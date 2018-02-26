@@ -1,0 +1,6 @@
+framework module Pods_UCBook {
+  umbrella header "Pods-UCBook-umbrella.h"
+
+  export *
+  module * { export * }
+}
