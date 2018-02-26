@@ -14,10 +14,30 @@
 		2D0CDF3920285A96000202ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0CDF3720285A96000202ED /* LaunchScreen.storyboard */; };
 		2D0CDF4420285A96000202ED /* UCBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0CDF4320285A96000202ED /* UCBookTests.swift */; };
 		2D0CDF4F20285A96000202ED /* UCBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0CDF4E20285A96000202ED /* UCBookUITests.swift */; };
-		2D0CDF5D2028625E000202ED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D0CDF5C2028625E000202ED /* GoogleService-Info.plist */; };
 		2D0CDF662029264A000202ED /* UserData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D0CDF642029264A000202ED /* UserData.xcdatamodeld */; };
-		2D0CDFA520294A2E000202ED /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0CDFA420294A2E000202ED /* ProfileVC.swift */; };
+		2D0CDFA520294A2E000202ED /* firstLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0CDFA420294A2E000202ED /* firstLoginVC.swift */; };
+		2D344F4A203BB76400294279 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D344F49203BB76400294279 /* LoginController.swift */; };
+		2D344F4C203CA29200294279 /* loginVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D344F4B203CA29200294279 /* loginVideo.mp4 */; };
+		2D4B0EA520351EF200B4F203 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D4B0EA420351EF200B4F203 /* GoogleService-Info.plist */; };
+		2D4B0EA72035284100B4F203 /* PostingBoardVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4B0EA62035284100B4F203 /* PostingBoardVC2.swift */; };
+		2D57C67220356CED001568BE /* CollectionVIewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D57C67120356CED001568BE /* CollectionVIewCells.swift */; };
+		2D57C67420356D3C001568BE /* CollectionViewCellsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D57C67320356D3C001568BE /* CollectionViewCellsVC.swift */; };
+		2D604A7E203FC46F001B5137 /* hubVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D604A7D203FC46F001B5137 /* hubVideo.mp4 */; };
+		2D604A8220408DCC001B5137 /* LoginTransitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D604A8120408DCC001B5137 /* LoginTransitionVC.swift */; };
+		2D84596C203558BD005734AA /* PostingBoardViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D84596B203558BD005734AA /* PostingBoardViewVC.swift */; };
 		2DC4B02F202B9E9A00534A25 /* HubVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC4B02E202B9E9A00534A25 /* HubVC.swift */; };
+		2DC4B033202FC47900534A25 /* PasswordResetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC4B032202FC47900534A25 /* PasswordResetVC.swift */; };
+		2DC4B0392031281800534A25 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC4B0382031281800534A25 /* Student.swift */; };
+		2DC4B03B203128FB00534A25 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC4B03A203128FB00534A25 /* Message.swift */; };
+		2DF4BBA020320BDB00DE772C /* Pods_UCBookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6593BCAFBE210BA9535AD5 /* Pods_UCBookTests.framework */; };
+		2DF4BBA120320BDC00DE772C /* Pods_UCBookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6593BCAFBE210BA9535AD5 /* Pods_UCBookTests.framework */; };
+		2DF4BBA220320C0400DE772C /* Pods_UCBookUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF97E3AC575E4AC21D686140 /* Pods_UCBookUITests.framework */; };
+		2DF4BBA320320C0500DE772C /* Pods_UCBookUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF97E3AC575E4AC21D686140 /* Pods_UCBookUITests.framework */; };
+		2DF4BBF12032460D00DE772C /* ChatBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DF4BBF02032460D00DE772C /* ChatBoard.storyboard */; };
+		2DF4BBF320324A2B00DE772C /* somefake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF4BBF220324A2B00DE772C /* somefake.swift */; };
+		2DF4BBF520334C4700DE772C /* PostingBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DF4BBF420334C4700DE772C /* PostingBoard.storyboard */; };
+		2DF4BBF720334DBB00DE772C /* PostingBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF4BBF620334DBB00DE772C /* PostingBoardVC.swift */; };
+		2DF4BBFB203500F100DE772C /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF4BBFA203500F100DE772C /* MessageCell.swift */; };
 		B64DAA079CD6E9F7281FFDBA /* Pods_UCBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA6D22DD6F6F9B4E2111E0D /* Pods_UCBook.framework */; };
 		E90A2DFC162EE6515F108BBA /* Pods_UCBookUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF97E3AC575E4AC21D686140 /* Pods_UCBookUITests.framework */; };
 		F979253B3E434A6E0C6DE877 /* Pods_UCBookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E6593BCAFBE210BA9535AD5 /* Pods_UCBookTests.framework */; };
@@ -56,10 +76,26 @@
 		2D0CDF4A20285A96000202ED /* UCBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UCBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D0CDF4E20285A96000202ED /* UCBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCBookUITests.swift; sourceTree = "<group>"; };
 		2D0CDF5020285A96000202ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2D0CDF5C2028625E000202ED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2D0CDF652029264A000202ED /* UserData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserData.xcdatamodel; sourceTree = "<group>"; };
-		2D0CDFA420294A2E000202ED /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		2D0CDFA420294A2E000202ED /* firstLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstLoginVC.swift; sourceTree = "<group>"; };
+		2D344F49203BB76400294279 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		2D344F4B203CA29200294279 /* loginVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = loginVideo.mp4; path = ../UCAppAssets/loginVideo.mp4; sourceTree = "<group>"; };
+		2D4B0EA420351EF200B4F203 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2D4B0EA62035284100B4F203 /* PostingBoardVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostingBoardVC2.swift; sourceTree = "<group>"; };
+		2D57C67120356CED001568BE /* CollectionVIewCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionVIewCells.swift; sourceTree = "<group>"; };
+		2D57C67320356D3C001568BE /* CollectionViewCellsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCellsVC.swift; sourceTree = "<group>"; };
+		2D604A7D203FC46F001B5137 /* hubVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = hubVideo.mp4; path = UCBook/Assets.xcassets/hubVideo.dataset/hubVideo.mp4; sourceTree = "<group>"; };
+		2D604A8120408DCC001B5137 /* LoginTransitionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTransitionVC.swift; sourceTree = "<group>"; };
+		2D84596B203558BD005734AA /* PostingBoardViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostingBoardViewVC.swift; sourceTree = "<group>"; };
 		2DC4B02E202B9E9A00534A25 /* HubVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubVC.swift; sourceTree = "<group>"; };
+		2DC4B032202FC47900534A25 /* PasswordResetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetVC.swift; sourceTree = "<group>"; };
+		2DC4B0382031281800534A25 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		2DC4B03A203128FB00534A25 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		2DF4BBF02032460D00DE772C /* ChatBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatBoard.storyboard; sourceTree = "<group>"; };
+		2DF4BBF220324A2B00DE772C /* somefake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = somefake.swift; sourceTree = "<group>"; };
+		2DF4BBF420334C4700DE772C /* PostingBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PostingBoard.storyboard; sourceTree = "<group>"; };
+		2DF4BBF620334DBB00DE772C /* PostingBoardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostingBoardVC.swift; sourceTree = "<group>"; };
+		2DF4BBFA203500F100DE772C /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		2E6593BCAFBE210BA9535AD5 /* Pods_UCBookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UCBookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76721059EDCCC9C64F5819F3 /* Pods-UCBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UCBook/Pods-UCBook.debug.xcconfig"; sourceTree = "<group>"; };
 		94BAA2F0B658BDF6F1E535B2 /* Pods-UCBookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UCBookTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UCBookTests/Pods-UCBookTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -74,7 +110,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DF4BBA320320C0500DE772C /* Pods_UCBookUITests.framework in Frameworks */,
 				B64DAA079CD6E9F7281FFDBA /* Pods_UCBook.framework in Frameworks */,
+				2DF4BBA120320BDC00DE772C /* Pods_UCBookTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +121,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F979253B3E434A6E0C6DE877 /* Pods_UCBookTests.framework in Frameworks */,
+				2DF4BBA220320C0400DE772C /* Pods_UCBookUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E90A2DFC162EE6515F108BBA /* Pods_UCBookUITests.framework in Frameworks */,
+				2DF4BBA020320BDB00DE772C /* Pods_UCBookTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +153,8 @@
 		2D0CDF2220285A96000202ED = {
 			isa = PBXGroup;
 			children = (
+				2D604A7D203FC46F001B5137 /* hubVideo.mp4 */,
+				2D344F4B203CA29200294279 /* loginVideo.mp4 */,
 				2D0CDF2D20285A96000202ED /* UCBook */,
 				2D0CDF4220285A96000202ED /* UCBookTests */,
 				2D0CDF4D20285A96000202ED /* UCBookUITests */,
@@ -135,16 +177,15 @@
 		2D0CDF2D20285A96000202ED /* UCBook */ = {
 			isa = PBXGroup;
 			children = (
-				2D0CDF2E20285A96000202ED /* AppDelegate.swift */,
-				2D0CDF3020285A96000202ED /* LoginVC.swift */,
+				2D57C675203B620F001568BE /* Singleton */,
+				2DF4BBFE2035021800DE772C /* Model */,
+				2DF4BBFD2035021200DE772C /* Controller */,
+				2DF4BBFC2035020C00DE772C /* VIew */,
 				2D0CDF642029264A000202ED /* UserData.xcdatamodeld */,
-				2D0CDF3220285A96000202ED /* Main.storyboard */,
 				2D0CDF3520285A96000202ED /* Assets.xcassets */,
-				2D0CDF3720285A96000202ED /* LaunchScreen.storyboard */,
 				2D0CDF3A20285A96000202ED /* Info.plist */,
-				2D0CDF5C2028625E000202ED /* GoogleService-Info.plist */,
-				2D0CDFA420294A2E000202ED /* ProfileVC.swift */,
-				2DC4B02E202B9E9A00534A25 /* HubVC.swift */,
+				2D0CDF3720285A96000202ED /* LaunchScreen.storyboard */,
+				2D4B0EA420351EF200B4F203 /* GoogleService-Info.plist */,
 			);
 			path = UCBook;
 			sourceTree = "<group>";
@@ -167,6 +208,53 @@
 			path = UCBookUITests;
 			sourceTree = "<group>";
 		};
+		2D57C675203B620F001568BE /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				2D0CDF2E20285A96000202ED /* AppDelegate.swift */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		2DF4BBFC2035020C00DE772C /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				2D0CDF3220285A96000202ED /* Main.storyboard */,
+				2DF4BBF02032460D00DE772C /* ChatBoard.storyboard */,
+				2DF4BBF420334C4700DE772C /* PostingBoard.storyboard */,
+			);
+			path = VIew;
+			sourceTree = "<group>";
+		};
+		2DF4BBFD2035021200DE772C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2DF4BBF220324A2B00DE772C /* somefake.swift */,
+				2D0CDF3020285A96000202ED /* LoginVC.swift */,
+				2D0CDFA420294A2E000202ED /* firstLoginVC.swift */,
+				2DC4B02E202B9E9A00534A25 /* HubVC.swift */,
+				2DC4B032202FC47900534A25 /* PasswordResetVC.swift */,
+				2DF4BBF620334DBB00DE772C /* PostingBoardVC.swift */,
+				2D4B0EA62035284100B4F203 /* PostingBoardVC2.swift */,
+				2D84596B203558BD005734AA /* PostingBoardViewVC.swift */,
+				2D57C67320356D3C001568BE /* CollectionViewCellsVC.swift */,
+				2D344F49203BB76400294279 /* LoginController.swift */,
+				2D604A8120408DCC001B5137 /* LoginTransitionVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2DF4BBFE2035021800DE772C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2DC4B0382031281800534A25 /* Student.swift */,
+				2DC4B03A203128FB00534A25 /* Message.swift */,
+				2DF4BBFA203500F100DE772C /* MessageCell.swift */,
+				2D57C67120356CED001568BE /* CollectionVIewCells.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		D1E4DE9BD095D869D00D8E9D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +264,7 @@
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 /* End PBXGroup section */
 
@@ -293,10 +382,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D604A7E203FC46F001B5137 /* hubVideo.mp4 in Resources */,
+				2D344F4C203CA29200294279 /* loginVideo.mp4 in Resources */,
 				2D0CDF3920285A96000202ED /* LaunchScreen.storyboard in Resources */,
-				2D0CDF5D2028625E000202ED /* GoogleService-Info.plist in Resources */,
+				2DF4BBF12032460D00DE772C /* ChatBoard.storyboard in Resources */,
 				2D0CDF3620285A96000202ED /* Assets.xcassets in Resources */,
 				2D0CDF3420285A96000202ED /* Main.storyboard in Resources */,
+				2DF4BBF520334C4700DE772C /* PostingBoard.storyboard in Resources */,
+				2D4B0EA520351EF200B4F203 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,9 +460,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-UCBook/Pods-UCBook-resources.sh",
+				"${PODS_ROOT}/FirebaseInvites/Resources/GINInviteResources.bundle",
+				"${PODS_ROOT}/FirebaseInvites/Resources/GPPACLPickerResources.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GINInviteResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GPPACLPickerResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -484,11 +584,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DF4BBF720334DBB00DE772C /* PostingBoardVC.swift in Sources */,
+				2D57C67420356D3C001568BE /* CollectionViewCellsVC.swift in Sources */,
 				2D0CDF662029264A000202ED /* UserData.xcdatamodeld in Sources */,
+				2DC4B033202FC47900534A25 /* PasswordResetVC.swift in Sources */,
+				2DC4B03B203128FB00534A25 /* Message.swift in Sources */,
+				2DF4BBFB203500F100DE772C /* MessageCell.swift in Sources */,
 				2D0CDF3120285A96000202ED /* LoginVC.swift in Sources */,
+				2D604A8220408DCC001B5137 /* LoginTransitionVC.swift in Sources */,
+				2D84596C203558BD005734AA /* PostingBoardViewVC.swift in Sources */,
 				2DC4B02F202B9E9A00534A25 /* HubVC.swift in Sources */,
-				2D0CDFA520294A2E000202ED /* ProfileVC.swift in Sources */,
+				2D4B0EA72035284100B4F203 /* PostingBoardVC2.swift in Sources */,
+				2D0CDFA520294A2E000202ED /* firstLoginVC.swift in Sources */,
+				2D57C67220356CED001568BE /* CollectionVIewCells.swift in Sources */,
+				2DF4BBF320324A2B00DE772C /* somefake.swift in Sources */,
+				2D344F4A203BB76400294279 /* LoginController.swift in Sources */,
 				2D0CDF2F20285A96000202ED /* AppDelegate.swift in Sources */,
+				2DC4B0392031281800534A25 /* Student.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -658,10 +770,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K7L685QH7K;
 				INFOPLIST_FILE = UCBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.IOSBookApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(inherited) \"${PODS_ROOT}/FirebaseAnalytics/Frameworks\" \"${PODS_ROOT}/FirebaseAuth/Frameworks\" \"${PODS_ROOT}/FirebaseDatabase/Frameworks\" \"${PODS_ROOT}/FirebaseInstanceID/Frameworks\" \"${PODS_ROOT}/FirebaseStorage/Frameworks\" \"${PODS_ROOT}/GoogleInterchangeUtilities/Frameworks\" \"${PODS_ROOT}/GoogleNetworkingUtilities/Frameworks\" \"${PODS_ROOT}/GoogleUtilities/Frameworks\" \"${PODS_ROOT}/GoogleSymbolUtilities/Frameworks\"";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -674,10 +788,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K7L685QH7K;
 				INFOPLIST_FILE = UCBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.IOSBookApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(inherited) \"${PODS_ROOT}/FirebaseAnalytics/Frameworks\" \"${PODS_ROOT}/FirebaseAuth/Frameworks\" \"${PODS_ROOT}/FirebaseDatabase/Frameworks\" \"${PODS_ROOT}/FirebaseInstanceID/Frameworks\" \"${PODS_ROOT}/FirebaseStorage/Frameworks\" \"${PODS_ROOT}/GoogleInterchangeUtilities/Frameworks\" \"${PODS_ROOT}/GoogleNetworkingUtilities/Frameworks\" \"${PODS_ROOT}/GoogleUtilities/Frameworks\" \"${PODS_ROOT}/GoogleSymbolUtilities/Frameworks\"";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -690,6 +806,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UCBookTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.UCBook.UCBookTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -707,6 +824,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UCBookTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.UCBook.UCBookTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -723,6 +841,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UCBookUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.UCBook.UCBookUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -739,6 +858,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UCBookUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.UCBook.UCBookUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
