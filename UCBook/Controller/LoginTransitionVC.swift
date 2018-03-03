@@ -13,8 +13,12 @@ class LoginTransitionVC: UIViewController, UIImagePickerControllerDelegate,UINav
 
     @IBOutlet weak var pic: UIImageView!
     
-    @IBOutlet weak var nameField: UITextField!
+    @IBOutlet weak var prompt: UILabel!
+
     
+    @IBOutlet weak var nameField: UITextField!
+    @IBOutlet weak var podiumButton: UIButton!
+    @IBOutlet weak var picBar: UILabel!
     private var avPlayer: AVPlayer!
 
     
@@ -25,6 +29,17 @@ class LoginTransitionVC: UIViewController, UIImagePickerControllerDelegate,UINav
         
     }
 
+    @IBAction func podiumPress(_ sender: Any) {
+        if nameField.text != "" {
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyBoard.instantiateViewController(withIdentifier: "HubVC")
+         //   vc.modalTransitionStyle = .flipHorizontal
+            self.present(vc, animated: true, completion: nil)
+        }else {
+            prompt.text = "Dont Forget To Enter Your Name"
+            
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -60,7 +75,7 @@ class LoginTransitionVC: UIViewController, UIImagePickerControllerDelegate,UINav
 
         pic.layer.borderWidth = 1
         pic.layer.borderColor = UIColor.white.cgColor
-        pic.backgroundColor = UIColor.white
+        pic.backgroundColor = UIColor.gray
         pic.layer.masksToBounds = false
         pic.layer.cornerRadius = pic.frame.height/2
         pic.clipsToBounds = true
@@ -72,6 +87,9 @@ class LoginTransitionVC: UIViewController, UIImagePickerControllerDelegate,UINav
         pic.addGestureRecognizer(picTap)
  
     }
+    
+ 
+    
     func bgVideo(){
         let filepath: String? = Bundle.main.path(forResource: "loginVideo", ofType: "mp4")
         // guard let unwrappedVideoPath = filepath else {return}
@@ -101,6 +119,10 @@ class LoginTransitionVC: UIViewController, UIImagePickerControllerDelegate,UINav
             self.avPlayer?.play()
     }
 }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        podiumButton.isHidden = self.pic.image == nil
+    }
     func picHasbeenTapped(){
         print("touching image")
         let controller = UIImagePickerController()

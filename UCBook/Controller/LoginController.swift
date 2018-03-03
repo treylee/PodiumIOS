@@ -210,7 +210,7 @@ class LoginController: UIViewController {
             let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             // the identifier is the storyboardID near under the class name section
             let vc = storyBoard.instantiateViewController(withIdentifier: "LoginTransitionVC")
-            vc.modalTransitionStyle = .flipHorizontal
+           // vc.modalTransitionStyle = .flipHorizontal
             self.present(vc, animated: true, completion: nil)
         }else {
             playText(message: "Need us to resend? Click the link below")

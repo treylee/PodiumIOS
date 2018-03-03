@@ -8,12 +8,15 @@
 
 import UIKit
 
-class PostingBoardVC: UIViewController {
-    var titleList = [ "1","2","3","4","5"]
+class BookBoardVC: UIViewController {
+    var titleList = [ "Harry Potter","Rich Dar Poor Dad","Cooking Essentials Family","Insta Fame for Dummeis","Knowledge is Power "]
+    var priceList = [ "112","243","231","411","500"]
+
     var imageList =
     {
         
     }
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     //10 is the spacing between the columns
@@ -22,40 +25,46 @@ class PostingBoardVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let width = (view.frame.size.width)
-        let height = (view.frame.size.height)
-
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
-        layout.itemSize = CGSize(width:width-10,height:height/3)
+        layout.itemSize = CGSize(width:width,height:width)
+        
         
     }
 }
-extension PostingBoardVC: UICollectionViewDelegate,UICollectionViewDataSource {
+extension BookBoardVC: UICollectionViewDelegate,UICollectionViewDataSource {
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        print(titleList.count)
         return titleList.count
     }
-    // tag 100 is title label in collection cell
+    // tag 11 is price 12 is title
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath )
-        if let label = cell.viewWithTag(100) as? UILabel {
+        if let label = cell.viewWithTag(12) as? UILabel {
+            print("success1")
+
             label.text = titleList[indexPath.row]
             
         }
+        if let label = cell.viewWithTag(11) as? UILabel {
+            print("success2")
+
+            label.text = priceList[indexPath.row]
+            }
         
         
         
-    
         return cell
     }
-     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        /*
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        
         if (kind == UICollectionElementKindSectionHeader) {
             let headerView:UICollectionReusableView =  collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "collectionViewHeader", for: indexPath)
             
             headerView.backgroundColor = UIColor.green
             print("testing")
-
+            
             return headerView
-        }*/
+        }
         print("dada")
         return UICollectionReusableView()
         

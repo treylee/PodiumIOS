@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UCBook/Controller/LoginController.swift"
-            timestampString = "541369563.441968"
+            timestampString = "541583524.796945"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "47"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UCBook/Controller/LoginController.swift"
-            timestampString = "541369563.442142"
+            timestampString = "541583524.797038"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "21"
@@ -93,6 +93,84 @@
                   startingLineNumber = "16"
                   endingLineNumber = "16"
                   offsetFromSymbolStart = "165">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UCBook/Controller/LoginTransitionVC.swift"
+            timestampString = "541814196.351475"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "LoginTransitionVC"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UCBook.LoginTransitionVC.pic.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIImageView&gt;"
+                  moduleName = "UCBook"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/trey/Desktop/UCBook/UCBook/Controller/LoginTransitionVC.swift"
+                  timestampString = "541378456.636116"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "79">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UCBook.LoginTransitionVC.pic.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIImageView&gt;"
+                  moduleName = "UCBook"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/trey/Desktop/UCBook/UCBook/Controller/LoginTransitionVC.swift"
+                  timestampString = "541378456.638468"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UCBook.LoginTransitionVC.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; UCBook.LoginTransitionVC"
+                  moduleName = "UCBook"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/trey/Desktop/UCBook/UCBook/Controller/LoginTransitionVC.swift"
+                  timestampString = "541378456.640543"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "77">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UCBook.LoginTransitionVC.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;UCBook.LoginTransitionVC&gt;"
+                  moduleName = "UCBook"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/trey/Desktop/UCBook/UCBook/Controller/LoginTransitionVC.swift"
+                  timestampString = "541378456.6430891"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "46">
                </Location>
             </Locations>
          </BreakpointContent>
