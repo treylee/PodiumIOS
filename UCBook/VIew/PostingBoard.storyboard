@@ -327,6 +327,38 @@
                                     <outlet property="bookTitle" destination="uB0-7o-Jbj" id="3zQ-LH-XJn"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" tag="18" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Row0" rowHeight="81" id="q6O-OH-Cjk" customClass="BookCellZero" customModule="UCBook" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="266" width="375" height="81"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="q6O-OH-Cjk" id="1GE-dZ-xL9" customClass="BookCellZero" customModule="UCBook" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="80.666666666666671"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="008-twitter.png" translatesAutoresizingMaskIntoConstraints="NO" id="PrV-Ug-CmD">
+                                            <rect key="frame" x="241" y="0.0" width="110" height="70"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Posted By:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ib-VT-fmb">
+                                            <rect key="frame" x="45" y="11" width="118" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.70080504441624369" green="0.70080504441624369" blue="0.70080504441624369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oq5-5T-34z">
+                                            <rect key="frame" x="136" y="49" width="103" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="1" green="0.76629031135615722" blue="0.65253481919147949" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="posterName" destination="Oq5-5T-34z" id="lcF-Q7-hCN"/>
+                                    <outlet property="posterPic" destination="PrV-Ug-CmD" id="IMb-yD-7ou"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="blK-qI-rlV" id="pdZ-DL-yWC"/>
@@ -569,6 +601,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="008-twitter.png" width="512" height="512"/>
         <image name="FullSizeRender" width="539" height="658"/>
         <image name="cloudPic" width="1920" height="1080"/>
         <image name="demo" width="1593" height="885"/>

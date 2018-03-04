@@ -31,6 +31,8 @@
 		2D604A8220408DCC001B5137 /* LoginTransitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D604A8120408DCC001B5137 /* LoginTransitionVC.swift */; };
 		2D604A842047B0F4001B5137 /* BookBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D604A832047B0F4001B5137 /* BookBoardVC.swift */; };
 		2D84596C203558BD005734AA /* PostingBoardViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D84596B203558BD005734AA /* PostingBoardViewVC.swift */; };
+		2DB4E561204B7B880077254A /* BookCellZero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB4E560204B7B880077254A /* BookCellZero.swift */; };
+		2DB4E563204B7E970077254A /* face id.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB4E562204B7E960077254A /* face id.png */; };
 		2DC4B02F202B9E9A00534A25 /* HubVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC4B02E202B9E9A00534A25 /* HubVC.swift */; };
 		2DC4B033202FC47900534A25 /* PasswordResetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC4B032202FC47900534A25 /* PasswordResetVC.swift */; };
 		2DC4B0392031281800534A25 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC4B0382031281800534A25 /* Student.swift */; };
@@ -99,6 +101,8 @@
 		2D604A8120408DCC001B5137 /* LoginTransitionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTransitionVC.swift; sourceTree = "<group>"; };
 		2D604A832047B0F4001B5137 /* BookBoardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookBoardVC.swift; sourceTree = "<group>"; };
 		2D84596B203558BD005734AA /* PostingBoardViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostingBoardViewVC.swift; sourceTree = "<group>"; };
+		2DB4E560204B7B880077254A /* BookCellZero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCellZero.swift; sourceTree = "<group>"; };
+		2DB4E562204B7E960077254A /* face id.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "face id.png"; path = "../UCAppAssets/face id.png"; sourceTree = "<group>"; };
 		2DC4B02E202B9E9A00534A25 /* HubVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubVC.swift; sourceTree = "<group>"; };
 		2DC4B032202FC47900534A25 /* PasswordResetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetVC.swift; sourceTree = "<group>"; };
 		2DC4B0382031281800534A25 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
@@ -165,6 +169,7 @@
 		2D0CDF2220285A96000202ED = {
 			isa = PBXGroup;
 			children = (
+				2DB4E562204B7E960077254A /* face id.png */,
 				2D35F7B2204A311100E516E8 /* 008-twitter.png */,
 				2D604A7D203FC46F001B5137 /* hubVideo.mp4 */,
 				2D344F4B203CA29200294279 /* loginVideo.mp4 */,
@@ -269,6 +274,7 @@
 				2D35F7B4204A579800E516E8 /* Expandable.swift */,
 				2D35F7B6204B2D2C00E516E8 /* BookCell.swift */,
 				2D35F7B8204B42A700E516E8 /* BookHeaderCell.swift */,
+				2DB4E560204B7B880077254A /* BookCellZero.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -400,6 +406,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DB4E563204B7E970077254A /* face id.png in Resources */,
 				2D35F7B3204A311100E516E8 /* 008-twitter.png in Resources */,
 				2D604A7E203FC46F001B5137 /* hubVideo.mp4 in Resources */,
 				2D344F4C203CA29200294279 /* loginVideo.mp4 in Resources */,
@@ -449,7 +456,7 @@
 		};
 		47908CCA29F58D612C907B7A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
@@ -475,7 +482,7 @@
 		};
 		5567D7949B30EF03475ED34B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
@@ -530,7 +537,7 @@
 		};
 		ABD092071802E80210E08E94 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
@@ -609,6 +616,7 @@
 				2D35F7B7204B2D2C00E516E8 /* BookCell.swift in Sources */,
 				2DC4B033202FC47900534A25 /* PasswordResetVC.swift in Sources */,
 				2DC4B03B203128FB00534A25 /* Message.swift in Sources */,
+				2DB4E561204B7B880077254A /* BookCellZero.swift in Sources */,
 				2D35F7B1204A219100E516E8 /* PostVC.swift in Sources */,
 				2DF4BBFB203500F100DE772C /* MessageCell.swift in Sources */,
 				2D0CDF3120285A96000202ED /* LoginVC.swift in Sources */,

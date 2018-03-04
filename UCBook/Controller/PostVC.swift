@@ -13,7 +13,6 @@ class PostVC: UITableViewController {
     var selectedHeader = -1;
     var bookShrinkSize = 0
     
-    
 // var instead of let so can mutate
     var twodimensionalArray = [
         Expandable(isExpanded: false,names: ["booby","tim","john","smith","xx" ]),
@@ -29,7 +28,9 @@ class PostVC: UITableViewController {
         //default cell
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
        // tableView.register(BookCell.self, forCellReuseIdentifier: cellId)
+     
 
+        tableView.rowHeight = UITableViewAutomaticDimension
     }
 
     @objc func handleShowIndexPath(){
@@ -173,10 +174,37 @@ class PostVC: UITableViewController {
         
         
     }
- 
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == 0 {
+       
+            return 81
+        }
+        return 44
+    }
+    var count = 0;
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath)
-
+        if indexPath.row == 0 {
+            print("setting height")
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Row0", for: indexPath) as! BookCellZero
+            cell.posterPic.layer.borderWidth = 1
+            cell.posterPic.layer.borderColor = UIColor.white.cgColor
+            cell.posterPic.backgroundColor = UIColor.gray
+            cell.posterPic.layer.masksToBounds = false
+            cell.posterPic.layer.cornerRadius = cell.posterPic.frame.height/2
+            cell.posterPic.clipsToBounds = true
+            cell.posterPic.image = UIImage(named: "face id")
+            //adding gesture recognizer alternative to IBaction
+            cell.posterPic.isUserInteractionEnabled = true
+            let picTap = UITapGestureRecognizer()
+            picTap.addTarget(self, action: "profileImageHasBeenTapped")
+            
+            cell.posterPic.addGestureRecognizer(picTap)
+            cell.posterName.text = "Sam C."
+            count += 1
+            return cell
+        }
+     let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath)
+        
         // access array and display
         //choose either names if section == 0 if not choose names2
         //let name  = indexPath.section == 0 ? names[indexPath.row] : names2[indexPath.row]
