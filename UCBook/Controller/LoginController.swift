@@ -54,6 +54,8 @@ class LoginController: UIViewController {
     func validateEmail()->Bool {
         email = emailField.text!
         email = email.replacingOccurrences(of: " ", with: "")
+        return true;
+
         if email.contains("@ucsc.edu") {
             return true
         }
@@ -117,6 +119,30 @@ class LoginController: UIViewController {
         })
        
     }
+    func authenticateReturningUser(){
+        print("reauthenticatin user")
+        validateEmail()
+        Auth.auth().signIn(withEmail: email, password: pinField.text!) { (user, error) in
+            if let error = error {
+                print(error.localizedDescription)
+                self.errorMessage = error.localizedDescription
+                print("count is \(self.count)")
+                print("count is now \(self.count)")
+                
+                return
+            }
+
+    
+            DispatchQueue.main.async {
+                   let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            // the identifier is the storyboardID near under the class name section
+            let vc = storyBoard.instantiateViewController(withIdentifier: "HubVC")
+            
+            // vc.modalTransitionStyle = .flipHorizontal
+            self.present(vc, animated: true, completion: nil)
+            }
+        }
+    }
     func authenticateDBUser() {
         print("authenticatin user")
         Auth.auth().createUser(withEmail: email, password: pinField.text!) { (user, error) in
@@ -170,6 +196,8 @@ class LoginController: UIViewController {
         switch count {
             
         case 0:
+            authenticateReturningUser()
+            
             if validateEmail() {
                 backgroundSelector.isHidden = true
                 backgroundSelector2.isHidden = false

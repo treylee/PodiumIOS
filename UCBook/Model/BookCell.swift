@@ -9,14 +9,16 @@
 import UIKit
 
 class BookCell: UITableViewCell {
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-        backgroundColor = .red
-        //cheat/hack
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+    var titleLabel:UILabel = {
+
+    let label = UILabel(frame: CGRect(x:35, y: 30, width: UIScreen.main.bounds.width , height: 30))
+        
+        label.numberOfLines = 0
+        label.lineBreakMode = .byWordWrapping
+        label.text =  "This is the very long description of a very boring book that I happen to read on tuesdays :( "
+        label.textColor = UIColor.lightGray
+        return label
+    }()
+
     
 }

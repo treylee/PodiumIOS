@@ -13,5 +13,5 @@ class BookCellZero : UITableViewCell {
     
     @IBOutlet weak var posterPic: UIImageView!
     @IBOutlet weak var posterName: UILabel!
-    
+
 }

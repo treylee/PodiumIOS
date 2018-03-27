@@ -16,6 +16,14 @@
 		2D0CDF4F20285A96000202ED /* UCBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0CDF4E20285A96000202ED /* UCBookUITests.swift */; };
 		2D0CDF662029264A000202ED /* UserData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D0CDF642029264A000202ED /* UserData.xcdatamodeld */; };
 		2D0CDFA520294A2E000202ED /* firstLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0CDFA420294A2E000202ED /* firstLoginVC.swift */; };
+		2D2A5DD9206A069F00FD9E98 /* FriendListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2A5DD8206A069F00FD9E98 /* FriendListItem.swift */; };
+		2D32A4C4204FA3910005AC01 /* InstructorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D32A4C3204FA3910005AC01 /* InstructorCell.swift */; };
+		2D32A4C6204FA3A60005AC01 /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D32A4C5204FA3A60005AC01 /* ReviewCell.swift */; };
+		2D32A4C8204FA3C20005AC01 /* MeetingLocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D32A4C7204FA3C20005AC01 /* MeetingLocationCell.swift */; };
+		2D32A4CA204FA3D50005AC01 /* ISBNCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D32A4C9204FA3D50005AC01 /* ISBNCell.swift */; };
+		2D32A4CC204FA3EF0005AC01 /* ConditionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D32A4CB204FA3EF0005AC01 /* ConditionCell.swift */; };
+		2D32A4CE20507C000005AC01 /* TableHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D32A4CD20507C000005AC01 /* TableHeaderCell.swift */; };
+		2D32A4D020524F610005AC01 /* TableFooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D32A4CF20524F600005AC01 /* TableFooterCell.swift */; };
 		2D344F4A203BB76400294279 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D344F49203BB76400294279 /* LoginController.swift */; };
 		2D344F4C203CA29200294279 /* loginVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D344F4B203CA29200294279 /* loginVideo.mp4 */; };
 		2D35F7B1204A219100E516E8 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D35F7B0204A219100E516E8 /* PostVC.swift */; };
@@ -30,9 +38,14 @@
 		2D604A7E203FC46F001B5137 /* hubVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D604A7D203FC46F001B5137 /* hubVideo.mp4 */; };
 		2D604A8220408DCC001B5137 /* LoginTransitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D604A8120408DCC001B5137 /* LoginTransitionVC.swift */; };
 		2D604A842047B0F4001B5137 /* BookBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D604A832047B0F4001B5137 /* BookBoardVC.swift */; };
+		2D643E1F2068512A008C1329 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D643E1E2068512A008C1329 /* ChatVC.swift */; };
 		2D84596C203558BD005734AA /* PostingBoardViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D84596B203558BD005734AA /* PostingBoardViewVC.swift */; };
+		2DA56D7B206700E5005748EA /* PostBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA56D7A206700E5005748EA /* PostBoard.swift */; };
+		2DA56D7D20670E4C005748EA /* TestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA56D7C20670E4C005748EA /* TestCell.swift */; };
+		2DA6648F2069E18300464E5D /* FriendListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA6648E2069E18300464E5D /* FriendListVC.swift */; };
 		2DB4E561204B7B880077254A /* BookCellZero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB4E560204B7B880077254A /* BookCellZero.swift */; };
 		2DB4E563204B7E970077254A /* face id.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB4E562204B7E960077254A /* face id.png */; };
+		2DB4E565204C755D0077254A /* BookCellOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB4E564204C755D0077254A /* BookCellOne.swift */; };
 		2DC4B02F202B9E9A00534A25 /* HubVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC4B02E202B9E9A00534A25 /* HubVC.swift */; };
 		2DC4B033202FC47900534A25 /* PasswordResetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC4B032202FC47900534A25 /* PasswordResetVC.swift */; };
 		2DC4B0392031281800534A25 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC4B0382031281800534A25 /* Student.swift */; };
@@ -86,6 +99,14 @@
 		2D0CDF5020285A96000202ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D0CDF652029264A000202ED /* UserData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserData.xcdatamodel; sourceTree = "<group>"; };
 		2D0CDFA420294A2E000202ED /* firstLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstLoginVC.swift; sourceTree = "<group>"; };
+		2D2A5DD8206A069F00FD9E98 /* FriendListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListItem.swift; sourceTree = "<group>"; };
+		2D32A4C3204FA3910005AC01 /* InstructorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructorCell.swift; sourceTree = "<group>"; };
+		2D32A4C5204FA3A60005AC01 /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
+		2D32A4C7204FA3C20005AC01 /* MeetingLocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingLocationCell.swift; sourceTree = "<group>"; };
+		2D32A4C9204FA3D50005AC01 /* ISBNCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISBNCell.swift; sourceTree = "<group>"; };
+		2D32A4CB204FA3EF0005AC01 /* ConditionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionCell.swift; sourceTree = "<group>"; };
+		2D32A4CD20507C000005AC01 /* TableHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderCell.swift; sourceTree = "<group>"; };
+		2D32A4CF20524F600005AC01 /* TableFooterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableFooterCell.swift; sourceTree = "<group>"; };
 		2D344F49203BB76400294279 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		2D344F4B203CA29200294279 /* loginVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = loginVideo.mp4; path = ../UCAppAssets/loginVideo.mp4; sourceTree = "<group>"; };
 		2D35F7B0204A219100E516E8 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
@@ -100,9 +121,14 @@
 		2D604A7D203FC46F001B5137 /* hubVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = hubVideo.mp4; path = UCBook/Assets.xcassets/hubVideo.dataset/hubVideo.mp4; sourceTree = "<group>"; };
 		2D604A8120408DCC001B5137 /* LoginTransitionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTransitionVC.swift; sourceTree = "<group>"; };
 		2D604A832047B0F4001B5137 /* BookBoardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookBoardVC.swift; sourceTree = "<group>"; };
+		2D643E1E2068512A008C1329 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		2D84596B203558BD005734AA /* PostingBoardViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostingBoardViewVC.swift; sourceTree = "<group>"; };
+		2DA56D7A206700E5005748EA /* PostBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostBoard.swift; sourceTree = "<group>"; };
+		2DA56D7C20670E4C005748EA /* TestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCell.swift; sourceTree = "<group>"; };
+		2DA6648E2069E18300464E5D /* FriendListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListVC.swift; sourceTree = "<group>"; };
 		2DB4E560204B7B880077254A /* BookCellZero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCellZero.swift; sourceTree = "<group>"; };
 		2DB4E562204B7E960077254A /* face id.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "face id.png"; path = "../UCAppAssets/face id.png"; sourceTree = "<group>"; };
+		2DB4E564204C755D0077254A /* BookCellOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCellOne.swift; sourceTree = "<group>"; };
 		2DC4B02E202B9E9A00534A25 /* HubVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubVC.swift; sourceTree = "<group>"; };
 		2DC4B032202FC47900534A25 /* PasswordResetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetVC.swift; sourceTree = "<group>"; };
 		2DC4B0382031281800534A25 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
@@ -260,6 +286,9 @@
 				2D604A8120408DCC001B5137 /* LoginTransitionVC.swift */,
 				2D604A832047B0F4001B5137 /* BookBoardVC.swift */,
 				2D35F7B0204A219100E516E8 /* PostVC.swift */,
+				2DA56D7A206700E5005748EA /* PostBoard.swift */,
+				2D643E1E2068512A008C1329 /* ChatVC.swift */,
+				2DA6648E2069E18300464E5D /* FriendListVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -275,6 +304,16 @@
 				2D35F7B6204B2D2C00E516E8 /* BookCell.swift */,
 				2D35F7B8204B42A700E516E8 /* BookHeaderCell.swift */,
 				2DB4E560204B7B880077254A /* BookCellZero.swift */,
+				2DB4E564204C755D0077254A /* BookCellOne.swift */,
+				2D32A4C3204FA3910005AC01 /* InstructorCell.swift */,
+				2D32A4C5204FA3A60005AC01 /* ReviewCell.swift */,
+				2D32A4C7204FA3C20005AC01 /* MeetingLocationCell.swift */,
+				2D32A4C9204FA3D50005AC01 /* ISBNCell.swift */,
+				2D32A4CB204FA3EF0005AC01 /* ConditionCell.swift */,
+				2D32A4CD20507C000005AC01 /* TableHeaderCell.swift */,
+				2D32A4CF20524F600005AC01 /* TableFooterCell.swift */,
+				2DA56D7C20670E4C005748EA /* TestCell.swift */,
+				2D2A5DD8206A069F00FD9E98 /* FriendListItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -612,14 +651,17 @@
 			files = (
 				2DF4BBF720334DBB00DE772C /* PostingBoardVC.swift in Sources */,
 				2D57C67420356D3C001568BE /* CollectionViewCellsVC.swift in Sources */,
+				2D32A4CC204FA3EF0005AC01 /* ConditionCell.swift in Sources */,
 				2D0CDF662029264A000202ED /* UserData.xcdatamodeld in Sources */,
 				2D35F7B7204B2D2C00E516E8 /* BookCell.swift in Sources */,
 				2DC4B033202FC47900534A25 /* PasswordResetVC.swift in Sources */,
 				2DC4B03B203128FB00534A25 /* Message.swift in Sources */,
 				2DB4E561204B7B880077254A /* BookCellZero.swift in Sources */,
 				2D35F7B1204A219100E516E8 /* PostVC.swift in Sources */,
+				2D32A4C8204FA3C20005AC01 /* MeetingLocationCell.swift in Sources */,
 				2DF4BBFB203500F100DE772C /* MessageCell.swift in Sources */,
 				2D0CDF3120285A96000202ED /* LoginVC.swift in Sources */,
+				2D32A4D020524F610005AC01 /* TableFooterCell.swift in Sources */,
 				2D604A8220408DCC001B5137 /* LoginTransitionVC.swift in Sources */,
 				2D604A842047B0F4001B5137 /* BookBoardVC.swift in Sources */,
 				2D35F7B9204B42A700E516E8 /* BookHeaderCell.swift in Sources */,
@@ -627,11 +669,21 @@
 				2DC4B02F202B9E9A00534A25 /* HubVC.swift in Sources */,
 				2D4B0EA72035284100B4F203 /* PostingBoardVC2.swift in Sources */,
 				2D0CDFA520294A2E000202ED /* firstLoginVC.swift in Sources */,
+				2DA6648F2069E18300464E5D /* FriendListVC.swift in Sources */,
+				2DB4E565204C755D0077254A /* BookCellOne.swift in Sources */,
 				2D57C67220356CED001568BE /* CollectionVIewCells.swift in Sources */,
+				2DA56D7D20670E4C005748EA /* TestCell.swift in Sources */,
+				2D32A4CE20507C000005AC01 /* TableHeaderCell.swift in Sources */,
+				2D643E1F2068512A008C1329 /* ChatVC.swift in Sources */,
 				2D35F7B5204A579800E516E8 /* Expandable.swift in Sources */,
+				2DA56D7B206700E5005748EA /* PostBoard.swift in Sources */,
+				2D32A4CA204FA3D50005AC01 /* ISBNCell.swift in Sources */,
 				2DF4BBF320324A2B00DE772C /* somefake.swift in Sources */,
+				2D32A4C4204FA3910005AC01 /* InstructorCell.swift in Sources */,
 				2D344F4A203BB76400294279 /* LoginController.swift in Sources */,
+				2D32A4C6204FA3A60005AC01 /* ReviewCell.swift in Sources */,
 				2D0CDF2F20285A96000202ED /* AppDelegate.swift in Sources */,
+				2D2A5DD9206A069F00FD9E98 /* FriendListItem.swift in Sources */,
 				2DC4B0392031281800534A25 /* Student.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

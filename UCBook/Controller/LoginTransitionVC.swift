@@ -8,7 +8,7 @@
 
 import UIKit
 import AVKit
-
+import Firebase
 class LoginTransitionVC: UIViewController, UIImagePickerControllerDelegate,UINavigationControllerDelegate {
 
     @IBOutlet weak var pic: UIImageView!
@@ -48,9 +48,36 @@ class LoginTransitionVC: UIViewController, UIImagePickerControllerDelegate,UINav
         dismiss(animated: true, completion: nil)
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+       
         let image = info[UIImagePickerControllerOriginalImage] as! UIImage
         pic.image = image
+        
+        // rest of code and method adds image to storage then adds to currently logged in user object.
+        let storageRef = Storage.storage().reference().child((Auth.auth().currentUser?.uid)!).child("userpic")
+       
+        let uploadImage = UIImagePNGRepresentation(image)
+        storageRef.putData(uploadImage!, metadata: nil, completion:
+            { (metadata,error) in
+                if error != nil {
+                print(error)
+                return
+        }
+            if let profileImageURL = metadata?.downloadURL()?.absoluteString{
+                let values =  ["profileImageUrl": profileImageURL]
+                self.addImageURL(uid:(Auth.auth().currentUser?.uid)!,values: values as [String : AnyObject])
+
+                }
+
+        })
+
+        print("loading image")
+        
         dismiss(animated: true,completion: nil)
+    }
+    private func addImageURL(uid:String,values: [String: AnyObject]){
+        let ref = Database.database().reference(fromURL: "https://iosbookapp.firebaseio.com/")
+        let usersReference = ref.child("users").child(uid).child("user")
+        usersReference.updateChildValues(values)
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch:UITouch = touches.first!
@@ -58,6 +85,7 @@ class LoginTransitionVC: UIViewController, UIImagePickerControllerDelegate,UINav
             print("touching image")
         let controller = UIImagePickerController()
         controller.delegate = self
+            controller.allowsEditing = true
         controller.sourceType = .photoLibrary
         present(controller,animated: true,completion: nil)
         }

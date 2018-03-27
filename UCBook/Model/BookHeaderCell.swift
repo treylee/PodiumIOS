@@ -14,4 +14,6 @@ class BookHeaderCell: UITableViewCell {
     @IBOutlet weak var bookPrice: UILabel!
     @IBOutlet weak var bookPicture: UIImageView!    
     @IBOutlet weak var bookTitle: UILabel!
+    
+    @IBOutlet weak var moneySign: UILabel!
 }
