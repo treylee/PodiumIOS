@@ -121,12 +121,11 @@ class LoginController: UIViewController {
     }
     func authenticateReturningUser(){
         print("reauthenticatin user")
-        validateEmail()
         Auth.auth().signIn(withEmail: email, password: pinField.text!) { (user, error) in
             if let error = error {
                 print(error.localizedDescription)
                 self.errorMessage = error.localizedDescription
-                print("count is \(self.count)")
+                print("in error \(self.count)")
                 print("count is now \(self.count)")
                 
                 return
@@ -173,7 +172,10 @@ class LoginController: UIViewController {
                 "role" : "student" as AnyObject
         ]
         
-        self.ref.child("users").child(Auth.auth().currentUser!.uid).setValue(["user": newDBuser])
+        let ref = Database.database().reference(fromURL: "https://iosbookapp.firebaseio.com/")
+        let values = ["email": email,"password":pin,"role":"Student"]
+        let usersReference = ref.child("users").child((Auth.auth().currentUser?.uid)!)
+        usersReference.updateChildValues(values)
         
         
     }
@@ -196,7 +198,6 @@ class LoginController: UIViewController {
         switch count {
             
         case 0:
-            authenticateReturningUser()
             
             if validateEmail() {
                 backgroundSelector.isHidden = true
@@ -214,6 +215,7 @@ class LoginController: UIViewController {
             if pinField.text! == pinField2.text!
                 && pinField.text!.count > 5{
                 print("in case 1")
+                authenticateReturningUser()
                 authenticateDBUser()
                 count += 1
                  // self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.checkEmailVerified), userInfo: nil, repeats: true)

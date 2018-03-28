@@ -287,8 +287,8 @@
 				2D604A832047B0F4001B5137 /* BookBoardVC.swift */,
 				2D35F7B0204A219100E516E8 /* PostVC.swift */,
 				2DA56D7A206700E5005748EA /* PostBoard.swift */,
-				2D643E1E2068512A008C1329 /* ChatVC.swift */,
 				2DA6648E2069E18300464E5D /* FriendListVC.swift */,
+				2D643E1E2068512A008C1329 /* ChatVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

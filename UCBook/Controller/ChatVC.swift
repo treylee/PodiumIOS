@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class ChatVC: UICollectionViewController , UITextFieldDelegate {
+class ChatVC: UICollectionViewController , UITextFieldDelegate, UICollectionViewDelegateFlowLayout {
     //closure statement init a global variable
     //lazy var gives access to self
     lazy var inputTextField: UITextField = {
@@ -19,17 +19,55 @@ class ChatVC: UICollectionViewController , UITextFieldDelegate {
         text.delegate = self
         return text
     }()
+    let cellID = "cellID"
+    var messages =  [Message]()
     var friendID:String = ""
-    
+    var chatFriend = Student()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title =  "Podium"
+        navigationItem.title =  chatFriend.email
         collectionView?.backgroundColor = UIColor.white
         setupInputComponents()
-        print(friendID)
+        collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cellID)
+      //  messageWatcher()
+        observeMessages()
+        print("current user " , Auth.auth().currentUser?.uid, " chatting with ", chatFriend.uid)
         
     }
+    func observeMessages(){
+        print("CURRENT USER ID",Auth.auth().currentUser?.uid)
+        let ref = Database.database().reference().child("messages").child("user-message").child((Auth.auth().currentUser?.uid)!)
+            
+            ref.observe(.childAdded, with: { (snapshot) in
+                print("checking snap",snapshot)
+            
+            })
+        }
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 5
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: view.frame.width, height: 80)
+    }
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath)
+        cell.backgroundColor = UIColor.blue
+        
+        return cell
+    }
+    func messageWatcher() {
+        let refHandle = Database.database().reference().child("messages").observe(.childAdded, with: { (snapshot) in
+            
+            if let dictionary = snapshot.value as? [String: AnyObject] {
+                let message = Message()
+                message.setValuesForKeys(dictionary)
+                self.messages.append(message)
+            }
+        })
+        
+    }
+        
     func  setupInputComponents() {
         let containerView = UIView()
         //containerView.backgroundColor = UIColor.red
@@ -80,8 +118,24 @@ class ChatVC: UICollectionViewController , UITextFieldDelegate {
         var ref: DatabaseReference!
         ref = Database.database().reference().child("messages")
         let childRef = ref.childByAutoId()
-        let values  = ["text": inputTextField.text!]
-        childRef.updateChildValues(values)
+        let toID = chatFriend.uid
+        let fromID = Auth.auth().currentUser?.uid
+        let timeStamp = NSDate().timeIntervalSince1970
+        let values  = ["msg": inputTextField.text!,"toID" : toID , "fromID": fromID , "timeStamp":timeStamp] as [String : Any]
+        //childRef.updateChildValues(values)
+        
+        childRef.updateChildValues(values)  { (error,ref) in
+            if error != nil {
+                print(error)
+                return
+            }
+            let userMessageRef = Database.database().reference().child("userMessages").child(fromID!)
+            let messageID = childRef.key
+            
+            let ref2 = Database.database().reference().child("userMessages").child(toID!)
+            ref2.updateChildValues([messageID: 1])
+            
+        }
         
     }
     //complying with delegate  can press enter to send text now

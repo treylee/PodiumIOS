@@ -76,7 +76,7 @@ class LoginTransitionVC: UIViewController, UIImagePickerControllerDelegate,UINav
     }
     private func addImageURL(uid:String,values: [String: AnyObject]){
         let ref = Database.database().reference(fromURL: "https://iosbookapp.firebaseio.com/")
-        let usersReference = ref.child("users").child(uid).child("user")
+        let usersReference = ref.child("users").child(uid)
         usersReference.updateChildValues(values)
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

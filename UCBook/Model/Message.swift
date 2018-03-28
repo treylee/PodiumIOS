@@ -10,17 +10,15 @@ import Foundation
 import UIKit
 import Firebase
 
+// has to be objc key value compliance belongs to C in swift 4o2
 class Message: NSObject {
     
-    var sendingStudent: String?
-    var msg: String?
-    var timestamp: NSNumber?
-    var recievingStudent: String?
-    var imageUrl: String?
-    var videoUrl: String?
-    var imageWidth: NSNumber?
-    var imageHeight: NSNumber?
+    @objc var fromID: String?
+    @objc var msg: String?
+    @objc var timeStamp: NSNumber?
+    @objc var toID: String?
     
+    /*
     init(dictionary: [String: Any]) {
         self.sendingStudent = dictionary["sendingStudent"] as? String
         self.msg = dictionary["msg"] as? String
@@ -31,9 +29,14 @@ class Message: NSObject {
         self.imageWidth = dictionary["imageWidth"] as? NSNumber
         self.imageHeight = dictionary["imageHeight"] as? NSNumber
     }
-    
+    */
     func chatPartnerId() -> String? {
-        return sendingStudent == Auth.auth().currentUser?.uid ? recievingStudent : sendingStudent
+        
+        if fromID ==  Auth.auth().currentUser?.uid {
+            return toID
+        } else {
+            return fromID
+        }
     }
-    
+ 
 }
