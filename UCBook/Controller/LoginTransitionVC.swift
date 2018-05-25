@@ -9,7 +9,7 @@
 import UIKit
 import AVKit
 import Firebase
-class LoginTransitionVC: UIViewController, UIImagePickerControllerDelegate,UINavigationControllerDelegate {
+class LoginTransitionVC: UIViewController, UIImagePickerControllerDelegate,UINavigationControllerDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var pic: UIImageView!
     
@@ -25,10 +25,15 @@ class LoginTransitionVC: UIViewController, UIImagePickerControllerDelegate,UINav
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        nameField.delegate = self
         setup()
         
     }
 
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
     @IBAction func podiumPress(_ sender: Any) {
         if nameField.text != "" {
             let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)

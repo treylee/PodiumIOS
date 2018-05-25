@@ -1,0 +1,958 @@
+Anthropology
+ANTH 1 - Intro Biolog Anth
+ANTH 97 - Lab Safety Practice
+ANTH 102A - Human Skeletal Biol
+ANTH 104 - Human Var and Adapt
+ANTH 110F - Evolution Human Diet
+ANTH 110I - SustainbilitySocJust
+ANTH 113 - Tutor Writing Anth
+ANTH 130A - People of Africa
+ANTH 130L - Latin Amer Ethnogra
+ANTH 139 - Language & Culture
+ANTH 146 - Anth & Environment
+ANTH 150 - Communicating Anth
+ANTH 158 - Feminist Ethnography
+ANTH 170 - His Archaeol Theory
+ANTH 179 - Slavery in Atlantic
+ANTH 180 - Ceramic Analysis
+ANTH 194A - Dead Persons
+ANTH 194H - Paleoanthropology
+ANTH 194S - Anthroplgy of Sound
+ANTH 195A - Senior Thesis Seminar
+ANTH 200A - Cultural Grad Core
+ANTH 216 - Methods in BioAnth
+ANTH 228 - Grant Writing
+ANTH 248 - Finance/Money/Law
+ANTH 270A - Archaeol Grad Core
+ANTH 272 - Adv Archeol Research
+ANTH 280 - AdvCeramicAnalysis
+ANTH 292 - Graduate Colloquim
+ANTH 294R - Adv Read BioAnth
+*Applied Linguistics
+APLX 80 - Intro Applied Ling
+APLX 113 - Inter-Cultural Comm
+*Applied Math and linguistics
+AMS 3 - Precalculus
+AMS 5 - Statistics
+AMS 7 - StatMthdsBio/Env/Hlth
+AMS 10 - Math Methods I
+AMS 11A - Math Methd for Econ
+AMS 11B - Math Methds Econ II
+AMS 80A - Gambling and Gaming
+AMS 107 - IntroFluidDynamics
+AMS 114 - Intro Dynam Systems
+AMS 129 - Foundtns Sci Comput
+AMS 131 - Intro Prob Theory
+AMS 200 - Research/Teach AMS
+AMS 203 -  Intro Prob Theory
+AMS 211 - Foundatn App Math
+AMS 214 - Applied Dynamic Sys
+AMS 217 - Intro Fluid Dynamics
+AMS 229 - Convex Optimization
+AMS 263 - Stochastic Processes
+AMS 266A - Introduction to R
+AMS 274 - Gen Linear Models
+AMS 280B -  Stat&AppliedMathModel
+AMS 280C -  Seminar in GAFD
+*Art
+ART 10E - 3D Foundation
+ART 20I - Intro Photography
+ART 20J - Intro Draw/Paint
+ART 20K - Intro New Media
+ART 80D - Intro Photography
+ART 80F - Intro Digital Media
+ART 106C - StopMotionAnimation
+ART 130 - Interm/Adv Painting
+ART 146T - Digital Illustration
+ART 150 - Darkroom Practices
+ART 156 - Project Devlop Photo
+ART 162A - Intaglio I
+ART 163A - Lithography I
+ART 180B - Sculpture II
+ART 184 - 3D ArtDesign:LaserCNC
+ART 188 - Int/Adv Sclpt/Fndry
+ART 189 - SpecialTopicsSculpture
+*Arts&Des:Games&PlayableMedia
+ARTG 80G - Vis Com Interaction
+ARTG 80H - Hist Digital Games
+ARTG 80I - Foundations of Play
+ARTG 118 - Draw/Paint Game Des
+ARTG 129 - Spec Topic Game Des
+ARTG 170 - Game Design I
+ARTG 179 - Game Design Practicum
+*Astronomy and Astrophysics
+ASTR 1 - The Cosmos
+ASTR 2 - Overview Universe
+ASTR 111 - Order of Magnitude
+ASTR 119 - Intro Sci Computing
+ASTR 171 - Genl Relativity
+ASTR 205 - Intr Astro Research
+ASTR 212 - Dynamical Astronomy
+ASTR 223 - Planetary Physics
+ASTR 292 - Seminar
+*Biochemistry and Molecular Bio
+BIOC 100A - Biochemistry
+*Biology: Molecular Cell & Dev
+BIOC 100A - Biochemistry
+BIOL 20A - Cell & Molecular Bi
+BIOL 100 - Biochemistry
+BIOL 105 - Genetics
+BIOL 109L - Yeast Molecular Gen
+BIOL 110 - Cell Biology
+BIOL 125 - Intro to Neurosci
+BIOL 130 - Human Physiology
+BIOL 186F - Undergrad Rsrch:MCDB
+BIOL 186L - Undergrad Rsrch MCD
+BIOL 186R - UG Research: MCD Bio
+BIOL 189 - Health Sci Intrnshp
+BIOL 189W - Human Biology DC
+BIOL 191 - ACE Service Learning
+BIOL 200A - Critical Analysis
+BIOL 201 - RNA Processing
+BIOL 280A - Molec Gene Yeasts
+BIOL 280B - Chromatin Structure
+BIOL 280C - Mammalian Brain Dev
+BIOL 280D - RNA Processing
+BIOL 280E - Meiotic Chrom Dynms
+BIOL 280F - Vert Neural Connect
+BIOL 280G - Phys Devel Brain
+BIOL 280H - Chromatn/Transcript
+BIOL 280I - EpigeneticGeneSilenc
+BIOL 280J - Macromoleculr Cmplx
+BIOL 280K - Cell Cycle Research
+BIOL 280L - Development
+BIOL 280M - Post-Trans Control
+BIOL 280N - Noncoding RNA Immune
+BIOL 280O - Bacterial Pathogen
+BIOL 280Q - Oocyte/Embry/Neuron
+BIOL 280R - Gene reg C elegans
+BIOL 280S - Chrom/RNA reg
+BIOL 280T - Drosophila Develpmt
+BIOL 280U - Drosophila Embryo
+BIOL 280W - Membrane Proteins
+BIOL 280Y - Synaptic Plasticity
+BIOL 280Z - ProstaDev&CancerBio
+BIOL 288 - Teaching Assist Train
+BIOL 291 - Mol Cell Devel Bio
+BIOL 292 - MCD Seminar
+*Biology: Ecology & Evolutionary
+BIOE 20B - Developmt & Physiol
+BIOE 20C - Ecology & Evolution
+BIOE 82 - Intro Field Res/Con
+BIOE 107 - Ecology
+BIOE 124 - Mammalogy
+BIOE 136 - Enviro Physiology
+BIOE 140 - Behavioral Ecology
+BIOE 145 - Plant Ecology
+BIOE 145L - Plant Ecology Field
+BIOE 155 - Freshwater Ecology
+BIOE 159A - Fld Qtr:Marine Ecol
+BIOE 159B - Fld Qtr:Ichthyology
+BIOE 159C - Fld Qtr:Field Ecolo
+BIOE 165 - Marine Conserv Bio
+BIOE 172 - Population Genetics
+BIOE 183W - Research in EEB
+BIOE 200A - Scientific Skills
+BIOE 200B - Adv Organismal Bio
+BIOE 245 - Plant Ecology
+BIOE 272 - Population Genetics
+BIOE 281A - Appld Marine Ecolog
+BIOE 281B - Molecular Evolution
+BIOE 281C - Physiological Ecol
+BIOE 281D - Global Chng Ecology
+BIOE 281E - Freshwater Ecology
+BIOE 281F - Ecological Res Topi
+281G -  SexualSel/Soci Behav
+BIOE 281H - Comp Marine Phys
+BIOE 281I - DiseaseEco/Population
+BIOE 281K - Plant Evolution
+BIOE 281L - Behavrl & Evol Ecol
+BIOE 281N - Marine Vert Ecology
+BIOE 281O - PlantWaterRelations
+BIOE 281P - Plant Population
+BIOE 281L - Behavrl & Evol Ecol
+BIOE 281N - Marine Vert Ecology
+BIOE 281O - PlantWaterRelations
+BIOE 281P - Plant Population
+BIOE 281Q - Molec Evolution Gen
+BIOE 281R - Mari Eco&Evol Biol
+BIOE 281S - Ancient DNA
+BIOE 281U - Invertebrate Biol
+BIOE 281V - Behavioral Ecology
+BIOE 281W - Exercise/Env Phys
+BIOE 294 - Ecol, Evol Bio Sem
+BIOE 295 - Adv EEB Seminar
+*Biomolecular Egineering
+BME 5 - Intro to Biotech
+BME 18 - Sci Principles Life
+BME 80G - Bioethics 21st Cent
+BME 110 - Comp Bio Tools
+BME 122H - Env Virology
+BME 129A - Project Des/Imp BME I
+BME 130 - Genomes
+BME 132 - Evol Genomics
+BME 140 - Bioinstrumentation
+BME 185 - Tech Writing Biomol
+BME 205 - BioinfoModel/Algorthm
+BME 232 - Evol Genomics
+BME 280B - Bioinform/Bioeng Sem
+BME 281C - Cancer Genomics
+BME 281D - Protein Engineering
+BME 281E - Seminar in Genomics
+BME 281H - Sem Compar Genomics
+BME 281N - Transcriptomics
+BME 281P - Nanotech/Biosensors
+BME 281R - Stem Cell Genomics
+BME 281S - Sem Comput Genomics
+BME 281V - Immunogenomics
+*Carson
+CRSN 1 - ALE:Environ/Society
+CRSN 15 - STEM Jump Start
+CRSN 55 - Service Learning
+CRSN 56 - Sust Media Interns
+CRSN 90 - Garden Internship
+CRSN 122 - UN-Contemporary Issues
+CRSN 151C - Sust Lab Tools
+CRSN 162 - Sust Int Practicum
+*Chemistry and Biochemistry
+CHEM 1A - General Chemistry
+CHEM 1B - General Chemistry
+CHEM 1C - General Chemistry
+CHEM 8A - Organic Chemistry
+CHEM 122 - Instrumental Analys
+CHEM 143 - Org Chem Structure
+CHEM 146A - Adv Lab Organic
+CHEM 163A - Quantum Mech & Spec
+CHEM 182 - ACE Service Learning
+CHEM 200A - Adv Biophys Methods
+CHEM 234 - Bioinorganic Chem
+CHEM 242B - Modern Org Syn
+CHEM 269 - Electrochemistry
+CHEM 274 -Prosem Synth/Polymr
+CHEM 275 - Bio Inorganic Chem
+CHEM 282 - Synthetic Methods
+CHEM 284 - Prosem Syn Org Chem
+CHEM 286 - Prosem Nat Pro Chem
+CHEM 291 - Chemistry Seminar
+CHEM 292 - Seminar
+CHEM 296 - Teaching Chemistry
+*Chinese
+CHIN 1 - Chinese: First Year
+CHIN 4 - Chinese: Second Year
+CHIN 103 - Advanced Chinese
+*College Nine
+CLNI 1 - ALE:Intl/Global Persp
+CLNI 90 - ntercultural Study
+CLNI 120 - PAC Planning
+*College Ten
+CLTE 1 - ALE:Social Justice
+CLTE 95 - Nonviolent Comm
+CLTE 120 - PAC Planning
+CLTE 135 - Soc Just Inst & Pwr
+*Community Studies
+CMMU 10 - Intr To Cmmu Actvsm
+CMMU 105A - Field Study
+CMMU 105B - Field Study
+CMMU 105C - Field Study
+CMMU 132 - Amer Cities Soc Chg
+CMMU 149 - Pol Econ Food & Ag
+CMMU 161 - GenderHealth&Justice
+*Computational Media
+CMPM 25 - 3D Modeling
+CMPM 146 - Game AI
+CMPM 147 - Generative Design
+CMPM 170 - Game Design I
+CMPM 176 - Game Systems
+CMPM 179 - Game Design Practicum
+CMPM 201 - Intro Comp Media
+CMPM 290A - 01   Topics Comp Media
+*Computer Engineering
+CMPE 3 - Personal Computers
+CMPE 8 - Robot Automation
+CMPE 12 - Com Sys/Assmbly Lan
+CMPE 16 - Appl Discrete Math
+CMPE 80A - Universal Access
+CMPE 80N - Intro to Networking
+CMPE 100 - Logic Design
+CMPE 110 - Computer Architect
+CMPE 118 - Intro Mechatronics
+CMPE 121 - Micro System Design
+CMPE 129A - Capstone Project I
+CMPE 141 - Feedback Cntrl Syst
+CMPE 149 - Intro Cyber-Phy Sys
+CMPE 150 - Intro Comp Networks
+CMPE 185 - Tech Writ Comp Engs
+CMPE 200 - Resrch & Teaching
+CMPE 202 - Comp Architecture
+CMPE 216 - Bio-Inspired Locomotion
+CMPE 218 - Mechatronics
+CMPE 220 - AdvParallelProcess
+CMPE 241 - FeedbackContrlSystm
+CMPE 249 - Intro Cyber-Phy Sys
+CMPE 252A - Computer Networks
+CMPE 264 - Image Analy/Com Vis
+CMPE 280C - Seminar on Control
+CMPE 280N - Seminar On Networks
+CMPE 280P - Parallel Processing
+CMPE 280S - Seminar: Comp Sys
+CMPE 280V - Seminar:ComputrVision
+*Computer Science
+CMPS 5J - Intro to Prog Java
+CMPS 5P - Intro Prog Python
+CMPS 12A - Intro Program (Accel)
+CMPS 12B - Intro Data Structur
+CMPS 101 - Abstract Data Types
+CMPS 104A - Fund Compiler Des 1
+CMPS 109 - Adv Programming
+CMPS 111 - Intro Operating Sys
+CMPS 112 -  Compar Prog Lang
+CMPS 115 - Intro Software Eng
+CMPS 121 - Mobile Applications
+CMPS 128 - Dist Sys:FileSharing
+CMPS 130 - Computational Models
+CMPS 142 - Machine Learning
+CMPS 160 - Intro Comp Graphics
+CMPS 166A - Game Theory /Apps I
+CMPS 180 - Database Systems I
+CMPS 183 - Web Applications
+CMPS 185 - Technical Writing
+CMPS 200 - Research & Teaching
+CMPS 201 - Analysis Algorithms
+CMPS 217 - Logic In Comp Sci
+CMPS 223 - Adv Comp Security
+CMPS 242 - Machine Learning
+CMPS 260 - Computer Graphics
+CMPS 266A - Introduction to R
+CMPS 278 - Design Data Systems
+CMPS 280D - Seminar Databases
+CMPS 280L - Sem Logic Comp Sci
+CMPS 280M - ML Seminar
+CMPS 280S - Seminar Comp Syst
+*Cowell College
+COWL 1 - ALE:Imagining Justice
+COWL 70A - Intro Book Arts
+COWL 107 - Trust Rules
+COWL 111 - Mock Trial Workshop
+COWL 122 - UN-Contemporary Issues
+COWL 168 - Social Change
+COWL 184A - Leadership & Instit
+*Critical Race & Ethnic Studies
+CRES 10 - Intro to CRES
+*Crown
+CRWN 1 - ALE:Emerging Technologies
+CRWN 70 - Intro to Radio
+CRWN 70L - Radio Production
+CRWN 86 - Pro Comm in Digital Age
+CRWN 88 - ComputFuturol
+CRWN 90 - EntrepreneurshipAcad
+CRWN 185 - Career&Internship
+*Digital Arts and New Media
+DANM 210 - Project Design Studio
+DANM 219 - Electronic/Artmakng
+DANM 220 - Intro Progrm Arts
+DANM 250A - Collab Resrch Proj
+DANM 250B - Collab Resrch Proj
+DANM 250E - Collab Resrch Proj
+*Earth Science
+EART 1 - Oceanography
+EART 101 - Invertebrate Paleo
+EART 109 - Field Geology
+
+EART 110A - Evolution Of Earth
+EART 111 - Math in Earth Science
+EART 116 - Hydrology
+EART 119 - Intro Sci Computing
+EART 121 - The Atmosphere
+EART 150 - Structural Geology
+EART 160 - Planetary Science
+EART 191C - Practical Geophysics
+EART 203 - Intro Teaching Sem
+EART 204 - EPS Foundations
+EART 213 - Biogeochem Cycles
+EART 220 - GroundWaterModeling
+EART 290B - Topics Glaciology
+EART 290E - Topics/Planetry Sci
+EART 292 - Seminar
+*Economics
+ECON 1 - Intro Microeconomic
+ECON 2 - Intro Macroeconomic
+ECON 10A - Econ of Accounting
+ECON 11A - Math Methd for Econ
+ECON 11B - Math Methds Econ II
+ECON 20 - Econ for Non-Majors
+ECON 100A - Intermed Microecon
+ECON 100B - Intermed Macroecon
+ECON 105 - Topics in Macro
+ECON 111A - Intermed Account I
+ECON 113 - Intro Econometrics
+ECON 115 - Intr Management Sci
+ECON 117B - Tax Factors
+ECON 119 - Advanced Accounting
+ECON 126 - Why Succeed/Fail
+ECON 130 - Money & Banking
+ECON 133 - Security Markets
+ECON 136 - Business Strategy
+ECON 140 - International Trade
+ECON 143 - InternatnlEconPolicy
+ECON 161A - Marketing
+ECON 166A - Game Theory /Apps I
+ECON 170 - Environmental Econ
+ECON 180 - Labor
+ECON 186 - Mathematical Mthds
+ECON 197 - Economic Rhetoric
+ECON 200 - Microecon Analysis
+ECON 204A - Adv Microec Theor I
+ECON 205A - Adv Macroec Theor I
+ECON 210B - Math Methods Econ
+ECON 211A - Adv Econometrics I
+ECON 216 - Applied Economet I
+ECON 220A - Development Econ I
+ECON 221A - Adv Monetary Econ I
+ECON 233 - Finance I
+ECON 241A - Adv Intl Finance I
+ECON 250A - Public Appl Econ I
+ECON 274 - Macro Monetary Econ
+ECON 275 - 0Wkshp App Microecon
+*Education
+EDUC 60 - Intro to Education
+EDUC 104 - Ethical Issue Teach
+EDUC 120 - Aesthtc Educ Theory
+EDUC 160 - Educ Reform Issues
+EDUC 171 - Asian Schl & Immigra
+EDUC 180 - Intro To Teaching
+EDUC 200 - Beg Student Teach
+EDUC 204 - English Development
+EDUC 211 - TopicsElemEducation
+EDUC 212A - Biling&Biliteracy:A
+EDUC 220 - Reading & Lang Arts
+EDUC 222 - Math Learn & Teach
+EDUC 226 - English Teaching
+EDUC 228 - Math Education
+EDUC 230 - Sci Ed:Resrch/Pract
+EDUC 232 - Social Science
+EDUC 235 - Intr Educat Inquiry
+EDUC 262 - Cultural Context Ed
+*Electrical Engineering
+EE 80S - Sustn Eng/Pract
+EE 101 - Intro Elec Circuits
+EE 103 - Signals & Systems
+EE 129A - Capstone Project I
+EE 130 - Optoelect/Photonics
+EE 145 - Props Of Materials
+EE 154 - Feedback Cntrl Syst
+EE 172 - Adv Analog Circuits
+EE 173 - Hi-Spd Digtl Design
+EE 175 - Energy Gen Control
+EE 216 - Nanomaterial Devices
+EE 221 - Adv Analog Circuits
+EE 227 - Fund Semicond Phys
+EE 230 - Optical Fiber Comm
+EE 241 - FeedbackContrlSystm
+EE 251 - Digital Communicatn
+EE 261 - ErrorControlCoding
+EE 280A - Applied Microscopy
+EE 280B - Intgr Bioelect Sem
+EE 280N - Nanophotonics Sem
+EE 280O - Applied Optics
+EE 280Z - Smart Grids & Data
+EE 290 - EE Graduate Seminar
+EE 293 - Adv Topics in EE
+*Environmental Studies
+ENVS 15 - Naturl History UCSC
+ENVS 24 - General Ecology
+ENVS 80B - Forecast Globl Warm
+ENVS 106A - Natural Hist Birds
+ENVS 115A - GIS & Envnmtl Applc
+ENVS 120 - Conservation Biology
+ENVS 130A - Agroeco & Sust Ag
+ENVS 141 - Ecological Econ
+ENVS 145 - Green Cities
+ENVS 158 - Pol Ecol & Socl Chg
+ENVS 167 - Freshwater/Wetland
+ENVS 177 - TeachEnvironEduc
+ENVS 189 - Research Seminar
+ENVS 196 - Senior Seminar
+ENVS 201A - Research Approaches
+ENVS 215A - Gis & Envnmtl Applc
+ENVS 290 - Interdis Research
+ENVS 290L - Research Seminar
+ENVS 292 - Research In Envs
+*Feminist Studies
+FMST 1 - Feminist Stds Intro
+FMST 40 - Sexuality/Globalztn
+FMST 75 - Feminist Method
+FMST 80S - Women In Music
+FMST 188 - Topics in FMST
+FMST 194O - Gender/Human Rights
+FMST 200 - Feminist Theories
+FMST 204 - Ethno Writ Soc Doc
+FMST 264 - The Idea Of Africa
+*Film & Digital Media
+FILM 20A - Intro Film Studies
+FILM 20A - Intro Film Studies
+FILM 80M - Understanding Media
+FILM 80S - Sp Top Film/Dig Med
+FILM 132A - Internatnl Cinema
+FILM 134B - Amer Film:1960-Pres
+FILM 150 - Screenwriting
+FILM 162 - Film Authors
+FILM 170A - Digital Media Prod
+FILM 170B - Film/Video Productn
+FILM 171A - Prod Workshop-Sound
+FILM 171S - Spec Topics in Prod
+FILM 172 - NarrativeVideoWksp
+FILM 185D - Sound/Image Theory
+FILM 185S - AdvTopicFilmStudies
+FILM 194C - New Media Theor Sem
+FILM 200C - Theory/Praxis 2
+FILM 224 - Mediating Diff
+FILM 237 - Graduate Critique
+*French
+FREN 1 - French: First Year
+FREN 2 - French: First Year
+FREN 3 - French: First Year
+FREN 4 - French: Second Year
+FREN 5 - French: Second Year
+FREN 111 - Stylistics
+*Games & Playable Media
+GAME 230 - Game Engineering
+*German
+GERM 1 - German: First Year
+GERM 4 - German: Second Year
+*Greek
+GREE 1 - Elem Ancient Greek
+*Hebrew
+HEBR 1 - Hebrew: First Year
+*History
+HIS 10A - US History To 1877
+HIS 11A - LAmer ColonlPeriod
+HIS 40B - Modern East Asia
+HIS 41 - Making Mod Mid East
+HIS 77 - Am Jewish History
+HIS 100 - His Skills & Methds
+HIS 101E - Global 1930s
+HIS 110A - Colonial U S 1500-1750
+HIS 116A - Unchained Memory
+HIS 117 - Wired Nation
+HIS 128 - Chicana/o History
+HIS 137A - Africa To 1800
+HIS 140D - Recent Chinese Hist
+HIS 150F - Engendering Empires
+HIS 158C - Slavery in Atlantic
+HIS 159C - Temple and City
+HIS 167A - The First World War
+HIS 172A - German History
+HIS 190A - Latn Am Slavry/Race
+HIS 196H - Sex and the City
+HIS 200 - Methods & Theories
+HIS 210B - Readings US History
+HIS 230B - Engendering China
+HIS 260 - Making Space
+HIS 280A - Teaching Pedagogy
+HIS 280B - Resrch & Grant Writ
+HIS 280C - Job Market
+*History of Art & Visual Culture
+HAVC 24 - SE Asia Visual Cul
+HAVC 40 - Museum Cultures
+HAVC 45 - Photography Now
+HAVC 70 - Pacific Islands Art
+HAVC 116 - AfricanArchitecture
+HAVC 141K - Activst Art 1960 On
+HAVC 143E - History of Design
+HAVC 160A - Visual Cltr: Mexico
+HAVC 180A - Global Contemp Art
+HAVC 191P - Topics Contemp Art
+HAVC 191W - ArtDisasterRslience
+HAVC 201A - Intro Visual Studies
+HAVC 204 - Grant Writing
+HAVC 205 - Grant Writing in VS
+HAVC 233 - ContempArt & Vis Cltr
+*History of Consciousness
+HISC 80O - Popular Music
+HISC 120 - What is a State?
+HISC 203A - Approach To HistCon
+HISC 226 - Liberty/Resistance
+HISC 232 - Music/Social/Thought
+HISC 240 - Univ Level Pedagogy
+HISC 264 - The Idea Of Africa
+*Italian
+ITAL 1 - Elem Italian Lang
+ITAL 4 - Italian: Second Year
+ITAL 100 - Adv Ital Comp/Conv
+*Japanese
+JAPN 1 - Japanese: First Year
+JAPN 4 - Japanese: Second Year
+JAPN 103 - Advanced Japanese
+*Jewish Studies
+JWST 77 - Am Jewish History
+*Kresge College
+KRSG 1 - ALE:Power&Representat
+KRSG 18 - Natural Hist Pract
+*Languages
+LAAD 210 - OralCommunication:TAs
+*Latin
+LATN 1 - Elementary Latin
+*Latin American & Latino Studies
+LALS 1 - Intro Latin Amer St
+LALS 80S - Sexualities/Genders
+LALS 90 - Contemporary Brazil
+LALS 100 - Concepts/Theories LALS
+LALS 122 - Media/Nationalism
+LALS 130 - Expresiones en el cine
+LALS 171 - BrazilBlackWhite
+LALS 172 - VisualizingHumanRights
+LALS 180 - Borders:Real/Imagin
+LALS 194R - Violencia en Amer
+LALS 200 - LatAm/Latina/o Stdy
+LALS 203 - Latin Am Social Move
+*Legal Studies
+LGST 10 - Intro Legal Process
+LGST 105C - Modern Pol Thought
+LGST 109 - Legal Theory
+LGST 110 - Law & Social Issues
+LGST 111B - Civil Liberties
+LGST 111C - IssuesConstitutionLaw
+LGST 117 - Sports Law Politics
+LGST 120C - Capit Amer Pol Dev
+LGST 128I - Race and Law
+LGST 159 - Property and the Law
+LGST 196 - Senior Capstone
+*Linguistics
+LING 50 - Intr To Linguistics
+LING 53 - Semantics I
+LING 80D - Language and Mind
+LING 102 - Phonology II
+LING 112 - Syntax I
+LING 140 - Language Change
+LING 151 - Phonetic Analysis
+LING 154 - Lang/Social Identity
+LING 211 - Phonology A
+LING 221 - Syntax A
+LING 229 - Syntax Seminar
+LING 231 - Semantics A
+LING 240 - Pedagogy Of Ling
+LING 259 - Phonetics Seminar
+*Literature
+LIT 1 - Literary Interpret
+LIT 61P - Reading Poetry
+LIT 61W - Writing & Research
+LIT 61X - Tragedy
+LIT 80H - Politics of Fashion
+LIT 90 - Intro Creative Writ
+LIT 91A - Inter Fiction Writing
+LIT 91B - Inter Poetry Writing
+LIT 114C - Dante's Divine Comedy
+LIT 120F - Modern Poetry
+LIT 125H - Modern Arabic Novel
+LIT 126F - Speculative Fiction
+LIT 130D - Global Middle Ages
+LIT 133I - Global Japanese Lit
+LIT 135E - Hstorical Imaginary
+LIT 146B - Victorian Literature
+LIT 146F - Dissent in America
+LIT 155H - The Horror Film
+LIT 155N - Cinema in India
+LIT 165C - Mesoamerican Lit
+LIT 167E - Vampire in Pop Cltr
+LIT 168A - Cultr Islamic Law
+LIT 169A - Race/Gender/Material
+LIT 179A - Adv Writing-Fiction
+LIT 179B - Adv Writing-Poetry
+LIT 182J - Theorie
+LIT 183B - Themen Literatur
+LIT 184D - Prose Authors
+LIT 186B - Roman Poetry
+LIT 188H - Erotismo y Mistica
+LIT 189C - Intro a Span Study
+LIT 189S - Cultura popular
+LIT 190I - Individual Authors
+LIT 190Y - Mod Jewish Lit/Cultr
+LIT 200 - Proseminar
+LIT 201 - Pedagogy of Literat
+LIT 222 - English Lang Lit
+LIT 250 - Theory and Methods
+LIT 251 - TopicsCultrlStudies
+LIT 279A - Methods and Materials
+LIT 282D - Topics In Theory
+*Mathematics
+MATH 2 - Col Algbra/Calculus
+MATH 2T - Preparatory Math
+MATH 3 - Precalculus
+MATH 11A - Calculus with Apps
+MATH 11B - Calculus with Apps
+MATH 19A - Calc:Sci,Engin,Math
+MATH 19B - Calc:Sci,Engin,Math
+MATH 20A - Honors Calculus
+MATH 21 - Linear Algebra
+MATH 23A - Vector Calculus
+MATH 23B - Vector Calculus
+MATH 24 - Ordinary Diff Equas
+MATH 100 - Intr Proof/Prb Solv
+MATH 101 - Math Problm Solving
+MATH 105A - Real Analysis
+MATH 111A - Algebra
+MATH 117 - Adv Linear Algebra
+MATH 128A - Classical Geometry
+MATH 134 - Cryptography
+MATH 152 - Programming for Math
+MATH 200 - Algebra I
+MATH 203 - Algebra IV
+MATH 204 - Analysis I
+MATH 208 - Manifolds I
+MATH 211 - Algebraic Topology
+MATH 213A - Partial Dif Eqtns I
+MATH 238 - Ellip Func/Mod Form
+MATH 239 - Homological Algebra
+MATH 292 - Seminar
+*Merrill College
+MERR 1 - ALE:ReadOurselves/World
+MERR 90 - Field:TheoryPractice
+MERR 183F - Focus on Africa
+*Microbiol & Environ Toxicology
+METX 119 - Microbiology
+METX 200 - Intrdisc Appr
+METX 201 - Sources/Pollutants
+METX 281C - TopicsEnvirMicrobio
+METX 281M - Topics Molec Toxic
+METX 281O - Bacterial Pathogen
+METX 281S - Cell&Org/Toxicants
+METX 281V - Immunity to Bacteria
+METX 281Y - Bacterial Biofilms
+METX 292 - Intro Grad Seminar
+*Music
+MUSC 1C - Concert Choir
+MUSC 2 - Univ Orchestra
+MUSC 3 - Large Jazz Ensemble
+MUSC 5A - Beg W Java Gamelan
+MUSC 5B - Int W Java Gamelan
+MUSC 5C - Adv W Java Gamelan
+MUSC 8A - Balinese Gamelan
+MUSC 8B - Adv Balinese Gameln
+MUSC 9 - Wind Ensemble
+MUSC 10 - Eurasian Ensemble
+MUSC 11A - Western Classical
+MUSC 11B - Intro to Jazz
+MUSC 11D - Intr to World Music
+MUSC 12B - Mexican Folklorico
+MUSC 30A - Theor, Lit, Music
+MUSC 51 - Vocal Repertoire Class
+MUSC 55 - NorthIndiaRhythm
+MUSC 60 - Fund Keyboard Skills
+MUSC 75 - Beg Improv Theory
+MUSC 80C - Hist Electronic Mus
+MUSC 80S - Women In Music
+MUSC 80Z - Laptop Music
+MUSC 81M - Chic/LatinMuscUSA
+MUSC 101C - Hist West Art Music
+MUSC 102 - University Orchestra
+MUSC 103 - Univ Concert Choir
+MUSC 121 - Orchestration
+MUSC 125 - Adv Elec Sound Synt
+MUSC 130 - Harmony and Form
+MUSC 159A - Opera Workshop
+MUSC 163 - EarlyMusicEnsemble
+MUSC 164 - Jazz Ensembles
+MUSC 166 - Chamber Singers
+MUSC 167 - Wksp Electron Music
+MUSC 200 - Intro Res Methods
+MUSC 201 - History of Music Theory
+MUSC 219 - Technique/Composition
+MUSC 252 - Current Issues Coll
+*Oakes College
+OAKS 1 - ALE:CommunicaDiversity
+OAKS 73B - Oakes Mentoring
+OAKS 151A - CommunityLiteracies
+OAKS 151B - Community Lit Field
+*Ocean Sciences
+OCEA 1 - The Oceans
+OCEA 80A - Life In The Sea
+OCEA 90 - ClimateFundamentals
+OCEA 200 - Physical Oceanography
+OCEA 211 - Climate Dynamics
+OCEA 213 - Biogeochem Cycles
+OCEA 280 - Marine Geology
+OCEA 290C - Topics Mari Geochem
+OCEA 292 - Seminar
+OCEA 296 - Teaching Ocean Sci
+*Philosophy
+PHIL 9 - Intro to Logic
+PHIL 11 - Intro To Philosophy
+PHIL 23 - Phil Cognitive Sci
+PHIL 80G - Bioethics 21st Cent
+PHIL 100A - Ancient Greek Phil
+PHIL 106 - Kant
+PHIL 122 - Metaphysics
+PHIL 143 - App Eth:Ethics Bowl
+PHIL 190 - Senior Seminar
+PHIL 235 - Philos Of Psycholgy
+PHIL 280 - Grad Colloquia
+PHIL 281 - Pedagogy of Phil
+PHIL 290P - MajFigrs/ContmpryPhil
+*Physics
+PHYS 5A - Intro Physics I
+PHYS 5C - Intro Physics III
+PHYS 5D - Intro Physics IV
+PHYS 6A - Intro Physics I
+PHYS 6C - Intro Phys III
+PHYS 102 - Modern Physics
+PHYS 105 - Mechanics
+PHYS 107 - IntroFluidDynamics
+PHYS 116C - Math Method Physics
+PHYS 139B - Quantum Mechanics II
+PHYS 171 - Genl Relativity
+PHYS 182 - Sci Comm Physics
+PHYS 210 - Classical Mechanics
+PHYS 212 - Electromagnetism I
+PHYS 217 - Quant Fld Theory I
+PHYS 221A - Int Particle Phys I
+PHYS 231 - Intro Condes Matter
+PHYS 291A - Cosmology
+PHYS 291C - Particle Physics
+PHYS 291D - Exp Collider Phys
+PHYS 291E - Applied Physics
+PHYS 291F - Particle Astrophys
+PHYS 291G - Cond Matter Physics
+PHYS 292 - Seminar
+*Politics
+POLI 3 - Concepts/Politics
+POLI 105C - Modern Pol Thought
+POLI 110 - Law & Social Issues
+POLI 111B - Civil Liberties
+POLI 118 - Pol/Critical Theory
+POLI 120C - Capit Amer Pol Dev
+POLI 125 - PoliticalOrganizatns
+POLI 128 - AmerElecVoteBehavior
+POLI 129 - American Defense
+POLI 140A - European Politics
+POLI 143 - Compar Post-Communi
+POLI 144 - Andean Politics
+POLI 160D - Intl Political Econ
+POLI 165 - Global Organization
+POLI 174 - GlobPoliticalEcology
+POLI 185 - Political Psychology
+POLI 186 - GlobalHealthPolitics
+POLI 190H - Substance Of Dmcrcy
+POLI 190L - Poverty Politics
+POLI 190P - Race:His of Concept
+POLI 222 - Conflict/Chng:Politics
+POLI 255 - Comparative Anti-Colonialisms
+*Porter College
+PRTR 1 - ALE:Arts of Reading
+PRTR 41I - Improvisation
+*Portuguese
+PORT 1A - Portuguese: Accel
+PORT 60A - Portuguese: Accel Rom Lang
+PORT 65B - Portuguese: Accel Interm
+*Psychology
+PSYC 1 - Intro Psychology
+PSYC 10 - Intro Develop Psych
+PSYC 20A - Cogn: Fund Theories
+PSYC 40 - Intro Social Psych
+PSYC 100 - Research Methods
+PSYC 104 - Develop in Infancy
+PSYC 112 - Moral Development
+PSYC 114 - Devel as Cultural
+PSYC 119T - Media Contexts
+PSYC 124 - Psych of Reading
+PSYC 125 - Psych of Language
+PSYC 129 - Learning and Memory
+PSYC 138 - Programming CogSci
+PSYC 139H - Weird Science
+PSYC 139K - Face Recognition
+PSYC 140H - Sexual Identity/Soc
+PSYC 146 - The Social Context
+PSYC 150 - Soc Psyc Flim-Flam
+PSYC 153 - Psych of Poverty
+PSYC 159R - AchievementDisparity
+PSYC 167 - Clinical Psychology
+PSYC 171 - Child Psychopathol
+PSYC 175 - Pers/Relatn/Emotion
+PSYC 191A - Teaching Psychology
+PSYC 204 - Quant Data Analysis
+PSYC 214B - Adv Multivar Techni
+PSYC 224A - Prosem: Cogni Psy I
+PSYC 225A - Intro Dev Reserch I
+PSYC 230 - Cogni Psych Seminar
+PSYC 231 - Social Psych Sem
+PSYC 242 - Dev Psyc Seminar
+PSYC 244A - Prosem I:Lang Devel
+PSYC 290B - Adv Devel Research
+*Russian
+RUSS 1 - Russian: First Year
+*Science Communication
+SCIC 201A - Reporting Sci News
+SCIC 202 - Writ & Edit Wrkshop
+*Social Documentation
+SOCD 200 - Approach Social Docmt
+SOCD 201A - Intro Doc Fld Pro
+SOCD 201A - Intro Doc Fld Pro
+SOCD 204 - Ethno Writ Soc Doc
+SOCD 294A - Prod/Anlysis/Editng
+*Sociology
+SOCY 1 - Intro Sociology
+SOCY 3A - Evaluation/Evidence
+SOCY 15 - World Society
+SOCY 30A - IntrGlobal InfoEnterp
+SOCY 105A - Classical Soc Theor
+SOCY 111 - Family & Society
+SOCY 127P - SocDrugs/Bots/Pharm
+SOCY 128I - Race and Law
+SOCY 129 - Pop Culture Studies
+SOCY 136 - Social Psychology
+SOCY 152 - Body and Society
+SOCY 172 - Social Movements
+SOCY 178 - Social Problems
+SOCY 196G - GISES Proj Pract
+SOCY 201 - Make Classic Theory
+SOCY 203 - Sociol Methods
+SOCY 290 - Adv Socio Analysis
+*Spanish
+SPAN 1 - Spanish: First Year
+SPAN 2 - Spanish: First Year
+SPAN 3 - Spanish: First Year
+SPAN 4 - Spanish: Second Year
+SPAN 5 - Spanish: Second Year
+SPAN 5M - Medical Spanish
+SPAN 6 - Spanish: Second Year
+SPAN 105 - Intro a Span Study
+SPAN 150 - Intro Hispanic Ling
+SPAN 151 - Varieties of Spanish
+SPAN 156M - Mexico & Southwest
+*Spanish for Heritage Speakers
+SPHS 4 - SpanHeritageSpeakers
+SPHS 115 - Essay Reading/Writing
+*Stevenson College
+STEV 1 - ALE:Self and Society
+STEV 11A - ELP:Leadership Tools
+STEV 80H - Rainbow Theater
+STEV 90 - The Nuclear Pacific
+*Technology and Info Management
+TIM 50 - Business Inf System
+TIM 101 - Mgmt Of Tech Seminr
+TIM 105 - Intro Mgmt of Tech I
+TIM 166A - Game Theory /Apps I
+TIM 205 - Management Tech I
+TIM 209 - DataMining/BusAnalytics
+TIM 280I - Info Retrievl/Knowl Mgnt
+TIM 280S - Seminar Topics
+*Theater Arts
+THEA 10 - Intro to Design
+THEA 12 - Stage Management
+THEA 20 - Intr Studies Acting
+THEA 22 - Indonesian Dance
+THEA 31C - DanceStudio1:Contemp
+THEA 36 - Intro Dance Comp
+THEA 40 - Intro To Directing
+THEA 50 - Fundamen Production
+THEA 55A - Barnstorm
+THEA 61A - AncientMedievalDrama
+THEA 80L - Muppet Magic
+*Writing
+WRIT 1A - Intro to Composition
+WRIT 2 - Rhetoric & Inquiry
+WRIT 23 - Grammar and Rhetoric
+WRIT 25 - Writing About Place
+WRIT 26 - Writing About Lang
+WRIT 27 - Writing About Genre
+WRIT 169 - Tutoring Writing
+

@@ -11,7 +11,7 @@ import AVKit
 import AVFoundation
 import Firebase
 import CoreData
-class LoginController: UIViewController {
+class LoginController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var prompt: UIImageView!
     
@@ -43,6 +43,12 @@ class LoginController: UIViewController {
         pinField.underlined()
         emailField.underlined()
        // textBox.underlined()
+        self.emailField.delegate = self
+        self.pinField.delegate = self
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
     func designButton(){
         loginButton.layer.cornerRadius = 20

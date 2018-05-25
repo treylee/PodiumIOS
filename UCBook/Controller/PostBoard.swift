@@ -11,10 +11,13 @@ import UIKit
 
 class PostBoard: UITableViewController {
     
+lazy var searchBar = UISearchBar(frame: CGRect.zero)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchBar.placeholder = "Search"
         
+        navigationItem.titleView = searchBar
         // First Header
         let header = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 100))
         header.backgroundColor = .red

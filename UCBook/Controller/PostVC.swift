@@ -14,6 +14,8 @@ class PostVC: UITableViewController {
     var selectedHeader = -1;
     var bookShrinkSize = 0
     var counter = 500
+    lazy var searchBar = UISearchBar(frame: CGRect(x: 0, y: 0, width: 300, height: 30))
+    lazy var searchButton = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 30))
 
 // var instead of let so can mutate
     // add more expandables to create more books
@@ -24,9 +26,39 @@ class PostVC: UITableViewController {
             Expandable(isExpanded: false,names: ["booby","tim","john","smith","xx","sda","sdada" ]),
              Expandable(isExpanded: false,names: ["booby","tim","john","smith","xx","sda","sdada"]),
     ]
+    @objc func clickedSearch(){
+        print("clickedSearch")
+    }
     var showIndexPaths = false
     override func viewDidLoad(){
         super.viewDidLoad()
+        navigationController?.popToRootViewController(animated: true)
+
+        //UIApplication.shared.keyWindow?.rootViewController?.dismiss(animated: false, completion: nil)
+
+        searchBar.placeholder = "Search"
+        searchBar.clipsToBounds = true
+        searchBar.contentMode = UIViewContentMode.scaleAspectFit
+        
+        searchButton.setTitle("Search", for: .normal)
+        searchButton.clipsToBounds = true
+        searchButton.backgroundColor = UIColor.red
+        searchButton.contentMode = UIViewContentMode.scaleAspectFit
+       navigationItem.leftBarButtonItem = UIBarButtonItem(customView: searchBar)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: searchButton)
+       // navigationItem.titleView = searchBar
+        
+        let btn1 = UIButton(type: .custom)
+        btn1.setImage(UIImage(named: "FullSizeRender"), for: .normal)
+        btn1.clipsToBounds = true
+        btn1.frame = CGRect(x: 360, y: 0, width: 30, height: 30)
+        btn1.contentMode = UIViewContentMode.scaleAspectFill
+        btn1.addTarget(self, action: #selector(clickedSearch), for: .touchUpInside)
+        let item1 = UIBarButtonItem(customView: btn1)
+        
+        
+     //   self.navigationItem.setRightBarButtonItems([item1], animated: true)
+        
         let rect = CGRect(origin: CGPoint(x: 0,y :0), size: CGSize(width: 100, height: 100))
         var view1: UIView = UIView.init(frame: rect);
         var label: UILabel = UILabel.init(frame: rect)
@@ -59,9 +91,15 @@ class PostVC: UITableViewController {
         footer.backgroundColor = .red
         tableView.tableFooterView = footer;
         */
+        tableView?.contentInset = UIEdgeInsets(top: 75, left: 0, bottom: 75, right: 0)
+
         
     }
+    override func viewDidAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = false
+       
 
+    }
     @objc func handleShowIndexPath(){
         var indexPathsToReload = [IndexPath]()
         for section in twodimensionalArray.indices {
@@ -84,6 +122,18 @@ class PostVC: UITableViewController {
     }
     override func numberOfSections(in tableView: UITableView) -> Int {
         return twodimensionalArray.count
+    }
+    
+    override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SectionHeader") as? BookHeaderCell
+        var height = cell?.bookPicture.frame.size.height
+        var width = cell?.bookPicture.frame.size.width
+        
+        let footerView = UIView()
+        let separatorView = UIView(frame: CGRect(x: tableView.separatorInset.left, y: footerView.frame.height, width: width!, height: 1))
+        separatorView.backgroundColor = UIColor.red
+        footerView.addSubview(separatorView)
+        return footerView
     }
     
 /*
@@ -110,6 +160,8 @@ class PostVC: UITableViewController {
     }
    */
     let img = UIImage(named: "chex")!
+    var imgList: [String] = ["book5cover","book5cover", "book4cover","book3cover","book4cover","book1cover",]
+
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
 
         print("in header section:",section)
@@ -118,7 +170,7 @@ class PostVC: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SectionHeader") as? BookHeaderCell
         cell?.bookPrice.text = "100"
         cell?.bookTitle.text = "SomeBook"
-        cell?.bookPicture.image = img
+        cell?.bookPicture.image = UIImage(named: imgList[section])
         cell?.bookTitle.textColor = UIColor.lightGray
         cell?.bookPrice.textColor = UIColor.lightGray
         cell?.moneySign.textColor = UIColor.lightGray
@@ -130,8 +182,9 @@ class PostVC: UITableViewController {
             cell?.bookTitle.font = UIFont.boldSystemFont(ofSize: 20.0)
             cell?.bookPrice.font = UIFont.boldSystemFont(ofSize: 20.0)
             cell?.moneySign.font =   UIFont.boldSystemFont(ofSize: 20.0)
-          //  cell?.bookPicture.borderWidth = 3
+            //  cell?.bookPicture.borderWidth = 3
            // cell?.layer.borderColor = UIColor.black.cgColor
+            print("esslected header",selectedHeader)
         }
         let initialScale: CGFloat = 1.2
         let duration: TimeInterval = 0.5
@@ -140,13 +193,42 @@ class PostVC: UITableViewController {
         cell?.addGestureRecognizer(tap)
         cell?.isUserInteractionEnabled = true
         cell?.tag = section
+     
+
+      
         return cell
+    }
+    func ResizeImage(_ image: UIImage, targetSize: CGSize) -> UIImage? {
+        let size = image.size
+        
+        let widthRatio  = targetSize.width  / image.size.width
+        let heightRatio = targetSize.height / image.size.height
+        
+        // Figure out what our orientation is, and use that to form the rectangle
+        var newSize: CGSize
+        if(widthRatio > heightRatio) {
+            newSize = CGSize(width: size.width * heightRatio, height: size.height * heightRatio)
+        } else {
+            newSize = CGSize(width: size.width * widthRatio, height: size.height * widthRatio)
+        }
+        
+        // This is the rect that we've calculated out and this is what is actually used below
+        let rect = CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height)
+        
+        // Actually do the resizing to the rect using the ImageContext stuff
+        UIGraphicsBeginImageContextWithOptions(newSize, false, 1.0)
+        image.draw(in: rect)
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return newImage
     }
     // reload table is necessary in reloading the expandable views
     @objc func handleTap2(_ sender: UITapGestureRecognizer) {
         
         let section = sender.view?.tag
     
+
         // hides all other cells but the current selection and ones that already closed.
         print("the section pressed",section)
         for sections in (twodimensionalArray.indices){
@@ -322,6 +404,26 @@ class PostVC: UITableViewController {
 
 
         return cell
+    }
+    
+}
+
+class ScaledHeightImageView: UIImageView {
+    
+    override var intrinsicContentSize: CGSize {
+        
+        if let myImage = self.image {
+            let myImageWidth = myImage.size.width
+            let myImageHeight = myImage.size.height
+            let myViewWidth = self.frame.size.width
+            
+            let ratio = myViewWidth/myImageWidth
+            let scaledHeight = myImageHeight * ratio
+            
+            return CGSize(width: myViewWidth, height: scaledHeight)
+        }
+        
+        return CGSize(width: -1.0, height: -1.0)
     }
     
 }

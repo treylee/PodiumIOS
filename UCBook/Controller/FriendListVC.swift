@@ -21,6 +21,10 @@ class FriendListVC : UITableViewController {
         tableView.separatorStyle = .singleLine
         
     }
+    override func viewDidAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = false
+
+    }
     func retrieveMessages() {
         let refHandle = Database.database().reference().child("messages").observe(.childAdded, with: { (snapshot) in
             
@@ -46,7 +50,9 @@ class FriendListVC : UITableViewController {
                 let s  = Student()
                 s.uid = snapshot.key // necessary  to getUID and remain complianet for setValueKeys
                 s.setValuesForKeys(dict)
+                if s.uid != Auth.auth().currentUser?.uid {
                 self.students.append(s)
+                }
                 print(s.email)
                 
                 DispatchQueue.main.async {

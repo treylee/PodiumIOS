@@ -46,11 +46,19 @@
                                             <rect key="frame" x="43" y="10" width="46" height="46"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time Stamp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhw-aw-a5g">
+                                            <rect key="frame" x="262" y="0.0" width="97" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="message" destination="TLL-If-lIS" id="wCf-7P-EuY"/>
                                     <outlet property="pic" destination="pmE-Gq-7aS" id="CsK-6Y-YLN"/>
+                                    <outlet property="timeStamp" destination="jhw-aw-a5g" id="lFp-m3-b7v"/>
                                     <outlet property="username" destination="luN-qN-PLm" id="sS6-ed-1FK"/>
                                 </connections>
                             </tableViewCell>
@@ -60,7 +68,9 @@
                             <outlet property="delegate" destination="eXh-Ux-D3S" id="hGD-qC-5If"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="qKp-hD-1Sj"/>
                     <navigationItem key="navigationItem" title="Podium" id="GYL-5s-ZZW"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p4u-MA-suB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

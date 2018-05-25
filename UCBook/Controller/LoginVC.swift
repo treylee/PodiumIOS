@@ -32,6 +32,11 @@ class LoginVC: UIViewController {
     var password:String = ""
     var key:String = ""
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
+    
     func biometricType()  {
         let authContext = LAContext()
         if #available(iOS 11, *) {
@@ -99,6 +104,7 @@ class LoginVC: UIViewController {
         let slideDown = UISwipeGestureRecognizer(target: self, action: #selector(dismissView(gesture:)))
         slideDown.direction = .up
         view.addGestureRecognizer(slideDown)
+     
     }
 
    

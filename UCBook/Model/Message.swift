@@ -12,7 +12,6 @@ import Firebase
 
 // has to be objc key value compliance belongs to C in swift 4o2
 class Message: NSObject {
-    
     @objc var fromID: String?
     @objc var msg: String?
     @objc var timeStamp: NSNumber?

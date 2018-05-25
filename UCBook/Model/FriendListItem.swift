@@ -15,6 +15,7 @@ class FriendListItem : UITableViewCell {
     @IBOutlet weak var username: UILabel!
     
     
+    @IBOutlet weak var timeStamp: UILabel!
     @IBOutlet weak var message: UILabel!
 }
 
