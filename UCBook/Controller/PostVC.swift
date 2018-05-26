@@ -9,7 +9,12 @@
 import UIKit
 
 class PostVC: UITableViewController {
+   
     
+
+    var test = ""
+    var subject = ""
+    var course = ""
     let cellId = "cellId"
     var selectedHeader = -1;
     var bookShrinkSize = 0
@@ -32,7 +37,8 @@ class PostVC: UITableViewController {
     var showIndexPaths = false
     override func viewDidLoad(){
         super.viewDidLoad()
-        navigationController?.popToRootViewController(animated: true)
+       print("recieved data",subject,course)
+       
 
         //UIApplication.shared.keyWindow?.rootViewController?.dismiss(animated: false, completion: nil)
 

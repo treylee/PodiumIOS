@@ -13,10 +13,28 @@ import CoreData
 import AVKit
 
 
+protocol sendDataToHubProtocol {
+    func inputData2(data:String)
+}
 
 class HubVC: UIViewController,sendDataToViewProtocol {
-    func inputData(data: String) {
-        print(data)
+    // this class recieves data from searchPopUpvC and this forwards to search screen
+    var delegate:sendDataToHubProtocol? = nil
+
+    func inputData(subject: String , course: String) {
+
+
+        let storyBoard: UIStoryboard = UIStoryboard(name: "PostingBoard", bundle: nil)
+        // the identifier is the storyboardID near under the class name section
+        let vc = storyBoard.instantiateViewController(withIdentifier: "PostVC") as! PostVC
+        vc.subject = subject
+        vc.course = course
+            
+        
+        //sets the delegate in the new
+      //  dismiss(animated: true, completion: nil)
+        navigationController?.pushViewController(vc, animated: false)
+        
     }
     private var ref: DatabaseReference!
     private var email:String = ""
@@ -33,7 +51,7 @@ class HubVC: UIViewController,sendDataToViewProtocol {
         
         let vc = storyBoard.instantiateViewController(withIdentifier: "SearchPopupVC") as! SearchPopupVC
         vc.modalPresentationStyle = .overFullScreen
-
+           vc.delegate = self as! sendDataToViewProtocol 
         present(vc, animated: true)
 
     
@@ -45,7 +63,8 @@ class HubVC: UIViewController,sendDataToViewProtocol {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         // the identifier is the storyboardID near under the class name section
         let vc = storyBoard.instantiateViewController(withIdentifier: "PostPopupVC") as! PostPopupVC
-        vc.delegate = self as! sendDataToViewProtocol   //sets the delegate in the new
+        
+       //sets the delegate in the new
         present(vc, animated: false)
        // navigationController?.pushViewController(vc, animated: true)
 
@@ -56,6 +75,7 @@ class HubVC: UIViewController,sendDataToViewProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("testx",test)
         ref = Database.database().reference()
         bgVideo()
         //loginDBUser()

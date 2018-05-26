@@ -8,13 +8,20 @@
 
 import UIKit
 import Firebase
+
+protocol sendDataToViewProtocol {
+    func inputData(subject: String, course: String)
+}
+
 class SearchPopupVC : UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
 
     @IBOutlet weak var searchButton: UIButton!
     var list = ["Subjects"]
     var courseList = ["Courses"]
+    var curSubject = ""
+    var curCourse =  ""
+    var delegate:sendDataToViewProtocol? = nil
 
-    
     @IBOutlet weak var classPicker: UIPickerView!
     
     @IBOutlet weak var coursePicker: UIPickerView!
@@ -42,8 +49,11 @@ class SearchPopupVC : UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
         let vc = storyBoard.instantiateViewController(withIdentifier: "PostVC") as! PostVC
         navigationController?.pushViewController(vc, animated: true)
+         
  */
-        
+        delegate?.inputData(subject: curSubject, course: curCourse)
+        dismiss(animated: true, completion: nil)
+
             }
 
     
@@ -96,11 +106,19 @@ class SearchPopupVC : UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         }    }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        if pickerView.tag == 10 {
+
         classPickerButton.setTitle("Please Select Major", for: .normal
-        )
+            )
+            curSubject = list[row]
+
        // print(list[row])
         searchButton.isHidden = false
         LoadCourses(course: list[row])
+        }else {
+            curCourse = courseList[row]
+
+        }
     }
 //tag 10 is subject list
     func LoadCourses(course : String){

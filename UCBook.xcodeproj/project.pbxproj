@@ -18,6 +18,7 @@
 		2D0CDF662029264A000202ED /* UserData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D0CDF642029264A000202ED /* UserData.xcdatamodeld */; };
 		2D0CDFA520294A2E000202ED /* firstLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0CDFA420294A2E000202ED /* firstLoginVC.swift */; };
 		2D2A5DD9206A069F00FD9E98 /* FriendListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2A5DD8206A069F00FD9E98 /* FriendListItem.swift */; };
+		2D2AF63E20BA136F00EDC368 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2AF63D20BA136F00EDC368 /* Book.swift */; };
 		2D32A4C4204FA3910005AC01 /* InstructorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D32A4C3204FA3910005AC01 /* InstructorCell.swift */; };
 		2D32A4C6204FA3A60005AC01 /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D32A4C5204FA3A60005AC01 /* ReviewCell.swift */; };
 		2D32A4C8204FA3C20005AC01 /* MeetingLocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D32A4C7204FA3C20005AC01 /* MeetingLocationCell.swift */; };
@@ -110,6 +111,7 @@
 		2D0CDF652029264A000202ED /* UserData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserData.xcdatamodel; sourceTree = "<group>"; };
 		2D0CDFA420294A2E000202ED /* firstLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstLoginVC.swift; sourceTree = "<group>"; };
 		2D2A5DD8206A069F00FD9E98 /* FriendListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListItem.swift; sourceTree = "<group>"; };
+		2D2AF63D20BA136F00EDC368 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		2D32A4C3204FA3910005AC01 /* InstructorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructorCell.swift; sourceTree = "<group>"; };
 		2D32A4C5204FA3A60005AC01 /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
 		2D32A4C7204FA3C20005AC01 /* MeetingLocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingLocationCell.swift; sourceTree = "<group>"; };
@@ -341,6 +343,7 @@
 				2D3DEC8420A24AE300F50540 /* HistoryCell.swift */,
 				2D3DEC8620A24B0000F50540 /* AccountReviewCell.swift */,
 				2D6D18C820B1633400C7985B /* Extensions.swift */,
+				2D2AF63D20BA136F00EDC368 /* Book.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -700,6 +703,7 @@
 				2D4B0EA72035284100B4F203 /* PostingBoardVC2.swift in Sources */,
 				2D3B1E2C2072C38F00528D80 /* MainTabBar.swift in Sources */,
 				2D0CDFA520294A2E000202ED /* firstLoginVC.swift in Sources */,
+				2D2AF63E20BA136F00EDC368 /* Book.swift in Sources */,
 				2DA6648F2069E18300464E5D /* FriendListVC.swift in Sources */,
 				2DB4E565204C755D0077254A /* BookCellOne.swift in Sources */,
 				2D3DEC8520A24AE300F50540 /* HistoryCell.swift in Sources */,
