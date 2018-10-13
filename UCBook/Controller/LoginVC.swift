@@ -198,7 +198,7 @@ class LoginVC: UIViewController {
         if(Auth.auth().currentUser?.isEmailVerified) == true {
             // try dispatch async here later and see if you dont have
             // to press continue twice
-            self.performSegue(withIdentifier: "HubSegue2", sender: self)
+            self.performSegue(withIdentifier: "toHubScreen", sender: self)
         }else {
             print("Please verify email")
         }
@@ -221,11 +221,12 @@ class LoginVC: UIViewController {
                     "key":self.key as AnyObject,
                     "role" : "student" as AnyObject
             ]
+            /*
             self.ref.child("users").child((user?.uid)!).setValue(["user": newDBuser])
             print("\(user!.email!) created")
             
             self.verifyEmail()
-            
+            */
         }
         
         
@@ -246,7 +247,7 @@ class LoginVC: UIViewController {
             
         }, completion: { (finished: Bool) in
             let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyBoard.instantiateViewController(withIdentifier: "HubVC")
+            let vc = storyBoard.instantiateViewController(withIdentifier: "toHubScreen")
             vc.modalTransitionStyle = .flipHorizontal
             self.present(vc, animated: true, completion: nil)
         })
@@ -343,7 +344,7 @@ class LoginVC: UIViewController {
         if self.returningUser  == 0 {
         self.performSegue(withIdentifier: "ProfileSegue", sender:self)
         }else {
-            self.performSegue(withIdentifier: "HubSegue", sender:self)
+            self.performSegue(withIdentifier: "toHubSCreen", sender:self)
 
         }
       }

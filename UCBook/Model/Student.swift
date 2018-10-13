@@ -1,11 +1,3 @@
-//
-//  Student.swift
-//  UCBook
-//
-//  Created by Trieveon Cooper on 2/11/18.
-//  Copyright © 2018 Trieveon Cooper. All rights reserved.
-//
-
 import UIKit
 
 class Student: NSObject {
@@ -15,4 +7,3 @@ class Student: NSObject {
     @objc var role: String?
     @objc var uid: String?
 }
-

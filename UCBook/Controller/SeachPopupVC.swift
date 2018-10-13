@@ -51,6 +51,7 @@ class SearchPopupVC : UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         navigationController?.pushViewController(vc, animated: true)
          
  */
+        print("cursubject",curSubject,curCourse)
         delegate?.inputData(subject: curSubject, course: curCourse)
         dismiss(animated: true, completion: nil)
 
@@ -75,6 +76,7 @@ class SearchPopupVC : UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             return courseList.count
         }
     }
+    
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         if pickerView.tag == 10 {
             return list[row]
@@ -90,8 +92,23 @@ class SearchPopupVC : UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         if classPicker.isHidden == true {
             classPicker.isHidden = false;
         }
+
     }
+    
     func loadSubjects(){
+        
+        let db = Firestore.firestore()
+        db.collection("subjects").getDocuments { (snapshot,error) in
+            self.list.append("Select Subject")
+            for document in snapshot!.documents {
+                print("docuement ",document.documentID)
+                self.list.append(document.documentID)
+                self.classPicker.reloadAllComponents()
+            }
+        }
+        
+        /*
+        
         Database.database().reference().child("subject").observeSingleEvent(of: .value, with: { (snapshot) in
             // Get user value
             let enumerator = snapshot.children
@@ -103,7 +120,9 @@ class SearchPopupVC : UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             // ...
         }) { (error) in
             print(error.localizedDescription)
-        }    }
+        }
+*/
+ }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if pickerView.tag == 10 {
@@ -114,6 +133,7 @@ class SearchPopupVC : UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 
        // print(list[row])
         searchButton.isHidden = false
+        self.courseList.removeAll()
         LoadCourses(course: list[row])
         }else {
             curCourse = courseList[row]
@@ -122,6 +142,28 @@ class SearchPopupVC : UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
 //tag 10 is subject list
     func LoadCourses(course : String){
+        let db = Firestore.firestore()
+        
+        db.collection("subjects").document(course).getDocument { (document,error) in
+            self.courseList.append("Select Course")
+            if let city = document.flatMap({
+                $0.data().flatMap({ (data) in
+                    return data as Dictionary<String,AnyObject>
+                })
+            }) {
+                for (key,value)  in city {
+                    self.courseList.append(key as! String)
+                }
+                self.coursePicker.reloadAllComponents()
+                self.coursePicker.isHidden = false
+            } else {
+                print("Document does not exist")
+            }
+        }
+
+        
+   
+            /*
         Database.database().reference().child("subject").child(course).observeSingleEvent(of: .value, with: { (snapshot) in
             // Get user value
             let enumerator = snapshot.children
@@ -135,7 +177,11 @@ class SearchPopupVC : UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             // ...
         }) { (error) in
             print(error.localizedDescription)
-        }    }
+        }
+  */
+ 
+ }
+
     
     }
     

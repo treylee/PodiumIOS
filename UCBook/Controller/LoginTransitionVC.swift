@@ -53,7 +53,7 @@ class LoginTransitionVC: UIViewController, UIImagePickerControllerDelegate,UINav
         dismiss(animated: true, completion: nil)
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-       
+       /*
         let image = info[UIImagePickerControllerOriginalImage] as! UIImage
         pic.image = image
         
@@ -78,6 +78,31 @@ class LoginTransitionVC: UIViewController, UIImagePickerControllerDelegate,UINav
         print("loading image")
         
         dismiss(animated: true,completion: nil)
+ */
+        /* updated firebase 5.0
+ // Data in memory
+ let data = Data()
+ 
+ // Create a reference to the file you want to upload
+ let riversRef = storageRef.child("images/rivers.jpg")
+ 
+ // Upload the file to the path "images/rivers.jpg"
+ let uploadTask = riversRef.putData(data, metadata: nil) { (metadata, error) in
+ guard let metadata = metadata else {
+ // Uh-oh, an error occurred!
+ return
+ }
+ // Metadata contains file metadata such as size, content-type.
+ let size = metadata.size
+ // You can also access to download URL after upload.
+ storageRef.downloadURL { (url, error) in
+ guard let downloadURL = url else {
+ // Uh-oh, an error occurred!
+ return
+ }
+ }
+ }
+ */
     }
     private func addImageURL(uid:String,values: [String: AnyObject]){
         let ref = Database.database().reference(fromURL: "https://iosbookapp.firebaseio.com/")

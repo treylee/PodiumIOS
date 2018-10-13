@@ -29,7 +29,7 @@ class HubVC: UIViewController,sendDataToViewProtocol {
         let vc = storyBoard.instantiateViewController(withIdentifier: "PostVC") as! PostVC
         vc.subject = subject
         vc.course = course
-            
+        print("input data to be passed",subject,course)
         
         //sets the delegate in the new
       //  dismiss(animated: true, completion: nil)
@@ -79,7 +79,7 @@ class HubVC: UIViewController,sendDataToViewProtocol {
         ref = Database.database().reference()
         bgVideo()
         //loginDBUser()
-       // readFile();
+        readFile();
        
        
         
@@ -107,7 +107,11 @@ class HubVC: UIViewController,sendDataToViewProtocol {
         
 
     
-    
+        let db = Firestore.firestore()
+        let settings = db.settings
+        settings.areTimestampsInSnapshotsEnabled = true
+        db.settings = settings
+        var ref: DocumentReference? = nil
 
         var subject = ""
         var subjectList = [String]()
@@ -132,8 +136,26 @@ class HubVC: UIViewController,sendDataToViewProtocol {
                   }
                 }
             }
+         //init empty dictionary
+            var dict: [String: Any] = [
+                :]
+            // add the courses one by one into dictionary
+            for string in courseList {
+                dict[string] = ""
+            }
+            // query the database and add the dictionary to the setDataField to Read the classList
+            db
+                .collection("subjects").document(subject).setData(dict){ err in
+                    if let err = err {
+                        print("Error adding document: \(err)")
+                    } else {
+                        // print("Document added with ID: \(ref!.documentID)")
+                    }
+            }
+           
             
-            Database.database().reference().child("subject").child(subject).setValue(courseList)
+            
+            //Database.database().reference().child("subject").child(subject).setValue(courseList)
 
         }
         

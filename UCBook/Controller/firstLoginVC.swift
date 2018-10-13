@@ -123,7 +123,7 @@ class firstLoginVC  : UIViewController {
     if(Auth.auth().currentUser?.isEmailVerified) == true {
         // try dispatch async here later and see if you dont have
         // to press continue twice
-            self.performSegue(withIdentifier: "HubSegue2", sender: self)
+            self.performSegue(withIdentifier: "toHubScreen", sender: self)
         }else {
             print("Please verify email")
         }
@@ -147,10 +147,10 @@ class firstLoginVC  : UIViewController {
                 "key":self.key as AnyObject,
                 "role" : "student" as AnyObject
             ]
-            
-            self.ref.child("users").child((user?.uid)!).setValue(["user": newDBuser])
-              print("\(user!.email!) created")
-            
+            /*
+            self.ref.child("users").child(Auth.auth().currentUser?.uid).setValue(["user": newDBuser])
+            print("\(Auth.auth().currentUser?.email!) created")
+            */
               self.verifyEmail()
       
         }

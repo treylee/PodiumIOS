@@ -18,7 +18,7 @@ class AccountVC : UIViewController,UIImagePickerControllerDelegate,UINavigationC
     @IBOutlet weak var historyTable: UITableView!
     
     @IBOutlet weak var reviewTable: UITableView!
-   
+    var profileURL : String? = nil
     override func viewDidLoad() {
         super.viewDidLoad()
         historyTable.delegate = self
@@ -46,6 +46,7 @@ class AccountVC : UIViewController,UIImagePickerControllerDelegate,UINavigationC
         profilePic.layer.cornerRadius = profilePic.frame.height/2
         navigationItem.titleView = profilePic
         
+        
       /*
         let picTap = UITapGestureRecognizer()
         picTap.addTarget(self, action: "profileImageHasBeenTapped")
@@ -64,31 +65,36 @@ class AccountVC : UIViewController,UIImagePickerControllerDelegate,UINavigationC
         dismiss(animated: true, completion: nil)
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        let storageRef = Storage.storage().reference().child("users").child("20").child("profilePic")
+
+// let storageRef = Storage.storage().reference().child("users").child((Auth.auth().currentUser?.uid)!).child("profilePic")
+ 
+ let image = info[UIImagePickerControllerOriginalImage] as! UIImage
+ profilePhoto.image = image
         
-        let image = info[UIImagePickerControllerOriginalImage] as! UIImage
-        profilePhoto.image = image
-        
-        // rest of code and method adds image to storage then adds to currently logged in user object.
-        let storageRef = Storage.storage().reference().child((Auth.auth().currentUser?.uid)!).child("userpic")
-        
-        let uploadImage = UIImagePNGRepresentation(image)
-        storageRef.putData(uploadImage!, metadata: nil, completion:
-            { (metadata,error) in
-                if error != nil {
-                    print(error)
-                    return
-                }
-                if let profileImageURL = metadata?.downloadURL()?.absoluteString{
-                    let values =  ["profileImageUrl": profileImageURL]
-                    self.addImageURL(uid:(Auth.auth().currentUser?.uid)!,values: values as [String : AnyObject])
-                    
-                }
-                
-        })
-        
-        print("loading image")
-        
+ // Upload the file to the path "images/rivers.jpg"
+ let uploadImage = UIImagePNGRepresentation(image)
+       storageRef.putData(uploadImage!, metadata: nil) { (metadata, error) in
+            if error != nil {
+                print("Couldn't Upload Image", error)
+            } else {
+                print("Uploaded")
+                storageRef.downloadURL(completion: { (url, error) in
+                    print("inside")
+                    if error != nil {
+                        print(error!)
+                        return
+                    }
+                    if url != nil {
+                        print("download url:",url!.absoluteString)
+                        self.profileURL =  url!.absoluteString
+                    }
+                  })
+             }
+        }
         dismiss(animated: true,completion: nil)
+
+
     }
     private func addImageURL(uid:String,values: [String: AnyObject]){
         let ref = Database.database().reference(fromURL: "https://iosbookapp.firebaseio.com/")

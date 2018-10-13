@@ -165,8 +165,8 @@
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Ah-SI-H0S">
-                                        <rect key="frame" x="118" y="8" width="151" height="189"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="008-twitter.png" translatesAutoresizingMaskIntoConstraints="NO" id="8Ah-SI-H0S">
+                                        <rect key="frame" x="118" y="8" width="151" height="104"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </imageView>
@@ -208,6 +208,7 @@
                     </view>
                     <connections>
                         <outlet property="addButton" destination="wUC-PC-oYo" id="wSC-jr-Cis"/>
+                        <outlet property="bookPic" destination="8Ah-SI-H0S" id="Rlt-0q-iKs"/>
                         <outlet property="commentsTexrt" destination="c2K-CR-rGR" id="7ia-no-lAQ"/>
                         <outlet property="coursePicker" destination="rQs-Uv-YzV" id="7Bd-nb-rAL"/>
                         <outlet property="instructorText" destination="qV4-sI-i2d" id="YrZ-Pr-g1E"/>
@@ -341,7 +342,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cc3-0r-kUc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2092" y="-341.37931034482762"/>
+            <point key="canvasLocation" x="-2015" y="-421"/>
         </scene>
         <!--HubVC-->
         <scene sceneID="azT-hh-daL">
@@ -516,12 +517,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RfZ-tT-115" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="109.59999999999999" y="-7.6461769115442282"/>
+            <point key="canvasLocation" x="-2998" y="-559"/>
         </scene>
-        <!--TabVC-->
+        <!--toHubController-->
         <scene sceneID="XFv-Ee-ukq">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="MSG-yq-L4R" customClass="TabVC" customModule="UCBook" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController title="toHubController" automaticallyAdjustsScrollViewInsets="NO" id="MSG-yq-L4R" customClass="TabVC" customModule="UCBook" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" clipsSubviews="YES" alpha="0.59999999999999998" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="D2r-cz-5n3" customClass="MainTabBar" customModule="UCBook" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -536,7 +537,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hiN-H1-gnv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3154" y="354"/>
+            <point key="canvasLocation" x="-3298" y="165"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="QFA-Yy-pHU">
@@ -884,7 +885,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OUs-AG-v0D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2487" y="354"/>
+            <point key="canvasLocation" x="-2662" y="164"/>
         </scene>
     </scenes>
     <resources>

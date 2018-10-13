@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseUI
 
 class PostVC: UITableViewController {
    
     
-
+    var bookList = [Book]()
     var test = ""
     var subject = ""
     var course = ""
@@ -21,27 +23,145 @@ class PostVC: UITableViewController {
     var counter = 500
     lazy var searchBar = UISearchBar(frame: CGRect(x: 0, y: 0, width: 300, height: 30))
     lazy var searchButton = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 30))
+    private var roundButton = UIButton()
 
+    let storage = Storage.storage()
+    
 // var instead of let so can mutate
     // add more expandables to create more books
     // add names to create more rows in each book section
-    var twodimensionalArray = [
-        Expandable(isExpanded: false,names: ["booby","tim","john","smith","xx","sda","sdada" ]),
-            Expandable(isExpanded: false,names: ["booby","tim","john","smith","xx","sda","sdada" ]),
-            Expandable(isExpanded: false,names: ["booby","tim","john","smith","xx","sda","sdada" ]),
-             Expandable(isExpanded: false,names: ["booby","tim","john","smith","xx","sda","sdada"]),
-    ]
-    @objc func clickedSearch(){
-        print("clickedSearch")
+    var twodimensionalArray = [Expandable]()
+    @objc func clickedSearch(_ sender:UIButton){
+        
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "PostingBoard", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "addToCart")
+        //   vc.modalTransitionStyle = .flipHorizontal
+        navigationController?.pushViewController(vc, animated: false)
+
+        
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        if roundButton.superview != nil {
+            DispatchQueue.main.async {
+                self.roundButton.isHidden = true
+            }
+        }
+    }
+    @objc func buttonTapped(_ sender : UIButton){
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let vc = storyBoard.instantiateViewController(withIdentifier: "SearchPopupVC") as! SearchPopupVC
+        vc.view.backgroundColor = .blue
+        vc.modalPresentationStyle = .overFullScreen
+      //  vc.delegate = self as! sendDataToViewProtocol
+        navigationController?.popViewController(animated: true)
+        
+        dismiss(animated: true, completion: nil)
+        
+        present(vc, animated: true)
+
     }
     var showIndexPaths = false
+    func createFloatingButton() {
+        roundButton = UIButton(type: .custom)
+        roundButton.translatesAutoresizingMaskIntoConstraints = false
+        roundButton.backgroundColor = .white
+        // Make sure you replace the name of the image:
+        roundButton.setImage(UIImage(named:"bwSearchButton"), for: .normal)
+        
+        // Make sure to create a function and replace DOTHISONTAP with your own function:
+        roundButton.addTarget(self, action: #selector(buttonTapped(_:)), for: .touchUpInside)
+        // We're manipulating the UI, must be on the main thread:
+        DispatchQueue.main.async {
+            if let keyWindow = UIApplication.shared.keyWindow {
+                keyWindow.addSubview(self.roundButton)
+                NSLayoutConstraint.activate([
+                    keyWindow.trailingAnchor.constraint(equalTo: self.roundButton.trailingAnchor, constant: 15),
+                    keyWindow.bottomAnchor.constraint(equalTo: self.roundButton.bottomAnchor, constant: 45),
+                    self.roundButton.widthAnchor.constraint(equalToConstant: 30),
+                    self.roundButton.heightAnchor.constraint(equalToConstant: 30)])
+            }
+            // Make the button round:
+            self.roundButton.layer.cornerRadius = 37.5
+            // Add a black shadow:
+            self.roundButton.layer.shadowColor = UIColor.black.cgColor
+            self.roundButton.layer.shadowOffset = CGSize(width: 0.0, height: 5.0)
+            self.roundButton.layer.masksToBounds = false
+            self.roundButton.layer.shadowRadius = 2.0
+            self.roundButton.layer.shadowOpacity = 0.5
+            // Add a pulsing animation to draw attention to button:
+            let scaleAnimation: CABasicAnimation = CABasicAnimation(keyPath: "transform.scale")
+            scaleAnimation.duration = 0.4
+            scaleAnimation.repeatCount = .greatestFiniteMagnitude
+            scaleAnimation.autoreverses = true
+            scaleAnimation.fromValue = 1.0;
+            scaleAnimation.toValue = 1.05;
+            self.roundButton.layer.add(scaleAnimation, forKey: "scale")
+        }
+    }
+   
     override func viewDidLoad(){
         super.viewDidLoad()
-       print("recieved data",subject,course)
-       
+       createFloatingButton()
+      
+        print("loading")
+        let db = Firestore.firestore()
+    
+        if course != "" && subject != "" {
+        print(subject,"course:",course, "the subject and courses that were passed hipefully")
+            
+        db.collection("books").document("byCourse").collection(course)
+            .getDocuments() { (querySnapshot, err) in
+                if let err = err {
+                    print("Error getting documents: \(err)")
+                } else {
+                    for document in querySnapshot!.documents {
+            
+                        var newBook: Book = Book(dictionary: document.data())!
+                       
+                        self.bookList.append(newBook)
+                            print("printing bookList")
+                        print(self.bookList[0].title,"booklist 0")
+                        self.twodimensionalArray.append(Expandable(isExpanded: false,names: ["tim","tim","john","smith","xx","sda","sdada"]))
+                        }
+                    
+                        self.tableView.reloadData()
+                    
+                    print("reloading data")
+                    }
+                }
+        
 
+   
+        print("recieved data",subject,course)
+        } else {
+            
+            db.collection("books").document("all").collection("recent")
+                .getDocuments() { (querySnapshot, err) in
+                    if let err = err {
+                        print("Error getting documents: \(err)")
+                    } else {
+                        for document in querySnapshot!.documents {
+                            
+                            var newBook: Book = Book(dictionary: document.data())!
+                            print("in no selection")
+                            self.bookList.append(newBook)
+                            self.twodimensionalArray.append(Expandable(isExpanded: false,names: ["tim","tim","john","smith","xx","sda","sdada"]))
+                        }
+                        
+                        self.tableView.reloadData()
+                        
+                        print("reloading data")
+                    }
+            }
+            
+            
+            
+        }
+ 
         //UIApplication.shared.keyWindow?.rootViewController?.dismiss(animated: false, completion: nil)
-
+     
         searchBar.placeholder = "Search"
         searchBar.clipsToBounds = true
         searchBar.contentMode = UIViewContentMode.scaleAspectFit
@@ -50,21 +170,27 @@ class PostVC: UITableViewController {
         searchButton.clipsToBounds = true
         searchButton.backgroundColor = UIColor.red
         searchButton.contentMode = UIViewContentMode.scaleAspectFit
-       navigationItem.leftBarButtonItem = UIBarButtonItem(customView: searchBar)
-        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: searchButton)
+     //  navigationItem.leftBarButtonItem = UIBarButtonItem(customView: searchBar)
+     //   navigationItem.rightBarButtonItem = UIBarButtonItem(customView: searchButton)
        // navigationItem.titleView = searchBar
         
         let btn1 = UIButton(type: .custom)
-        btn1.setImage(UIImage(named: "FullSizeRender"), for: .normal)
+     
         btn1.clipsToBounds = true
+    
         btn1.frame = CGRect(x: 360, y: 0, width: 30, height: 30)
-        btn1.contentMode = UIViewContentMode.scaleAspectFill
+        btn1.tintColor = UIColor.red
+        btn1.backgroundColor = UIColor.red
+        btn1.setTitle("0", for: .normal)
+
         btn1.addTarget(self, action: #selector(clickedSearch), for: .touchUpInside)
+        self.navigationItem.leftBarButtonItem = nil
+        //self.navigationItem.title = nil
         let item1 = UIBarButtonItem(customView: btn1)
         
         
-     //   self.navigationItem.setRightBarButtonItems([item1], animated: true)
-        
+      self.navigationItem.setRightBarButtonItems([item1], animated: true)
+      
         let rect = CGRect(origin: CGPoint(x: 0,y :0), size: CGSize(width: 100, height: 100))
         var view1: UIView = UIView.init(frame: rect);
         var label: UILabel = UILabel.init(frame: rect)
@@ -103,20 +229,38 @@ class PostVC: UITableViewController {
     }
     override func viewDidAppear(_ animated: Bool) {
         self.tabBarController?.tabBar.isHidden = false
+        self.roundButton.isHidden = false
+        
        
 
     }
+    //only fits 6 atm
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath.row)
+  
+    }
+    // 6 is represented by the number of sections within a book selection for example reviews,comments,etc
     @objc func handleShowIndexPath(){
         var indexPathsToReload = [IndexPath]()
-        for section in twodimensionalArray.indices {
-            for row in twodimensionalArray[section].names.indices {
+        for section in 0...6 {
+            for row in 0...6 {
                 print(section,row)
                 let indexPath = IndexPath(row:row,section:section)
                 indexPathsToReload.append(indexPath)
                 }
         }
     }
-    
+    /*
+    @objc func cartImageClick(_ sender: UITapGestureRecognizer){
+        print("cart image click")
+        cart.title = "\(Int(cart.title!)!+1)"
+      
+
+        //animation(tempView: sender)
+        
+    }
+    */
+   
 
     
    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -167,24 +311,36 @@ class PostVC: UITableViewController {
    */
     let img = UIImage(named: "chex")!
     var imgList: [String] = ["book5cover","book5cover", "book4cover","book3cover","book4cover","book1cover",]
-
+  
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
 
-        print("in header section:",section)
+        print("in header section:",section,"booklist count",bookList.count )
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap2(_:)))
-            
+        let storageRef = storage.reference()
         let cell = tableView.dequeueReusableCell(withIdentifier: "SectionHeader") as? BookHeaderCell
         cell?.bookPrice.text = "100"
-        cell?.bookTitle.text = "SomeBook"
-        cell?.bookPicture.image = UIImage(named: imgList[section])
+        cell?.bookTitle.text = "test"
+        if bookList.count > 0 {
+            print(bookList[0].title,"checking this value")
+                cell?.bookTitle.text = bookList[section].title
+                cell?.bookPicture.image = UIImage(named: imgList[section])
+                cell?.bookPrice.text = bookList[section].price
+          //  let imageRef = storageRef.child(bookList[0].photos![0] as! String)
+         //   let imageView: UIImageView = (cell?.bookPicture)!
+         //   let placeholderImage = UIImage(named: "FullSizeRender")
+          //  imageView.sd_setImage(with: imageRef, placeholderImage: placeholderImage)
+
+        }
         cell?.bookTitle.textColor = UIColor.lightGray
         cell?.bookPrice.textColor = UIColor.lightGray
         cell?.moneySign.textColor = UIColor.lightGray
+        
+    
 
-      //  cell?.bookPicture.layer.masksToBounds = false
+        //  cell?.bookPicture.layer.masksToBounds = false
       //  cell?.bookPicture.layer.cornerRadius = (cell?.bookPicture.frame.height)!/6
      //   cell?.bookPicture.clipsToBounds = true
-        if selectedHeader ==  section {
+        if selectedHeader ==  section  {
             cell?.bookTitle.font = UIFont.boldSystemFont(ofSize: 20.0)
             cell?.bookPrice.font = UIFont.boldSystemFont(ofSize: 20.0)
             cell?.moneySign.font =   UIFont.boldSystemFont(ofSize: 20.0)
@@ -341,9 +497,78 @@ class PostVC: UITableViewController {
     }
  
 
+    @IBAction func cartClicked(_ sender: UIButton) {
+       
+        var docData: [String: Any] = [
+            "title": bookList[selectedHeader].title,
+            "isbn" : bookList[selectedHeader].isbn ,
+            "photos" : bookList[selectedHeader].photos,
+            "meetingPlace": bookList[selectedHeader].meetingPlace,
+            "price":bookList[selectedHeader].price
+        ]
+        
+        let db = Firestore.firestore()
+        let settings = db.settings
+        settings.areTimestampsInSnapshotsEnabled = true
+        db.settings = settings
+        var ref = db.collection("cart").addDocument(data: docData)
+        
+        
+      //  print("clicked",self.navigationItem.rightBarButtonItem?.title)
+
+        let buttonPosition : CGPoint = sender.convert(sender.bounds.origin, to: self.tableView)
+        
+        let indexPath = self.tableView.indexPathForRow(at: buttonPosition)!
+        
+ let cell = tableView.dequeueReusableCell(withIdentifier: "Row8", for: indexPath) as! CartOrBuyCell
     
+        let imageViewPosition : CGPoint = cell.cartButton.convert(cell.buyImageButton.bounds.origin, to: self.view)
+        
+        
+        let imgViewTemp = UIImageView(frame: CGRect(x: imageViewPosition.x, y: imageViewPosition.y, width: cell.buyImageButton.frame.size.width, height: cell.buyImageButton.frame.size.height))
+        
+        imgViewTemp.image = cell.cartButton.imageView?.image
+        
+        animation(tempView: imgViewTemp)
+    }
+    
+    func animation(tempView : UIView)  {
+        self.view.addSubview(tempView)
+        UIView.animate(withDuration: 1.0,
+                       animations: {
+                        tempView.animationZoom(scaleX: 1.5, y: 1.5)
+        }, completion: { _ in
+            
+            UIView.animate(withDuration: 0.5, animations: {
+                
+                tempView.animationZoom(scaleX: 0.2, y: 0.2)
+                tempView.animationRoted(angle: CGFloat(Double.pi))
+                
+                tempView.frame.origin.x = tempView.frame.origin.x
+                tempView.frame.origin.y = tempView.frame.origin.y + 400
+                
+            }, completion: { _ in
+                
+                tempView.removeFromSuperview()
+                
+                UIView.animate(withDuration: 1.0, animations: {
+                    /*
+                    self.counterItem += 1
+                    self.lableNoOfCartItem.text = "\(self.counterItem)"
+                    */
+                    tempView.animationZoom(scaleX: 1.4, y: 1.4)
+                }, completion: {_ in
+                    
+                    tempView.animationZoom(scaleX: 1.0, y: 1.0)
+                })
+                
+            })
+            
+        })
+    }
     var count = 0;
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        print("indexpath",indexPath.row)
         if indexPath.row == 0 {
             print("setting height")
             let cell = tableView.dequeueReusableCell(withIdentifier: "Row0", for: indexPath) as! BookCellZero
@@ -380,24 +605,34 @@ class PostVC: UITableViewController {
             cell.textLabel?.textColor = UIColor.lightGray
             
             return cell
-        } else if indexPath.row == 2 {
-                     let cell = tableView.dequeueReusableCell(withIdentifier: "Row2", for: indexPath) as! InstructorCell
-            return cell;
-        }else if indexPath.row == 3 {
+        } else if indexPath.row == 3 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "Row3", for: indexPath) as! ISBNCell
             return cell;
         }else if indexPath.row == 4 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "Row4", for: indexPath) as! ConditionCell
             return cell;
-        }else if indexPath.row == 5 {
+        }else if indexPath.row == 2 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "Row5", for: indexPath) as! MeetingLocationCell
             return cell;
-        }else if indexPath.row == 6 {
+        }else if indexPath.row == 5 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "Row6", for: indexPath) as! ReviewCell
             return cell;
+        }else if indexPath.row == 6 {
+            print("indexpath row is 8")
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Row8", for: indexPath) as! CartOrBuyCell
+            /*
+            cell.buyImageButton.isUserInteractionEnabled = true
+            cell.cartImageButton.isUserInteractionEnabled = true
+            
+            let cartTap = UITapGestureRecognizer(target: self, action: #selector(self.cartImageClick(_:)))
+            
+            
+            cell.cartImageButton.addGestureRecognizer(cartTap)
+            */
+            return cell;
+ 
         }
-     
-        
+
         
         
      let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath)
@@ -432,4 +667,13 @@ class ScaledHeightImageView: UIImageView {
         return CGSize(width: -1.0, height: -1.0)
     }
     
+}
+extension UIView{
+    func animationZoom(scaleX: CGFloat, y: CGFloat) {
+        self.transform = CGAffineTransform(scaleX: scaleX, y: y)
+    }
+    
+    func animationRoted(angle : CGFloat) {
+        self.transform = self.transform.rotated(by: angle)
+    }
 }

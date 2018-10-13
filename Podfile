@@ -11,7 +11,10 @@ pod 'Firebase/Messaging'
 pod 'Firebase/Database'	
 pod 'Firebase/DynamicLinks'	
 pod 'Firebase/Auth'	
-pod 'Firebase/Storage'	
+pod 'Firebase/Storage'
+pod 'Firebase/Firestore'
+pod 'FirebaseUI/Storage'
+
 
 
 

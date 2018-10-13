@@ -182,13 +182,60 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UCBook/Controller/PostVC.swift"
-            timestampString = "549070762.644085"
+            timestampString = "560720901.547621"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "146"
-            endingLineNumber = "146"
-            landmarkName = "PostVC"
-            landmarkType = "3">
+            startingLineNumber = "302"
+            endingLineNumber = "302"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UCBook.PostVC.init(style: __C.UITableViewStyle) -&gt; UCBook.PostVC"
+                  moduleName = "UCBook"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/trey/Desktop/UCBook/UCBook/Controller/PostVC.swift"
+                  timestampString = "553483325.10849"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "218"
+                  endingLineNumber = "218"
+                  offsetFromSymbolStart = "3361">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UCBook.PostVC.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; UCBook.PostVC"
+                  moduleName = "UCBook"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/trey/Desktop/UCBook/UCBook/Controller/PostVC.swift"
+                  timestampString = "553483325.114169"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "218"
+                  endingLineNumber = "218"
+                  offsetFromSymbolStart = "3419">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UCBook.PostVC.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;UCBook.PostVC&gt;"
+                  moduleName = "UCBook"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/trey/Desktop/UCBook/UCBook/Controller/PostVC.swift"
+                  timestampString = "553483325.116701"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "218"
+                  endingLineNumber = "218"
+                  offsetFromSymbolStart = "3361">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -212,7 +259,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UCBook/Controller/FriendListVC.swift"
-            timestampString = "545714082.2681969"
+            timestampString = "553395786.392787"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "117"
@@ -227,14 +274,30 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "UCBook/Controller/HubVC.swift"
-            timestampString = "549070762.6442291"
+            filePath = "UCBook/Controller/LoginController.swift"
+            timestampString = "553286353.77909"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "searchClick(_:)"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UCBook/Controller/PostVC.swift"
+            timestampString = "560720901.54811"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
