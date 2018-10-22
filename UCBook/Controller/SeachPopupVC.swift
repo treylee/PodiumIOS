@@ -53,6 +53,7 @@ class SearchPopupVC : UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
  */
         print("cursubject",curSubject,curCourse)
         delegate?.inputData(subject: curSubject, course: curCourse)
+
         dismiss(animated: true, completion: nil)
 
             }

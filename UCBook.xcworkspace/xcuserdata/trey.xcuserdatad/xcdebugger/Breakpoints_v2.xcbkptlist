@@ -182,13 +182,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UCBook/Controller/PostVC.swift"
-            timestampString = "560720901.547621"
+            timestampString = "561934079.802097"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "302"
-            endingLineNumber = "302"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "321"
+            endingLineNumber = "321"
+            landmarkName = "PostVC"
+            landmarkType = "3">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
@@ -259,7 +259,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UCBook/Controller/FriendListVC.swift"
-            timestampString = "553395786.392787"
+            timestampString = "561858286.578849"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "117"
@@ -291,13 +291,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UCBook/Controller/PostVC.swift"
-            timestampString = "560720901.54811"
+            timestampString = "561934079.802292"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "199"
-            endingLineNumber = "199"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "218"
+            endingLineNumber = "218"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

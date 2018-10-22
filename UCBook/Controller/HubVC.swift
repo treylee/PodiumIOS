@@ -14,13 +14,13 @@ import AVKit
 
 
 protocol sendDataToHubProtocol {
-    func inputData2(data:String)
+    func inputData(data:String)
 }
 
 class HubVC: UIViewController,sendDataToViewProtocol {
     // this class recieves data from searchPopUpvC and this forwards to search screen
     var delegate:sendDataToHubProtocol? = nil
-
+    public var goToSearch = false
     func inputData(subject: String , course: String) {
 
 
@@ -75,6 +75,14 @@ class HubVC: UIViewController,sendDataToViewProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if (goToSearch) {
+            goToSearch = false
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyBoard.instantiateViewController(withIdentifier: "SearchPopupVC") as! SearchPopupVC
+            vc.modalPresentationStyle = .overFullScreen
+            vc.delegate = self as! sendDataToViewProtocol
+            present(vc, animated: true)
+        }
         print("testx",test)
         ref = Database.database().reference()
         bgVideo()
@@ -206,7 +214,7 @@ class HubVC: UIViewController,sendDataToViewProtocol {
     @objc func settingsPage() {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         // the identifier is the storyboardID near under the class name section
-        let vc = storyBoard.instantiateViewController(withIdentifier: "AccountPage") as! AccountVC
+        let vc = storyBoard.instantiateViewController(withIdentifier: "AccountVC") as! AccountVC
         navigationController?.pushViewController(vc, animated: true)
     }
     func loginDBUser(){
@@ -245,11 +253,27 @@ class HubVC: UIViewController,sendDataToViewProtocol {
     func readUserInfo(){
         
     }
+
     func bgVideo(){
-        let filepath: String? = Bundle.main.path(forResource: "hubVideo", ofType: "mp4")
-        // guard let unwrappedVideoPath = filepath else {return}
-        let fileURL = URL.init(fileURLWithPath: filepath!)
         
+        if let filePath = Bundle.main.path(forResource: "hubVideo", ofType:"mp4") {
+            let filePathUrl = NSURL.fileURL(withPath: filePath)
+            self.avPlayer = AVPlayer(url: filePathUrl)
+            let playerLayer = AVPlayerLayer(player: avPlayer)
+            playerLayer.frame = self.view.bounds
+            playerLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
+            NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime, object: self.avPlayer?.currentItem, queue: nil) { (_) in
+                self.avPlayer?.seek(to: kCMTimeZero)
+                self.avPlayer?.play()
+            }
+            self.view.layer.insertSublayer(playerLayer, at: 0)
+            self.avPlayer?.play()
+        }
+        
+        /*let filepath: String? = Bundle.main.path(forResource: "hubVideo", ofType: "mp4")
+        let fileURL = URL.init(fileURLWithPath: filepath!)
+        print("the file path ",fileURL)
+
         
         avPlayer = AVPlayer(url: fileURL)
         
@@ -272,7 +296,7 @@ class HubVC: UIViewController,sendDataToViewProtocol {
         NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime, object: self.avPlayer.currentItem, queue: .main) { _ in
             self.avPlayer?.seek(to: kCMTimeZero)
             self.avPlayer?.play()
-        }
+        }*/
         
     }
 

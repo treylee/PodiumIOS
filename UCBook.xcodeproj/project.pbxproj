@@ -26,30 +26,29 @@
 		2D32A4CC204FA3EF0005AC01 /* ConditionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D32A4CB204FA3EF0005AC01 /* ConditionCell.swift */; };
 		2D32A4CE20507C000005AC01 /* TableHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D32A4CD20507C000005AC01 /* TableHeaderCell.swift */; };
 		2D32A4D020524F610005AC01 /* TableFooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D32A4CF20524F600005AC01 /* TableFooterCell.swift */; };
+		2D33C1042177B14A007114AF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D33C1032177B14A007114AF /* GoogleService-Info.plist */; };
 		2D344F4A203BB76400294279 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D344F49203BB76400294279 /* LoginController.swift */; };
-		2D344F4C203CA29200294279 /* loginVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D344F4B203CA29200294279 /* loginVideo.mp4 */; };
 		2D35F7B1204A219100E516E8 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D35F7B0204A219100E516E8 /* PostVC.swift */; };
-		2D35F7B3204A311100E516E8 /* 008-twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D35F7B2204A311100E516E8 /* 008-twitter.png */; };
 		2D35F7B5204A579800E516E8 /* Expandable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D35F7B4204A579800E516E8 /* Expandable.swift */; };
 		2D35F7B7204B2D2C00E516E8 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D35F7B6204B2D2C00E516E8 /* BookCell.swift */; };
 		2D35F7B9204B42A700E516E8 /* BookHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D35F7B8204B42A700E516E8 /* BookHeaderCell.swift */; };
 		2D3B1E2C2072C38F00528D80 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3B1E2B2072C38F00528D80 /* MainTabBar.swift */; };
 		2D3DEC8520A24AE300F50540 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3DEC8420A24AE300F50540 /* HistoryCell.swift */; };
 		2D3DEC8720A24B0000F50540 /* AccountReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3DEC8620A24B0000F50540 /* AccountReviewCell.swift */; };
-		2D4B0EA520351EF200B4F203 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D4B0EA420351EF200B4F203 /* GoogleService-Info.plist */; };
+		2D41B6E72177CA8200CE130A /* hubVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D33C1072177BADF007114AF /* hubVideo.mp4 */; };
+		2D41B6EA2177CA8600CE130A /* hubVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D33C1072177BADF007114AF /* hubVideo.mp4 */; };
+		2D41B6EB2177CA8600CE130A /* hubVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D33C1072177BADF007114AF /* hubVideo.mp4 */; };
 		2D57C67220356CED001568BE /* CollectionVIewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D57C67120356CED001568BE /* CollectionVIewCells.swift */; };
 		2D604A7E203FC46F001B5137 /* hubVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D604A7D203FC46F001B5137 /* hubVideo.mp4 */; };
 		2D604A8220408DCC001B5137 /* LoginTransitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D604A8120408DCC001B5137 /* LoginTransitionVC.swift */; };
 		2D643E1F2068512A008C1329 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D643E1E2068512A008C1329 /* ChatVC.swift */; };
 		2D6D18C920B1633400C7985B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6D18C820B1633400C7985B /* Extensions.swift */; };
-		2D7261E220B367C300F6587D /* fallList2018.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2D7261E120B367C300F6587D /* fallList2018.txt */; };
 		2D9755FE2085256B00AEE921 /* PostPopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9755FD2085256B00AEE921 /* PostPopupVC.swift */; };
 		2D99FE482086EFC20010028D /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D99FE472086EFC20010028D /* AccountVC.swift */; };
 		2DA56D7B206700E5005748EA /* PostBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA56D7A206700E5005748EA /* PostBoard.swift */; };
 		2DA56D7D20670E4C005748EA /* TestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA56D7C20670E4C005748EA /* TestCell.swift */; };
 		2DA6648F2069E18300464E5D /* FriendListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA6648E2069E18300464E5D /* FriendListVC.swift */; };
 		2DB4E561204B7B880077254A /* BookCellZero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB4E560204B7B880077254A /* BookCellZero.swift */; };
-		2DB4E563204B7E970077254A /* face id.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DB4E562204B7E960077254A /* face id.png */; };
 		2DB4E565204C755D0077254A /* BookCellOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB4E564204C755D0077254A /* BookCellOne.swift */; };
 		2DB82DAC2073141900FF38F9 /* TabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB82DAB2073141900FF38F9 /* TabVC.swift */; };
 		2DC4B02F202B9E9A00534A25 /* HubVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC4B02E202B9E9A00534A25 /* HubVC.swift */; };
@@ -116,30 +115,27 @@
 		2D32A4CB204FA3EF0005AC01 /* ConditionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionCell.swift; sourceTree = "<group>"; };
 		2D32A4CD20507C000005AC01 /* TableHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderCell.swift; sourceTree = "<group>"; };
 		2D32A4CF20524F600005AC01 /* TableFooterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableFooterCell.swift; sourceTree = "<group>"; };
+		2D33C1032177B14A007114AF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2D33C1072177BADF007114AF /* hubVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = hubVideo.mp4; path = ../../Downloads/hubVideo.mp4; sourceTree = "<group>"; };
 		2D344F49203BB76400294279 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
-		2D344F4B203CA29200294279 /* loginVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = loginVideo.mp4; path = ../UCAppAssets/loginVideo.mp4; sourceTree = "<group>"; };
 		2D35F7B0204A219100E516E8 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
-		2D35F7B2204A311100E516E8 /* 008-twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "008-twitter.png"; path = "../UCAppAssets/008-twitter.png"; sourceTree = "<group>"; };
 		2D35F7B4204A579800E516E8 /* Expandable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expandable.swift; sourceTree = "<group>"; };
 		2D35F7B6204B2D2C00E516E8 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 		2D35F7B8204B42A700E516E8 /* BookHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookHeaderCell.swift; sourceTree = "<group>"; };
 		2D3B1E2B2072C38F00528D80 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		2D3DEC8420A24AE300F50540 /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
 		2D3DEC8620A24B0000F50540 /* AccountReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountReviewCell.swift; sourceTree = "<group>"; };
-		2D4B0EA420351EF200B4F203 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2D57C67120356CED001568BE /* CollectionVIewCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionVIewCells.swift; sourceTree = "<group>"; };
-		2D604A7D203FC46F001B5137 /* hubVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = hubVideo.mp4; path = UCBook/Assets.xcassets/hubVideo.dataset/hubVideo.mp4; sourceTree = "<group>"; };
+		2D604A7D203FC46F001B5137 /* hubVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = hubVideo.mp4; sourceTree = "<group>"; };
 		2D604A8120408DCC001B5137 /* LoginTransitionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTransitionVC.swift; sourceTree = "<group>"; };
 		2D643E1E2068512A008C1329 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		2D6D18C820B1633400C7985B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		2D7261E120B367C300F6587D /* fallList2018.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = fallList2018.txt; path = ../../fallList2018.txt; sourceTree = "<group>"; };
 		2D9755FD2085256B00AEE921 /* PostPopupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPopupVC.swift; sourceTree = "<group>"; };
 		2D99FE472086EFC20010028D /* AccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
 		2DA56D7A206700E5005748EA /* PostBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostBoard.swift; sourceTree = "<group>"; };
 		2DA56D7C20670E4C005748EA /* TestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCell.swift; sourceTree = "<group>"; };
 		2DA6648E2069E18300464E5D /* FriendListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListVC.swift; sourceTree = "<group>"; };
 		2DB4E560204B7B880077254A /* BookCellZero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCellZero.swift; sourceTree = "<group>"; };
-		2DB4E562204B7E960077254A /* face id.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "face id.png"; path = "../UCAppAssets/face id.png"; sourceTree = "<group>"; };
 		2DB4E564204C755D0077254A /* BookCellOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCellOne.swift; sourceTree = "<group>"; };
 		2DB82DAB2073141900FF38F9 /* TabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabVC.swift; sourceTree = "<group>"; };
 		2DC4B02E202B9E9A00534A25 /* HubVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubVC.swift; sourceTree = "<group>"; };
@@ -209,10 +205,7 @@
 		2D0CDF2220285A96000202ED = {
 			isa = PBXGroup;
 			children = (
-				2DB4E562204B7E960077254A /* face id.png */,
-				2D35F7B2204A311100E516E8 /* 008-twitter.png */,
-				2D604A7D203FC46F001B5137 /* hubVideo.mp4 */,
-				2D344F4B203CA29200294279 /* loginVideo.mp4 */,
+				2D33C1072177BADF007114AF /* hubVideo.mp4 */,
 				2D0CDF2D20285A96000202ED /* UCBook */,
 				2D0CDF4220285A96000202ED /* UCBookTests */,
 				2D0CDF4D20285A96000202ED /* UCBookUITests */,
@@ -235,7 +228,8 @@
 		2D0CDF2D20285A96000202ED /* UCBook */ = {
 			isa = PBXGroup;
 			children = (
-				2D7261E120B367C300F6587D /* fallList2018.txt */,
+				2D604A7D203FC46F001B5137 /* hubVideo.mp4 */,
+				2D33C1032177B14A007114AF /* GoogleService-Info.plist */,
 				2D57C675203B620F001568BE /* Singleton */,
 				2DF4BBFE2035021800DE772C /* Model */,
 				2DF4BBFD2035021200DE772C /* Controller */,
@@ -244,7 +238,6 @@
 				2D0CDF3520285A96000202ED /* Assets.xcassets */,
 				2D0CDF3A20285A96000202ED /* Info.plist */,
 				2D0CDF3720285A96000202ED /* LaunchScreen.storyboard */,
-				2D4B0EA420351EF200B4F203 /* GoogleService-Info.plist */,
 			);
 			path = UCBook;
 			sourceTree = "<group>";
@@ -362,7 +355,6 @@
 				2D0CDF2820285A96000202ED /* Frameworks */,
 				2D0CDF2920285A96000202ED /* Resources */,
 				47908CCA29F58D612C907B7A /* [CP] Embed Pods Frameworks */,
-				5567D7949B30EF03475ED34B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -381,8 +373,6 @@
 				2D0CDF3B20285A96000202ED /* Sources */,
 				2D0CDF3C20285A96000202ED /* Frameworks */,
 				2D0CDF3D20285A96000202ED /* Resources */,
-				F5E38B1032197EBB0EDDD7F5 /* [CP] Embed Pods Frameworks */,
-				C27EBC4E043EDAB6A7AFB5C0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -402,8 +392,6 @@
 				2D0CDF4620285A96000202ED /* Sources */,
 				2D0CDF4720285A96000202ED /* Frameworks */,
 				2D0CDF4820285A96000202ED /* Resources */,
-				F229AB56E20E31B45FBDB5D5 /* [CP] Embed Pods Frameworks */,
-				9A6474D21081370CE307E742 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -466,17 +454,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DB4E563204B7E970077254A /* face id.png in Resources */,
-				2D35F7B3204A311100E516E8 /* 008-twitter.png in Resources */,
 				2D604A7E203FC46F001B5137 /* hubVideo.mp4 in Resources */,
-				2D344F4C203CA29200294279 /* loginVideo.mp4 in Resources */,
+				2D41B6E72177CA8200CE130A /* hubVideo.mp4 in Resources */,
 				2D0CDF3920285A96000202ED /* LaunchScreen.storyboard in Resources */,
 				2DF4BBF12032460D00DE772C /* ChatBoard.storyboard in Resources */,
 				2D0CDF3620285A96000202ED /* Assets.xcassets in Resources */,
 				2D0CDF3420285A96000202ED /* Main.storyboard in Resources */,
-				2D7261E220B367C300F6587D /* fallList2018.txt in Resources */,
 				2DF4BBF520334C4700DE772C /* PostingBoard.storyboard in Resources */,
-				2D4B0EA520351EF200B4F203 /* GoogleService-Info.plist in Resources */,
+				2D33C1042177B14A007114AF /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +469,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D41B6EA2177CA8600CE130A /* hubVideo.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +477,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D41B6EB2177CA8600CE130A /* hubVideo.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,10 +511,12 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-UCBook/Pods-UCBook-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
@@ -538,10 +527,12 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
@@ -551,28 +542,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UCBook/Pods-UCBook-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5567D7949B30EF03475ED34B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-UCBook/Pods-UCBook-resources.sh",
-				"${PODS_ROOT}/FirebaseInvites/Resources/GINInviteResources.bundle",
-				"${PODS_ROOT}/FirebaseInvites/Resources/GPPACLPickerResources.bundle",
-				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GINInviteResources.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GPPACLPickerResources.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UCBook/Pods-UCBook-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		731CFDB46124430D3B22F68B /* [CP] Check Pods Manifest.lock */ = {
@@ -593,21 +562,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9A6474D21081370CE307E742 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UCBookUITests/Pods-UCBookUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		ABD092071802E80210E08E94 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 12;
@@ -624,56 +578,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C27EBC4E043EDAB6A7AFB5C0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UCBookTests/Pods-UCBookTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F229AB56E20E31B45FBDB5D5 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-UCBookUITests/Pods-UCBookUITests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UCBookUITests/Pods-UCBookUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F5E38B1032197EBB0EDDD7F5 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UCBookTests/Pods-UCBookTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

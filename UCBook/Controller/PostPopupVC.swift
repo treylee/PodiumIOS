@@ -148,17 +148,18 @@ class PostPopupVC : UIViewController,UIPickerViewDelegate, UIPickerViewDataSourc
                 "isbn" : isbnText.text! ,
                 "photos" : self.photos,
                 "meetingPlace": meetingPlaceText.text,
-                "price":tmpPrice
+                "price":tmpPrice,
+                "comments": commentsTexrt.text
             ]
         
         let db = Firestore.firestore()
-        let settings = db.settings
-        settings.areTimestampsInSnapshotsEnabled = true
-        db.settings = settings
+        
+            print("adding the following")
             var ref = db.collection("books").document("byCourse").collection(courseText).addDocument(data: docData)
             var ref2 = db.collection("books").document("bySubject").collection(subjectText).addDocument(data: docData)
+            
             // remove when sold!
-            var ref3 = db.collection("books").document("all").collection("recent").addDocument(data: docData) 
+            var ref3 = db.collection("books").document("all").collection("recent").addDocument(data: docData)
             
             
             

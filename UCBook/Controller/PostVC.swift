@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseUI
+import Kingfisher
 
 class PostVC: UITableViewController {
    
@@ -26,21 +27,39 @@ class PostVC: UITableViewController {
     private var roundButton = UIButton()
 
     let storage = Storage.storage()
+
     
 // var instead of let so can mutate
     // add more expandables to create more books
     // add names to create more rows in each book section
     var twodimensionalArray = [Expandable]()
+    
+    @objc func profileImageHasBeenTapped(_ sender:UIGestureRecognizer){
+        
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "AccountVC")
+        //   vc.modalTransitionStyle = .flipHorizontal
+        //  print("CLICKED SEARCH")
+        dismiss(animated: true, completion: nil)
+       navigationController?.pushViewController(vc, animated: false)
+        
+        
+    }
+    // clicked cart more fittting name
     @objc func clickedSearch(_ sender:UIButton){
         
         
         let storyBoard: UIStoryboard = UIStoryboard(name: "PostingBoard", bundle: nil)
         let vc = storyBoard.instantiateViewController(withIdentifier: "addToCart")
         //   vc.modalTransitionStyle = .flipHorizontal
+       //  print("CLICKED SEARCH")
+        dismiss(animated: true, completion: nil)
         navigationController?.pushViewController(vc, animated: false)
 
         
     }
+    
     override func viewWillDisappear(_ animated: Bool) {
         if roundButton.superview != nil {
             DispatchQueue.main.async {
@@ -51,16 +70,16 @@ class PostVC: UITableViewController {
     @objc func buttonTapped(_ sender : UIButton){
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let vc = storyBoard.instantiateViewController(withIdentifier: "SearchPopupVC") as! SearchPopupVC
-        vc.view.backgroundColor = .blue
-        vc.modalPresentationStyle = .overFullScreen
+        let vc = storyBoard.instantiateViewController(withIdentifier: "HubVC") as! HubVC
+       // vc.view.backgroundColor = .blue
       //  vc.delegate = self as! sendDataToViewProtocol
-        navigationController?.popViewController(animated: true)
+       // navigationController?.popViewController(animated: true)
         
-        dismiss(animated: true, completion: nil)
+       // self.navigationController?.popToRootViewController(animated: true)
+        self.dismiss(animated: true, completion: nil)
+        vc.goToSearch = true
+        navigationController?.pushViewController(vc, animated: false)
         
-        present(vc, animated: true)
-
     }
     var showIndexPaths = false
     func createFloatingButton() {
@@ -123,7 +142,7 @@ class PostVC: UITableViewController {
                         self.bookList.append(newBook)
                             print("printing bookList")
                         print(self.bookList[0].title,"booklist 0")
-                        self.twodimensionalArray.append(Expandable(isExpanded: false,names: ["tim","tim","john","smith","xx","sda","sdada"]))
+                       self.twodimensionalArray.append(Expandable(isExpanded: false,names: ["tim","tim","john","smith","xx","sda","sdada"]))
                         }
                     
                         self.tableView.reloadData()
@@ -325,7 +344,8 @@ class PostVC: UITableViewController {
                 cell?.bookTitle.text = bookList[section].title
                 cell?.bookPicture.image = UIImage(named: imgList[section])
                 cell?.bookPrice.text = bookList[section].price
-          //  let imageRef = storageRef.child(bookList[0].photos![0] as! String)
+
+            //  let imageRef = storageRef.child(bookList[0].photos![0] as! String)
          //   let imageView: UIImageView = (cell?.bookPicture)!
          //   let placeholderImage = UIImage(named: "FullSizeRender")
           //  imageView.sd_setImage(with: imageRef, placeholderImage: placeholderImage)
@@ -506,12 +526,13 @@ class PostVC: UITableViewController {
             "meetingPlace": bookList[selectedHeader].meetingPlace,
             "price":bookList[selectedHeader].price
         ]
-        
+        /*
         let db = Firestore.firestore()
         let settings = db.settings
         settings.areTimestampsInSnapshotsEnabled = true
         db.settings = settings
-        var ref = db.collection("cart").addDocument(data: docData)
+ */
+        var ref = Firestore.firestore().collection("cart").addDocument(data: docData)
         
         
       //  print("clicked",self.navigationItem.rightBarButtonItem?.title)
@@ -578,12 +599,17 @@ class PostVC: UITableViewController {
             cell.posterPic.layer.masksToBounds = false
             cell.posterPic.layer.cornerRadius = cell.posterPic.frame.height/2
             cell.posterPic.clipsToBounds = true
-            cell.posterPic.image = UIImage(named: "FullSizeRender")
-            //adding gesture recognizer alternative to IBaction
+           
+            let url = URL(string: self.bookList[0].photos?[0] as! String)
+            cell.posterPic.kf.setImage(with: url)
+           
             cell.posterPic.isUserInteractionEnabled = true
-            let picTap = UITapGestureRecognizer()
-            picTap.addTarget(self, action: "profileImageHasBeenTapped")
-            
+            var picTap = UITapGestureRecognizer()
+
+             picTap = UITapGestureRecognizer(target: self, action: #selector(self.profileImageHasBeenTapped(_:)
+                ))
+
+
             cell.posterPic.addGestureRecognizer(picTap)
             cell.posterName.text = "Sam C."
             // removes cell seperator from bottom
@@ -597,25 +623,28 @@ class PostVC: UITableViewController {
             
             let label = UILabel(frame: CGRect(x:3, y: 30, width: UIScreen.main.bounds.width , height: 40))
 
-
+            
             cell.textLabel?.numberOfLines = 0
             cell.textLabel?.lineBreakMode = .byWordWrapping
-            cell.textLabel?.text =
-                "   This is a very long description of a very boring book that I happen to read on tuesdays :( "
+            cell.textLabel?.text = self.bookList[indexPath.section].meetingPlace
             cell.textLabel?.textColor = UIColor.lightGray
             
             return cell
         } else if indexPath.row == 3 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "Row3", for: indexPath) as! ISBNCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Row3", for: indexPath) as! ISBNCell            
+            cell.ISBN.text = self.bookList[indexPath.section] != nil ? self.bookList[0].isbn : "test isbn"
             return cell;
         }else if indexPath.row == 4 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "Row4", for: indexPath) as! ConditionCell
+           // cell.condition.text = self.bookList[indexPath.section].
             return cell;
         }else if indexPath.row == 2 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "Row5", for: indexPath) as! MeetingLocationCell
+                cell.meetingLocation.text = self.bookList[indexPath.section].meetingPlace
             return cell;
         }else if indexPath.row == 5 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "Row6", for: indexPath) as! ReviewCell
+            //cell.averageRating.text = self.bookList[indexPath.section].
             return cell;
         }else if indexPath.row == 6 {
             print("indexpath row is 8")
@@ -629,6 +658,7 @@ class PostVC: UITableViewController {
             
             cell.cartImageButton.addGestureRecognizer(cartTap)
             */
+
             return cell;
  
         }
