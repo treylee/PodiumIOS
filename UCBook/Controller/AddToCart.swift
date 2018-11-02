@@ -30,13 +30,36 @@ class AddToCart : UIViewController,UIImagePickerControllerDelegate,UINavigationC
             let cell = cartTable.dequeueReusableCell(withIdentifier: "CartCell") as! CartCell
             cell.bookTitle.text = bookList[indexPath.row].title
             cell.bookPrice.text = bookList[indexPath.row].price
+        let url = URL(string: self.bookList[indexPath.row].photos?[0] as! String)
+        cell.bookPic.kf.setImage(with: url)
         
      
         return cell
     }
     
 
-
+    @IBAction func viewBook(_ sender: Any) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "PostingBoard", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "BookDetailsVC") as! BookDetailsVC
+        vc.modalPresentationStyle = .overFullScreen
+        present(vc, animated: true)
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "PostingBoard", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "BookDetailsVC") as! BookDetailsVC
+        vc.modalPresentationStyle = .overFullScreen
+        
+        vc.bookISBN?.text = bookList[indexPath.row].isbn
+        vc.bookCondition?.text = bookList[indexPath.row].title
+        vc.subjectText =
+            bookList[indexPath.row].title!
+        vc.price =
+            bookList[indexPath.row].price!
+        vc.bookDescription?.text =
+            bookList[indexPath.row].description
+        
+        present(vc, animated: true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         cartTable.delegate = self
@@ -82,6 +105,10 @@ class AddToCart : UIViewController,UIImagePickerControllerDelegate,UINavigationC
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1;
     }
+     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+            return 75
+        }
+    
     
 }
 

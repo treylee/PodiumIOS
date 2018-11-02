@@ -14,7 +14,8 @@ class LoginTransitionVC: UIViewController, UIImagePickerControllerDelegate,UINav
     @IBOutlet weak var pic: UIImageView!
     
     @IBOutlet weak var prompt: UILabel!
-
+    var profileURL = ""
+    var photos = [String]()
     
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var podiumButton: UIButton!
@@ -30,21 +31,17 @@ class LoginTransitionVC: UIViewController, UIImagePickerControllerDelegate,UINav
         
     }
 
+    @IBAction func goToHub(_ sender: Any) {
+        addImageURL()
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "toHubController")
+        present(vc, animated: true)
+    }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
         return false
     }
-    @IBAction func podiumPress(_ sender: Any) {
-        if nameField.text != "" {
-            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyBoard.instantiateViewController(withIdentifier: "HubVC")
-         //   vc.modalTransitionStyle = .flipHorizontal
-            self.present(vc, animated: true, completion: nil)
-        }else {
-            prompt.text = "Dont Forget To Enter Your Name"
-            
-        }
-    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -53,61 +50,45 @@ class LoginTransitionVC: UIViewController, UIImagePickerControllerDelegate,UINav
         dismiss(animated: true, completion: nil)
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-       /*
+        let storageRef = Storage.storage().reference().child("books").child("22").child("bookPic")
+        
+        // let storageRef = Storage.storage().reference().child("users").child((Auth.auth().currentUser?.uid)!).child("profilePic")
+        
         let image = info[UIImagePickerControllerOriginalImage] as! UIImage
         pic.image = image
         
-        // rest of code and method adds image to storage then adds to currently logged in user object.
-        let storageRef = Storage.storage().reference().child((Auth.auth().currentUser?.uid)!).child("userpic")
-       
+        // Upload the file to the path "images/rivers.jpg"
         let uploadImage = UIImagePNGRepresentation(image)
-        storageRef.putData(uploadImage!, metadata: nil, completion:
-            { (metadata,error) in
-                if error != nil {
-                print(error)
-                return
+        storageRef.putData(uploadImage!, metadata: nil) { (metadata, error) in
+            if error != nil {
+                print("Couldn't Upload Image", error)
+            } else {
+                print("Uploaded")
+                storageRef.downloadURL(completion: { (url, error) in
+                    print("inside")
+                    if error != nil {
+                        print(error!)
+                        return
+                    }
+                    if url != nil {
+                        print("download url:",url!.absoluteString)
+                        self.profileURL =  url!.absoluteString
+                        self.photos.append(self.profileURL)
+                    }
+                })
+            }
         }
-            if let profileImageURL = metadata?.downloadURL()?.absoluteString{
-                let values =  ["profileImageUrl": profileImageURL]
-                self.addImageURL(uid:(Auth.auth().currentUser?.uid)!,values: values as [String : AnyObject])
-
-                }
-
-        })
-
-        print("loading image")
+        picker.dismiss(animated: true,completion: nil)
         
-        dismiss(animated: true,completion: nil)
- */
-        /* updated firebase 5.0
- // Data in memory
- let data = Data()
- 
- // Create a reference to the file you want to upload
- let riversRef = storageRef.child("images/rivers.jpg")
- 
- // Upload the file to the path "images/rivers.jpg"
- let uploadTask = riversRef.putData(data, metadata: nil) { (metadata, error) in
- guard let metadata = metadata else {
- // Uh-oh, an error occurred!
- return
- }
- // Metadata contains file metadata such as size, content-type.
- let size = metadata.size
- // You can also access to download URL after upload.
- storageRef.downloadURL { (url, error) in
- guard let downloadURL = url else {
- // Uh-oh, an error occurred!
- return
- }
- }
- }
- */
+        
     }
-    private func addImageURL(uid:String,values: [String: AnyObject]){
-        let ref = Database.database().reference(fromURL: "https://iosbookapp.firebaseio.com/")
-        let usersReference = ref.child("users").child(uid)
-        usersReference.updateChildValues(values)
+    private func addImageURL(){
+        let docData: [String: Any] = [
+            "profilePhoto": photos
+            ]
+        var ref4 = Firestore.firestore().collection("users").document(Auth.auth().currentUser!.uid).collection("profilePhoto").addDocument(data: docData)
+
+        
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch:UITouch = touches.first!
@@ -121,7 +102,7 @@ class LoginTransitionVC: UIViewController, UIImagePickerControllerDelegate,UINav
         }
     }
     func setup(){
-        bgVideo()
+        //bgVideo()
         // set background image
         /*
          let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
@@ -179,7 +160,7 @@ class LoginTransitionVC: UIViewController, UIImagePickerControllerDelegate,UINav
 }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        podiumButton.isHidden = self.pic.image == nil
+        //podiumButton.isHidden = false
     }
     func picHasbeenTapped(){
         print("touching image")

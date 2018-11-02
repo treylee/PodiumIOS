@@ -75,6 +75,7 @@ class HubVC: UIViewController,sendDataToViewProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(Auth.auth().currentUser!.uid)
         if (goToSearch) {
             goToSearch = false
             let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)

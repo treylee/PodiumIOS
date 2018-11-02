@@ -15,6 +15,7 @@ class PostVC: UITableViewController {
    
     
     var bookList = [Book]()
+    var profilePhoto = ""
     var test = ""
     var subject = ""
     var course = ""
@@ -140,7 +141,8 @@ class PostVC: UITableViewController {
                         var newBook: Book = Book(dictionary: document.data())!
                        
                         self.bookList.append(newBook)
-                            print("printing bookList")
+                        self.profilePhoto = newBook.sellerPhoto!
+                        print("printing profilePhoto",self.profilePhoto)
                         print(self.bookList[0].title,"booklist 0")
                        self.twodimensionalArray.append(Expandable(isExpanded: false,names: ["tim","tim","john","smith","xx","sda","sdada"]))
                         }
@@ -163,8 +165,11 @@ class PostVC: UITableViewController {
                     } else {
                         for document in querySnapshot!.documents {
                             
-                            var newBook: Book = Book(dictionary: document.data())!
+                            let newBook: Book = Book(dictionary: document.data())!
                             print("in no selection")
+                            self.profilePhoto = newBook.sellerPhoto!
+                            print("printing profilePhoto",self.profilePhoto)
+                            
                             self.bookList.append(newBook)
                             self.twodimensionalArray.append(Expandable(isExpanded: false,names: ["tim","tim","john","smith","xx","sda","sdada"]))
                         }
@@ -340,9 +345,16 @@ class PostVC: UITableViewController {
         cell?.bookPrice.text = "100"
         cell?.bookTitle.text = "test"
         if bookList.count > 0 {
-            print(bookList[0].title,"checking this value")
+            print(bookList[section].title,"checking this value")
                 cell?.bookTitle.text = bookList[section].title
-                cell?.bookPicture.image = UIImage(named: imgList[section])
+            let url = URL(string: self.bookList[section].photos?[0] as! String)
+            cell?.bookPicture.kf.setImage(with: url)
+            
+        
+            
+            
+            print(bookList[section].title,"checking this value2")
+
                 cell?.bookPrice.text = bookList[section].price
 
             //  let imageRef = storageRef.child(bookList[0].photos![0] as! String)
@@ -356,6 +368,7 @@ class PostVC: UITableViewController {
         cell?.moneySign.textColor = UIColor.lightGray
         
     
+        print(bookList[section].title,"checking this value2")
 
         //  cell?.bookPicture.layer.masksToBounds = false
       //  cell?.bookPicture.layer.cornerRadius = (cell?.bookPicture.frame.height)!/6
@@ -519,7 +532,7 @@ class PostVC: UITableViewController {
 
     @IBAction func cartClicked(_ sender: UIButton) {
        
-        var docData: [String: Any] = [
+        let docData: [String: Any] = [
             "title": bookList[selectedHeader].title,
             "isbn" : bookList[selectedHeader].isbn ,
             "photos" : bookList[selectedHeader].photos,
@@ -599,8 +612,8 @@ class PostVC: UITableViewController {
             cell.posterPic.layer.masksToBounds = false
             cell.posterPic.layer.cornerRadius = cell.posterPic.frame.height/2
             cell.posterPic.clipsToBounds = true
-           
-            let url = URL(string: self.bookList[0].photos?[0] as! String)
+           print("dapp", self.bookList[indexPath.row].sellerPhoto!)
+            let url = URL(string:self.bookList[indexPath.row].sellerPhoto!)
             cell.posterPic.kf.setImage(with: url)
            
             cell.posterPic.isUserInteractionEnabled = true

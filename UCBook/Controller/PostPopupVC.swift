@@ -11,6 +11,8 @@ import Firebase
 
 
 class PostPopupVC : UIViewController,UIPickerViewDelegate, UIPickerViewDataSource,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
+    
+    var newPhoto = ""
     var priceText =  0
     var list = [String]()
     var courseList = [String]()
@@ -19,6 +21,7 @@ class PostPopupVC : UIViewController,UIPickerViewDelegate, UIPickerViewDataSourc
     var subjectText = ""
     var courseText = ""
     var profileURL = ""
+    var profilePhoto = ""
     var photos = [String]()
     @IBOutlet weak var titleText: UITextField!
     
@@ -39,8 +42,33 @@ class PostPopupVC : UIViewController,UIPickerViewDelegate, UIPickerViewDataSourc
     
     @IBOutlet weak var coursePicker: UIPickerView!
     
+   func getPhotoUrl() {
+    Firestore.firestore().collection("users").document((Auth.auth().currentUser?.uid)!).collection("profilePhoto")
+        .getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    
+                    var dict : [String:Any] =  document.data()
+                    
+                    var dictarr = dict["profilePhoto"] as! NSArray
+                    
+                    self.newPhoto = dictarr[0] as! String
+                    
+                    print("gotit")
+                    print("g",self.newPhoto)
+                    
+                }
+                
+                print("reloading data")
+            }
+    }
+    
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        getPhotoUrl()
         subjectPicker.dataSource = self
         subjectPicker.delegate = self
         coursePicker.delegate = self
@@ -149,7 +177,9 @@ class PostPopupVC : UIViewController,UIPickerViewDelegate, UIPickerViewDataSourc
                 "photos" : self.photos,
                 "meetingPlace": meetingPlaceText.text,
                 "price":tmpPrice,
-                "comments": commentsTexrt.text
+                "comments": commentsTexrt.text,
+                "sellerId" : Auth.auth().currentUser!.uid,
+                "sellerPhoto":newPhoto
             ]
         
         let db = Firestore.firestore()
@@ -161,6 +191,11 @@ class PostPopupVC : UIViewController,UIPickerViewDelegate, UIPickerViewDataSourc
             // remove when sold!
             var ref3 = db.collection("books").document("all").collection("recent").addDocument(data: docData)
             
+            //postHistory where all the books they posted are held
+            var ref4 = db.collection("users").document(Auth.auth().currentUser!.uid).collection("postHistory").addDocument(data: docData)
+
+            
+            Auth.auth().currentUser!.uid
             
             
             for string in photos {

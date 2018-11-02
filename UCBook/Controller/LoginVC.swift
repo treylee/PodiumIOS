@@ -247,7 +247,7 @@ class LoginVC: UIViewController {
             
         }, completion: { (finished: Bool) in
             let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyBoard.instantiateViewController(withIdentifier: "toHubScreen")
+            let vc = storyBoard.instantiateViewController(withIdentifier: "toHubController")
             vc.modalTransitionStyle = .flipHorizontal
             self.present(vc, animated: true, completion: nil)
         })

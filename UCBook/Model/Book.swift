@@ -15,6 +15,10 @@ class Book: NSObject{
      var photos: NSArray?
      var title: String?
      var isExpanded = false
+     var sellerId: String?
+     var comments: String?
+     var sellerPhoto: String?
+    
     init?(dictionary: [String: Any]) {
         
         self.isbn = dictionary["isbn"] as? String
@@ -22,6 +26,11 @@ class Book: NSObject{
         self.price = dictionary["price"] as? String
         self.photos = dictionary["photos"] as? NSArray
         self.title = dictionary["title"] as? String
+        self.sellerId = dictionary["sellerId"] as? String
+        self.comments = dictionary["comments"] as? String
+        self.sellerPhoto = dictionary["sellerPhoto"] as? String
+
         
   }
+    
 }

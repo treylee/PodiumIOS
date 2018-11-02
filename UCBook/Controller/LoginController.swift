@@ -141,7 +141,7 @@ class LoginController: UIViewController, UITextFieldDelegate {
             DispatchQueue.main.async {
                    let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             // the identifier is the storyboardID near under the class name section
-            let vc = storyBoard.instantiateViewController(withIdentifier: "HubVC")
+            let vc = storyBoard.instantiateViewController(withIdentifier: "toHubController")
             
             // vc.modalTransitionStyle = .flipHorizontal
             self.present(vc, animated: true, completion: nil)
@@ -255,7 +255,7 @@ class LoginController: UIViewController, UITextFieldDelegate {
     }
     
     func bgVideo(){
-        let filepath: String? = Bundle.main.path(forResource: "loginVideo", ofType: "mp4")
+        let filepath: String? = Bundle.main.path(forResource: "hubVideo", ofType: "mp4")
         // guard let unwrappedVideoPath = filepath else {return}
         let fileURL = URL.init(fileURLWithPath: filepath!)
         

@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UCBook/Controller/LoginController.swift"
-            timestampString = "549063950.7837861"
+            timestampString = "562886378.2784621"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "53"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UCBook/Controller/LoginController.swift"
-            timestampString = "549063950.783839"
+            timestampString = "562886378.278553"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "21"
@@ -104,7 +104,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UCBook/Controller/LoginTransitionVC.swift"
-            timestampString = "547508221.244964"
+            timestampString = "562886378.27863"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "13"
@@ -182,11 +182,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UCBook/Controller/PostVC.swift"
-            timestampString = "561934079.802097"
+            timestampString = "562886378.278715"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "321"
-            endingLineNumber = "321"
+            startingLineNumber = "326"
+            endingLineNumber = "326"
             landmarkName = "PostVC"
             landmarkType = "3">
             <Locations>
@@ -259,7 +259,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UCBook/Controller/FriendListVC.swift"
-            timestampString = "561858286.578849"
+            timestampString = "562822594.151722"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "117"
@@ -275,27 +275,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UCBook/Controller/LoginController.swift"
-            timestampString = "553286353.77909"
+            timestampString = "562886378.278831"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "42"
             endingLineNumber = "42"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "UCBook/Controller/PostVC.swift"
-            timestampString = "561934079.802292"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "218"
-            endingLineNumber = "218"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
