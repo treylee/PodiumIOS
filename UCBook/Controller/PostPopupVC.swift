@@ -23,6 +23,7 @@ class PostPopupVC : UIViewController,UIPickerViewDelegate, UIPickerViewDataSourc
     var profileURL = ""
     var profilePhoto = ""
     var photos = [String]()
+    var sellerName = ""
     @IBOutlet weak var titleText: UITextField!
     
     @IBOutlet weak var commentsTexrt: UITextView!
@@ -43,7 +44,7 @@ class PostPopupVC : UIViewController,UIPickerViewDelegate, UIPickerViewDataSourc
     @IBOutlet weak var coursePicker: UIPickerView!
     
    func getPhotoUrl() {
-    Firestore.firestore().collection("users").document((Auth.auth().currentUser?.uid)!).collection("profilePhoto")
+    Firestore.firestore().collection("users").document((Auth.auth().currentUser?.uid)!).collection("profile")
         .getDocuments() { (querySnapshot, err) in
             if let err = err {
                 print("Error getting documents: \(err)")
@@ -53,9 +54,9 @@ class PostPopupVC : UIViewController,UIPickerViewDelegate, UIPickerViewDataSourc
                     var dict : [String:Any] =  document.data()
                     
                     var dictarr = dict["profilePhoto"] as! NSArray
-                    
+                    var sname = dict["profileName"] as! String
                     self.newPhoto = dictarr[0] as! String
-                    
+                    self.sellerName = sname
                     print("gotit")
                     print("g",self.newPhoto)
                     
@@ -157,7 +158,7 @@ class PostPopupVC : UIViewController,UIPickerViewDelegate, UIPickerViewDataSourc
                  "isbn" : isbnText.text! ,
                  "photos" : self.photos,
                  "meetingPlace": meetingPlaceText.text,
-                    "price":tmpPrice] as [String : Any]
+                "price":tmpPrice] as [String : Any]
             
                 var random = arc4random_uniform(21) + 10
             
@@ -179,7 +180,8 @@ class PostPopupVC : UIViewController,UIPickerViewDelegate, UIPickerViewDataSourc
                 "price":tmpPrice,
                 "comments": commentsTexrt.text,
                 "sellerId" : Auth.auth().currentUser!.uid,
-                "sellerPhoto":newPhoto
+                "sellerPhoto":newPhoto,
+                "sellerName": sellerName
             ]
         
         let db = Firestore.firestore()

@@ -39,25 +39,28 @@ class AddToCart : UIViewController,UIImagePickerControllerDelegate,UINavigationC
     
 
     @IBAction func viewBook(_ sender: Any) {
-        let storyBoard: UIStoryboard = UIStoryboard(name: "PostingBoard", bundle: nil)
-        let vc = storyBoard.instantiateViewController(withIdentifier: "BookDetailsVC") as! BookDetailsVC
-        vc.modalPresentationStyle = .overFullScreen
-        present(vc, animated: true)
+   
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyBoard: UIStoryboard = UIStoryboard(name: "PostingBoard", bundle: nil)
         let vc = storyBoard.instantiateViewController(withIdentifier: "BookDetailsVC") as! BookDetailsVC
         vc.modalPresentationStyle = .overFullScreen
         
-        vc.bookISBN?.text = bookList[indexPath.row].isbn
+        vc.isbn = bookList[indexPath.row].isbn!
         vc.bookCondition?.text = bookList[indexPath.row].title
         vc.subjectText =
             bookList[indexPath.row].title!
         vc.price =
             bookList[indexPath.row].price!
-        vc.bookDescription?.text =
+        vc.comments =
             bookList[indexPath.row].description
-        
+        vc.sellerPhoto =
+            bookList[indexPath.row].sellerPhoto!
+        vc.photos =
+            bookList[indexPath.row].photos as! [String]
+        vc.name =
+            bookList[indexPath.row].sellerName!
+
         present(vc, animated: true)
     }
     override func viewDidLoad() {

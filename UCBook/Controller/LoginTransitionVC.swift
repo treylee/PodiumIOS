@@ -32,7 +32,6 @@ class LoginTransitionVC: UIViewController, UIImagePickerControllerDelegate,UINav
     }
 
     @IBAction func goToHub(_ sender: Any) {
-        addImageURL()
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyBoard.instantiateViewController(withIdentifier: "toHubController")
         present(vc, animated: true)
@@ -56,7 +55,8 @@ class LoginTransitionVC: UIViewController, UIImagePickerControllerDelegate,UINav
         
         let image = info[UIImagePickerControllerOriginalImage] as! UIImage
         pic.image = image
-        
+        print("cecking")
+    
         // Upload the file to the path "images/rivers.jpg"
         let uploadImage = UIImagePNGRepresentation(image)
         storageRef.putData(uploadImage!, metadata: nil) { (metadata, error) in
@@ -74,6 +74,8 @@ class LoginTransitionVC: UIViewController, UIImagePickerControllerDelegate,UINav
                         print("download url:",url!.absoluteString)
                         self.profileURL =  url!.absoluteString
                         self.photos.append(self.profileURL)
+                        self.addImageURL()
+
                     }
                 })
             }
@@ -84,9 +86,10 @@ class LoginTransitionVC: UIViewController, UIImagePickerControllerDelegate,UINav
     }
     private func addImageURL(){
         let docData: [String: Any] = [
-            "profilePhoto": photos
+            "profilePhoto": self.photos,
+            "profileName": nameField.text
             ]
-        var ref4 = Firestore.firestore().collection("users").document(Auth.auth().currentUser!.uid).collection("profilePhoto").addDocument(data: docData)
+        var ref4 = Firestore.firestore().collection("users").document(Auth.auth().currentUser!.uid).collection("profile").addDocument(data: docData)
 
         
     }

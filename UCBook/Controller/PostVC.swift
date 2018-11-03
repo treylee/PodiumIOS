@@ -16,6 +16,7 @@ class PostVC: UITableViewController {
     
     var bookList = [Book]()
     var profilePhoto = ""
+    var sellerName = ""
     var test = ""
     var subject = ""
     var course = ""
@@ -23,12 +24,13 @@ class PostVC: UITableViewController {
     var selectedHeader = -1;
     var bookShrinkSize = 0
     var counter = 500
+    var currentBookIndex = 0
     lazy var searchBar = UISearchBar(frame: CGRect(x: 0, y: 0, width: 300, height: 30))
     lazy var searchButton = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 30))
     private var roundButton = UIButton()
 
     let storage = Storage.storage()
-
+    var cartcell = CartOrBuyCell()
     
 // var instead of let so can mutate
     // add more expandables to create more books
@@ -53,14 +55,13 @@ class PostVC: UITableViewController {
         
         let storyBoard: UIStoryboard = UIStoryboard(name: "PostingBoard", bundle: nil)
         let vc = storyBoard.instantiateViewController(withIdentifier: "addToCart")
-        //   vc.modalTransitionStyle = .flipHorizontal
-       //  print("CLICKED SEARCH")
-        dismiss(animated: true, completion: nil)
+
         navigationController?.pushViewController(vc, animated: false)
+        //dismiss(animated: true, completion: nil)
 
         
     }
-    
+  
     override func viewWillDisappear(_ animated: Bool) {
         if roundButton.superview != nil {
             DispatchQueue.main.async {
@@ -140,8 +141,10 @@ class PostVC: UITableViewController {
             
                         var newBook: Book = Book(dictionary: document.data())!
                        
-                        self.bookList.append(newBook)
                         self.profilePhoto = newBook.sellerPhoto!
+                        self.sellerName = newBook.sellerName!
+                        self.bookList.append(newBook)
+
                         print("printing profilePhoto",self.profilePhoto)
                         print(self.bookList[0].title,"booklist 0")
                        self.twodimensionalArray.append(Expandable(isExpanded: false,names: ["tim","tim","john","smith","xx","sda","sdada"]))
@@ -168,7 +171,7 @@ class PostVC: UITableViewController {
                             let newBook: Book = Book(dictionary: document.data())!
                             print("in no selection")
                             self.profilePhoto = newBook.sellerPhoto!
-                            print("printing profilePhoto",self.profilePhoto)
+                            self.sellerName = newBook.sellerName!
                             
                             self.bookList.append(newBook)
                             self.twodimensionalArray.append(Expandable(isExpanded: false,names: ["tim","tim","john","smith","xx","sda","sdada"]))
@@ -274,17 +277,7 @@ class PostVC: UITableViewController {
                 }
         }
     }
-    /*
-    @objc func cartImageClick(_ sender: UITapGestureRecognizer){
-        print("cart image click")
-        cart.title = "\(Int(cart.title!)!+1)"
-      
 
-        //animation(tempView: sender)
-        
-    }
-    */
-   
 
     
    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -337,7 +330,7 @@ class PostVC: UITableViewController {
     var imgList: [String] = ["book5cover","book5cover", "book4cover","book3cover","book4cover","book1cover",]
   
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-
+        self.currentBookIndex = section
         print("in header section:",section,"booklist count",bookList.count )
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap2(_:)))
         let storageRef = storage.reference()
@@ -532,20 +525,8 @@ class PostVC: UITableViewController {
 
     @IBAction func cartClicked(_ sender: UIButton) {
        
-        let docData: [String: Any] = [
-            "title": bookList[selectedHeader].title,
-            "isbn" : bookList[selectedHeader].isbn ,
-            "photos" : bookList[selectedHeader].photos,
-            "meetingPlace": bookList[selectedHeader].meetingPlace,
-            "price":bookList[selectedHeader].price
-        ]
-        /*
-        let db = Firestore.firestore()
-        let settings = db.settings
-        settings.areTimestampsInSnapshotsEnabled = true
-        db.settings = settings
- */
-        var ref = Firestore.firestore().collection("cart").addDocument(data: docData)
+    
+        var ref = Firestore.firestore().collection("cart").addDocument(data: bookList[currentBookIndex].dic!)
         
         
       //  print("clicked",self.navigationItem.rightBarButtonItem?.title)
@@ -554,7 +535,7 @@ class PostVC: UITableViewController {
         
         let indexPath = self.tableView.indexPathForRow(at: buttonPosition)!
         
- let cell = tableView.dequeueReusableCell(withIdentifier: "Row8", for: indexPath) as! CartOrBuyCell
+        let cell = cartcell
     
         let imageViewPosition : CGPoint = cell.cartButton.convert(cell.buyImageButton.bounds.origin, to: self.view)
         
@@ -661,7 +642,11 @@ class PostVC: UITableViewController {
             return cell;
         }else if indexPath.row == 6 {
             print("indexpath row is 8")
-            let cell = tableView.dequeueReusableCell(withIdentifier: "Row8", for: indexPath) as! CartOrBuyCell
+           let cell = tableView.dequeueReusableCell(withIdentifier: "Row8", for: indexPath) as! CartOrBuyCell
+            
+            cartcell = cell;
+      
+
             /*
             cell.buyImageButton.isUserInteractionEnabled = true
             cell.cartImageButton.isUserInteractionEnabled = true

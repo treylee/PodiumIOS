@@ -18,9 +18,11 @@ class Book: NSObject{
      var sellerId: String?
      var comments: String?
      var sellerPhoto: String?
+     var sellerName: String?
+     var dic: [String:Any]?
     
     init?(dictionary: [String: Any]) {
-        
+        self.dic = dictionary
         self.isbn = dictionary["isbn"] as? String
         self.meetingPlace = dictionary["meetingPlace"] as? String
         self.price = dictionary["price"] as? String
@@ -29,6 +31,7 @@ class Book: NSObject{
         self.sellerId = dictionary["sellerId"] as? String
         self.comments = dictionary["comments"] as? String
         self.sellerPhoto = dictionary["sellerPhoto"] as? String
+        self.sellerName = dictionary["sellerName"] as? String
 
         
   }
