@@ -12,7 +12,7 @@ import Firebase
 class AccountVC : UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate,UITableViewDelegate,UITableViewDataSource {
   
   
-    
+    var bookList = [Book]()
     @IBOutlet weak var profilePhoto: UIImageView!
     
     @IBOutlet weak var historyTable: UITableView!
@@ -21,6 +21,7 @@ class AccountVC : UIViewController,UIImagePickerControllerDelegate,UINavigationC
     var profileURL : String? = nil
     override func viewDidLoad() {
         super.viewDidLoad()
+        postHistory()
         historyTable.delegate = self
         historyTable.dataSource = self
         reviewTable.delegate = self
@@ -56,7 +57,23 @@ class AccountVC : UIViewController,UIImagePickerControllerDelegate,UINavigationC
         
  
     }
-    
+    func postHistory() {
+        Firestore.firestore().collection("users").document((Auth.auth().currentUser?.uid)!).collection("postHistory")
+            .getDocuments() { (querySnapshot, err) in
+                if let err = err {
+                    print("Error getting documents: \(err)")
+                } else {
+                    for document in querySnapshot!.documents {
+                        
+                        var newBook: Book = Book(dictionary: document.data())!
+                        print(newBook.sellerName,"yahh")
+                        self.bookList.append(newBook)
+                        
+                    }
+                    self.historyTable.reloadData()
+        }
+        
+        }}
     @IBAction func changePhoto(_ sender: Any) {
         
     }
@@ -140,8 +157,13 @@ class AccountVC : UIViewController,UIImagePickerControllerDelegate,UINavigationC
             //adding gesture recognizer alternative to IBaction
             cell.reviewerPhoto.isUserInteractionEnabled = true
         } else if tableView == historyTable {
-      
+      print("lcount",bookList.count)
             let cell = historyTable.dequeueReusableCell(withIdentifier: "HistoryCell") as! HistoryCell
+           // cell.bookSeller.text = bookList[indexPath.row].sellerName
+            if(bookList.count > 0){
+             /*   let url = URL(string: self.bookList[indexPath.row].photos?[0] as! String)
+                cell.bookPhoto.kf.setImage(with: url)*/
+            }
                cellToReturn = cell
         }
         
@@ -149,14 +171,20 @@ class AccountVC : UIViewController,UIImagePickerControllerDelegate,UINavigationC
     }
     
       func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // can ontroll the number of items in each seciton
-            return 1
+        var count = 0
+        if tableView == reviewTable{
+        count = 1
+        }
+        else if tableView == historyTable {
+            count = 2
+
+        }
+            return count
         
     }
       func numberOfSections(in tableView: UITableView) -> Int {
-        return 11;
+        return 1
     }
-    
     
 }
     

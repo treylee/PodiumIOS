@@ -1,5 +1,6 @@
 
-[!] Automatically assigning platform `ios` with version `10.0` on target `UCBook` because no platform was specified. Please specify a platform for this target in your Podfile. See `https://guides.cocoapods.org/syntax/podfile.html#platform`# Uncomment the next line to define a global platform for your project
+[!] Automatically assigning platform `ios` with version `10.0` on target `UCBook` because no platform was specified. Please specify a platform for this target in your Podfile. See `https://guides.cocoapods.org/syntax/podfile.html#platform`
+# Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
 target 'UCBook' do
@@ -14,7 +15,7 @@ pod 'Firebase/Auth'
 pod 'Firebase/Storage'
 pod 'Firebase/Firestore'
 pod 'FirebaseUI/Storage'
-pod 'Kingfisher', '~> 4.0'
+pod 'Kingfisher', 
 
 
 

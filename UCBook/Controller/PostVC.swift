@@ -36,7 +36,10 @@ class PostVC: UITableViewController {
     // add more expandables to create more books
     // add names to create more rows in each book section
     var twodimensionalArray = [Expandable]()
-    
+    func addPostHistory(){
+        
+        
+    }
     @objc func profileImageHasBeenTapped(_ sender:UIGestureRecognizer){
         
         
@@ -44,7 +47,6 @@ class PostVC: UITableViewController {
         let vc = storyBoard.instantiateViewController(withIdentifier: "AccountVC")
         //   vc.modalTransitionStyle = .flipHorizontal
         //  print("CLICKED SEARCH")
-        dismiss(animated: true, completion: nil)
        navigationController?.pushViewController(vc, animated: false)
         
         
@@ -330,8 +332,7 @@ class PostVC: UITableViewController {
     var imgList: [String] = ["book5cover","book5cover", "book4cover","book3cover","book4cover","book1cover",]
   
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        self.currentBookIndex = section
-        print("in header section:",section,"booklist count",bookList.count )
+        print("in header section:",currentBookIndex,"booklist count",bookList.count )
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap2(_:)))
         let storageRef = storage.reference()
         let cell = tableView.dequeueReusableCell(withIdentifier: "SectionHeader") as? BookHeaderCell
@@ -361,7 +362,7 @@ class PostVC: UITableViewController {
         cell?.moneySign.textColor = UIColor.lightGray
         
     
-        print(bookList[section].title,"checking this value2")
+        print(selectedHeader,"selected header")
 
         //  cell?.bookPicture.layer.masksToBounds = false
       //  cell?.bookPicture.layer.cornerRadius = (cell?.bookPicture.frame.height)!/6
@@ -373,6 +374,7 @@ class PostVC: UITableViewController {
             //  cell?.bookPicture.borderWidth = 3
            // cell?.layer.borderColor = UIColor.black.cgColor
             print("esslected header",selectedHeader)
+            currentBookIndex = selectedHeader
         }
         let initialScale: CGFloat = 1.2
         let duration: TimeInterval = 0.5
@@ -522,7 +524,17 @@ class PostVC: UITableViewController {
         }
     }
  
-
+    @IBAction func contactSeller(_ sender: Any) {
+        
+        let uuid = UUID().uuidString
+        let chat_room = ChatRoom(dictionary: bookList[currentBookIndex].dic!)
+        chat_room!.dic?.updateValue(uuid, forKey: "roomId")
+ Firestore.firestore().collection("chatRooms").document("users").collection((Auth.auth().currentUser?.uid)!).addDocument(data: (chat_room?.dic!)!)
+        
+        Firestore.firestore().collection("chatRooms").document("users").collection((bookList[currentBookIndex].sellerId)!).addDocument(data: (chat_room?.dic!)!)
+        
+    }
+    
     @IBAction func cartClicked(_ sender: UIButton) {
        
     
@@ -537,10 +549,10 @@ class PostVC: UITableViewController {
         
         let cell = cartcell
     
-        let imageViewPosition : CGPoint = cell.cartButton.convert(cell.buyImageButton.bounds.origin, to: self.view)
+        let imageViewPosition : CGPoint = cell.cartButton.convert(cell.cartButton.bounds.origin, to: self.view)
         
         
-        let imgViewTemp = UIImageView(frame: CGRect(x: imageViewPosition.x, y: imageViewPosition.y, width: cell.buyImageButton.frame.size.width, height: cell.buyImageButton.frame.size.height))
+        let imgViewTemp = UIImageView(frame: CGRect(x: imageViewPosition.x, y: imageViewPosition.y, width: cell.cartButton.frame.size.width, height: cell.cartButton.frame.size.height))
         
         imgViewTemp.image = cell.cartButton.imageView?.image
         

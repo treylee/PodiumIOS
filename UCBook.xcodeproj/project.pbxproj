@@ -35,6 +35,7 @@
 		2D3B1E2C2072C38F00528D80 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3B1E2B2072C38F00528D80 /* MainTabBar.swift */; };
 		2D3DEC8520A24AE300F50540 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3DEC8420A24AE300F50540 /* HistoryCell.swift */; };
 		2D3DEC8720A24B0000F50540 /* AccountReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3DEC8620A24B0000F50540 /* AccountReviewCell.swift */; };
+		2D4DB60B2190AEAB007EE61D /* ChatRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4DB60A2190AEAB007EE61D /* ChatRoom.swift */; };
 		2D57C67220356CED001568BE /* CollectionVIewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D57C67120356CED001568BE /* CollectionVIewCells.swift */; };
 		2D604A7E203FC46F001B5137 /* hubVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D604A7D203FC46F001B5137 /* hubVideo.mp4 */; };
 		2D604A8220408DCC001B5137 /* LoginTransitionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D604A8120408DCC001B5137 /* LoginTransitionVC.swift */; };
@@ -123,6 +124,7 @@
 		2D3B1E2B2072C38F00528D80 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		2D3DEC8420A24AE300F50540 /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
 		2D3DEC8620A24B0000F50540 /* AccountReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountReviewCell.swift; sourceTree = "<group>"; };
+		2D4DB60A2190AEAB007EE61D /* ChatRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoom.swift; sourceTree = "<group>"; };
 		2D57C67120356CED001568BE /* CollectionVIewCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionVIewCells.swift; sourceTree = "<group>"; };
 		2D604A7D203FC46F001B5137 /* hubVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = hubVideo.mp4; sourceTree = "<group>"; };
 		2D604A8120408DCC001B5137 /* LoginTransitionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTransitionVC.swift; sourceTree = "<group>"; };
@@ -329,6 +331,7 @@
 				2DF411D620E92FD900C82635 /* CartOrBuyCell.swift */,
 				2DFF594220F6E6010088F7EB /* CartCell.swift */,
 				2DEF033320FBDE58006D0399 /* Student.swift */,
+				2D4DB60A2190AEAB007EE61D /* ChatRoom.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -603,6 +606,7 @@
 				2DFF594320F6E6010088F7EB /* CartCell.swift in Sources */,
 				2DC4B02F202B9E9A00534A25 /* HubVC.swift in Sources */,
 				2D3B1E2C2072C38F00528D80 /* MainTabBar.swift in Sources */,
+				2D4DB60B2190AEAB007EE61D /* ChatRoom.swift in Sources */,
 				2D0CDFA520294A2E000202ED /* firstLoginVC.swift in Sources */,
 				2DEF033420FBDE58006D0399 /* Student.swift in Sources */,
 				2D2AF63E20BA136F00EDC368 /* Book.swift in Sources */,

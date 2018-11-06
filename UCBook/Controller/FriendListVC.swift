@@ -12,20 +12,24 @@ import Firebase
 class FriendListVC : UITableViewController {
     
     var students = [Student]()
+    var rooms = [ChatRoom] ()
     var messages = [Message]()
     var messageDictionary = [String: Message]()
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.reloadData()
         retrieveMessages()
         populateUserList()
         tableView.separatorStyle = .singleLine
         
     }
     override func viewDidAppear(_ animated: Bool) {
-        self.tabBarController?.tabBar.isHidden = false
+        self.tabBarController?.tabBar.isHidden = true
+        self.tableView.reloadData()
 
     }
     func retrieveMessages() {
+        
         let refHandle = Database.database().reference().child("messages").observe(.childAdded, with: { (snapshot) in
             
             if let dictionary = snapshot.value as? [String: AnyObject] {
@@ -44,43 +48,45 @@ class FriendListVC : UITableViewController {
     }
     func populateUserList(){
         print("populating user list")
-        let refHandle = Database.database().reference().child("users").observe(.childAdded, with: { (snapshot) in
-            
-            if  let dict = snapshot.value as? [String: AnyObject] {
-                let s  = Student()
-                s.uid = snapshot.key // necessary  to getUID and remain complianet for setValueKeys
-                s.setValuesForKeys(dict)
-                if s.uid != Auth.auth().currentUser?.uid {
-                self.students.append(s)
-                }
-                print(s.email)
-                
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
+        
+        Firestore.firestore().collection("chatRooms").document("users").collection((Auth.auth().currentUser?.uid)!)
+            .getDocuments() { (querySnapshot, err) in
+                if let err = err {
+                    print("Error getting documents: \(err)")
+                } else {
+                    for document in querySnapshot!.documents {
+                        
+                        let room: ChatRoom = ChatRoom(dictionary: document.data())!
+                        
+                        self.rooms.append(room)
+                        print("seller",room.sellerName)
+                        
+                    }
                     
+                    self.tableView.reloadData()
+                   // DispatchQueue.main.async {
+                     //   self.tableView.reloadData()
+                        
+                   // }
+                    print("reloading data")
                 }
-            }
-         
-            
-           
-        })
+        }
+        
         
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return students.count
+        return rooms.count
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let student = students[indexPath.row]
+        let seller = rooms[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "friendListItem", for: indexPath) as! FriendListItem
        
         cell.pic.layer.masksToBounds = false
         cell.pic.layer.cornerRadius = cell.pic.frame.height/2
         cell.pic.clipsToBounds = true
-        print(student.profileImageUrl)
         // look into other libraries that cache images like kingfisher make it quicker to appear on message screen
         
-        if let profileImageUrl = student.profileImageUrl {
+        if let profileImageUrl = seller.sellerPhoto {
             let url = NSURL(string: profileImageUrl)
             var request = URLRequest(url: url! as URL)
             URLSession.shared.dataTask(with:request) { data,response,error in
@@ -110,8 +116,8 @@ class FriendListVC : UITableViewController {
     
         //adding gesture recognizer alternative to IBaction
         cell.pic.isUserInteractionEnabled = true
-        cell.username.text = student.email
-        cell.message.text = student.role
+        cell.username.text = seller.sellerName
+        cell.message.text = "Student"
         // removes cell seperator from bottom
         return cell
 
@@ -131,8 +137,8 @@ class FriendListVC : UITableViewController {
         // the identifier is the storyboardID near under the class name section
         let vc = storyBoard.instantiateViewController(withIdentifier: "ChatVC") as! ChatVC
         vc.friendID = "Checking if Friend ID passed"
-        let student = students[selectedCell.row]
-        vc.chatFriend = student
+        let room = rooms[selectedCell.row]
+        vc.chatFriend = room
         navigationController?.pushViewController(vc, animated: true)
     }
 }

@@ -471,10 +471,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="54.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="buyImageButton" image="podiumPurchase" translatesAutoresizingMaskIntoConstraints="NO" id="MoK-RS-wPT">
-                                            <rect key="frame" x="220" y="11" width="105" height="61"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzd-g0-KOB">
                                             <rect key="frame" x="22" y="-5" width="67" height="91"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -483,13 +479,23 @@
                                                 <action selector="cartClicked:" destination="blK-qI-rlV" eventType="touchUpInside" id="nkq-Ss-n5M"/>
                                             </connections>
                                         </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPG-Jn-yl3">
+                                            <rect key="frame" x="210" y="11" width="138" height="36"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                            <state key="normal" title="Contact Seller">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="contactSeller:" destination="blK-qI-rlV" eventType="touchUpInside" id="oSN-hM-rqG"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <color key="backgroundColor" red="0.99716390857017834" green="0.97561627070598178" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="tintColor" red="0.99895197540000003" green="1" blue="0.96797955670000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.98999440303973996" green="0.99442241752755711" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <outlet property="buyImageButton" destination="MoK-RS-wPT" id="asg-DN-hov"/>
                                     <outlet property="cartButton" destination="dzd-g0-KOB" id="iM2-KV-9Q0"/>
                                 </connections>
                             </tableViewCell>
@@ -722,6 +728,7 @@
                         <outlet property="bookPrice" destination="z9r-gi-kW9" id="oqr-fL-q2Z"/>
                         <outlet property="bookTitle" destination="WoQ-bc-cgn" id="pwW-vF-Pdy"/>
                         <outlet property="close" destination="jDT-UM-EIb" id="a4j-UJ-VZa"/>
+                        <outlet property="contactButton" destination="pJp-Vb-maD" id="hst-Zk-WL4"/>
                         <outlet property="sellerName" destination="8pp-Kx-nux" id="he4-dk-lLS"/>
                         <outlet property="sellerPicture" destination="BzY-fi-IWK" id="tnq-xI-PHg"/>
                     </connections>
@@ -889,7 +896,6 @@
         <image name="book3cover" width="1000" height="1192"/>
         <image name="close" width="512" height="512"/>
         <image name="cloudPic" width="1920" height="1080"/>
-        <image name="podiumPurchase" width="512" height="512"/>
         <image name="podiumlogo1" width="4525" height="2813"/>
     </resources>
 </document>

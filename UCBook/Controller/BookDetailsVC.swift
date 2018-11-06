@@ -41,6 +41,7 @@ class BookDetailsVC: UIViewController {
     
     @IBOutlet weak var close: UIImageView!
     
+    @IBOutlet weak var contactButton: UIImageView!
     override func viewDidLoad() {
         bookTitle.text = subjectText
         bookPrice.text = price
@@ -60,6 +61,11 @@ class BookDetailsVC: UIViewController {
         close.isUserInteractionEnabled = true
         close.addGestureRecognizer(tapGestureRecognizer)
         
+        let tapGestureRecognizer2 = UITapGestureRecognizer(target: self, action: #selector(toMessages(tapGestureRecognizer:)))
+        contactButton.isUserInteractionEnabled = true
+
+        contactButton.addGestureRecognizer(tapGestureRecognizer2)
+        
         
     }
     @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
@@ -67,6 +73,20 @@ class BookDetailsVC: UIViewController {
         print("habba")
         dismiss(animated: true, completion: nil)
         
-        // Your action
+    }
+    @objc func toMessages(tapGestureRecognizer: UITapGestureRecognizer)
+    {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "ChatBoard", bundle: nil)
+        // the identifier is the storyboardID near under the class name section
+        let vc = storyBoard.instantiateViewController(withIdentifier: "FriendListVC") as! FriendListVC
+        dismiss(animated: true, completion: {
+              self.navigationController?.pushViewController(vc, animated: true)
+        })
+ 
+       
+        present(vc, animated: false)
+
     }
 }
+
+
