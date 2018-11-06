@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8b2b9ee3-208b-405e-94f4-477f4422d0c1" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/UCBook/Controller/AddToCart.swift" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/UCBook/Model/CartCell.swift" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/UCBook/Model/CartOrBuyCell.swift" />
+      <change beforePath="$PROJECT_DIR$/Podfile" afterPath="$PROJECT_DIR$/Podfile" />
+      <change beforePath="$PROJECT_DIR$/Podfile.lock" afterPath="$PROJECT_DIR$/Podfile.lock" />
+      <change beforePath="$PROJECT_DIR$/Pods/Firebase/Core/Sources/Firebase.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/Firebase/Core/Sources/module.modulemap" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/Firebase/README.md" afterPath="$PROJECT_DIR$/Pods/Firebase/README.md" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/FirebaseAnalytics" afterPath="$PROJECT_DIR$/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/FirebaseAnalytics" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h" afterPath="$PROJECT_DIR$/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h" afterPath="$PROJECT_DIR$/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h" afterPath="$PROJECT_DIR$/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h" afterPath="$PROJECT_DIR$/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h" afterPath="$PROJECT_DIR$/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseAnalytics/Frameworks/FirebaseCoreDiagnostics.framework/FirebaseCoreDiagnostics" afterPath="$PROJECT_DIR$/Pods/FirebaseAnalytics/Frameworks/FirebaseCoreDiagnostics.framework/FirebaseCoreDiagnostics" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseAnalytics/Frameworks/FirebaseNanoPB.framework/FirebaseNanoPB" afterPath="$PROJECT_DIR$/Pods/FirebaseAnalytics/Frameworks/FirebaseNanoPB.framework/FirebaseNanoPB" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseAuth/CHANGELOG.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/FirebaseAuth" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuth.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthDataResult.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIROAuthProvider.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUser.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FIRUserMetadata.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseAuth/Frameworks/FirebaseAuth.framework/Modules/module.modulemap" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseAuth/README.md" afterPath="$PROJECT_DIR$/Pods/FirebaseAuth/README.md" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/FirebaseCore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRAnalyticsConfiguration.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRApp.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRConfiguration.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIRLoggerLevel.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FIROptions.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Headers/FirebaseCore.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseCore/Frameworks/FirebaseCore.framework/Modules/module.modulemap" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/FirebaseDatabase" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseDynamicLinks/Frameworks/FirebaseDynamicLinks.framework/FirebaseDynamicLinks" afterPath="$PROJECT_DIR$/Pods/FirebaseDynamicLinks/Frameworks/FirebaseDynamicLinks.framework/FirebaseDynamicLinks" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseDynamicLinks/Frameworks/FirebaseDynamicLinks.framework/Headers/FIRDynamicLink.h" afterPath="$PROJECT_DIR$/Pods/FirebaseDynamicLinks/Frameworks/FirebaseDynamicLinks.framework/Headers/FIRDynamicLink.h" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseDynamicLinks/Frameworks/FirebaseDynamicLinks.framework/Headers/FIRDynamicLinks.h" afterPath="$PROJECT_DIR$/Pods/FirebaseDynamicLinks/Frameworks/FirebaseDynamicLinks.framework/Headers/FIRDynamicLinks.h" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseInstanceID/CHANGELOG.md" afterPath="$PROJECT_DIR$/Pods/FirebaseInstanceID/CHANGELOG.md" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/FirebaseInstanceID" afterPath="$PROJECT_DIR$/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/FirebaseInstanceID" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h" afterPath="$PROJECT_DIR$/Pods/FirebaseInstanceID/Frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/FirebaseMessaging" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/Headers/FIRMessaging.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/Headers/FirebaseMessaging.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseMessaging/Frameworks/FirebaseMessaging.framework/Modules/module.modulemap" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/FirebaseStorage" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorage.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/FirebaseStorage/Frameworks/FirebaseStorage.framework/Modules/module.modulemap" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/GTMSessionFetcher/Source/GTMSessionFetcher.m" afterPath="$PROJECT_DIR$/Pods/GTMSessionFetcher/Source/GTMSessionFetcher.m" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleToolboxForMac/DebugUtils/GTMDebugSelectorValidation.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleToolboxForMac/DebugUtils/GTMDebugThreadValidation.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleToolboxForMac/DebugUtils/GTMMethodCheck.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleToolboxForMac/Foundation/GTMNSDictionary+URLArguments.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleToolboxForMac/Foundation/GTMNSDictionary+URLArguments.m" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleToolboxForMac/Foundation/GTMNSString+URLArguments.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/GoogleToolboxForMac/Foundation/GTMNSString+URLArguments.m" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Pods/Headers/Private/Firebase/Firebase.h" afterPath="$PROJECT_DIR$/Pods/Headers/Private/Firebase/Firebase.h" />
+      <change beforePath="$PROJECT_DIR$/Pods/Headers/Public/Firebase/Firebase.h" afterPath="$PROJECT_DIR$/Pods/Headers/Public/Firebase/Firebase.h" />
+      <change beforePath="$PROJECT_DIR$/Pods/Manifest.lock" afterPath="$PROJECT_DIR$/Pods/Manifest.lock" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/trey.xcuserdatad/xcschemes/GTMSessionFetcher.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/trey.xcuserdatad/xcschemes/GTMSessionFetcher.xcscheme" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/trey.xcuserdatad/xcschemes/GoogleToolboxForMac.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/trey.xcuserdatad/xcschemes/GoogleToolboxForMac.xcscheme" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/trey.xcuserdatad/xcschemes/Pods-UCBook.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/trey.xcuserdatad/xcschemes/Pods-UCBook.xcscheme" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/trey.xcuserdatad/xcschemes/Pods-UCBookTests.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/trey.xcuserdatad/xcschemes/Pods-UCBookTests.xcscheme" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/trey.xcuserdatad/xcschemes/Pods-UCBookUITests.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/trey.xcuserdatad/xcschemes/Pods-UCBookUITests.xcscheme" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/trey.xcuserdatad/xcschemes/Protobuf.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/trey.xcuserdatad/xcschemes/Protobuf.xcscheme" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/trey.xcuserdatad/xcschemes/leveldb-library.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/trey.xcuserdatad/xcschemes/leveldb-library.xcscheme" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/trey.xcuserdatad/xcschemes/nanopb.xcscheme" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/trey.xcuserdatad/xcschemes/nanopb.xcscheme" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/trey.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/trey.xcuserdatad/xcschemes/xcschememanagement.plist" />
+      <change beforePath="$PROJECT_DIR$/Pods/Protobuf/LICENSE" afterPath="$PROJECT_DIR$/Pods/Protobuf/LICENSE" />
+      <change beforePath="$PROJECT_DIR$/Pods/Protobuf/README.md" afterPath="$PROJECT_DIR$/Pods/Protobuf/README.md" />
+      <change beforePath="$PROJECT_DIR$/Pods/Protobuf/objectivec/GPBArray.m" afterPath="$PROJECT_DIR$/Pods/Protobuf/objectivec/GPBArray.m" />
+      <change beforePath="$PROJECT_DIR$/Pods/Protobuf/objectivec/GPBCodedInputStream.m" afterPath="$PROJECT_DIR$/Pods/Protobuf/objectivec/GPBCodedInputStream.m" />
+      <change beforePath="$PROJECT_DIR$/Pods/Protobuf/objectivec/GPBCodedInputStream_PackagePrivate.h" afterPath="$PROJECT_DIR$/Pods/Protobuf/objectivec/GPBCodedInputStream_PackagePrivate.h" />
+      <change beforePath="$PROJECT_DIR$/Pods/Protobuf/objectivec/GPBCodedOutputStream.m" afterPath="$PROJECT_DIR$/Pods/Protobuf/objectivec/GPBCodedOutputStream.m" />
+      <change beforePath="$PROJECT_DIR$/Pods/Protobuf/objectivec/GPBDescriptor.m" afterPath="$PROJECT_DIR$/Pods/Protobuf/objectivec/GPBDescriptor.m" />
+      <change beforePath="$PROJECT_DIR$/Pods/Protobuf/objectivec/GPBDictionary.h" afterPath="$PROJECT_DIR$/Pods/Protobuf/objectivec/GPBDictionary.h" />
+      <change beforePath="$PROJECT_DIR$/Pods/Protobuf/objectivec/GPBDictionary.m" afterPath="$PROJECT_DIR$/Pods/Protobuf/objectivec/GPBDictionary.m" />
+      <change beforePath="$PROJECT_DIR$/Pods/Protobuf/objectivec/GPBMessage.m" afterPath="$PROJECT_DIR$/Pods/Protobuf/objectivec/GPBMessage.m" />
+      <change beforePath="$PROJECT_DIR$/Pods/Protobuf/objectivec/GPBMessage_PackagePrivate.h" afterPath="$PROJECT_DIR$/Pods/Protobuf/objectivec/GPBMessage_PackagePrivate.h" />
+      <change beforePath="$PROJECT_DIR$/Pods/Protobuf/objectivec/GPBProtocolBuffers_RuntimeSupport.h" afterPath="$PROJECT_DIR$/Pods/Protobuf/objectivec/GPBProtocolBuffers_RuntimeSupport.h" />
+      <change beforePath="$PROJECT_DIR$/Pods/Protobuf/objectivec/GPBRootObject.m" afterPath="$PROJECT_DIR$/Pods/Protobuf/objectivec/GPBRootObject.m" />
+      <change beforePath="$PROJECT_DIR$/Pods/Protobuf/objectivec/GPBUtilities.m" afterPath="$PROJECT_DIR$/Pods/Protobuf/objectivec/GPBUtilities.m" />
+      <change beforePath="$PROJECT_DIR$/Pods/Protobuf/objectivec/GPBUtilities_PackagePrivate.h" afterPath="$PROJECT_DIR$/Pods/Protobuf/objectivec/GPBUtilities_PackagePrivate.h" />
+      <change beforePath="$PROJECT_DIR$/Pods/Protobuf/objectivec/google/protobuf/Any.pbobjc.h" afterPath="$PROJECT_DIR$/Pods/Protobuf/objectivec/google/protobuf/Any.pbobjc.h" />
+      <change beforePath="$PROJECT_DIR$/Pods/Protobuf/objectivec/google/protobuf/Api.pbobjc.h" afterPath="$PROJECT_DIR$/Pods/Protobuf/objectivec/google/protobuf/Api.pbobjc.h" />
+      <change beforePath="$PROJECT_DIR$/Pods/Protobuf/objectivec/google/protobuf/Duration.pbobjc.h" afterPath="$PROJECT_DIR$/Pods/Protobuf/objectivec/google/protobuf/Duration.pbobjc.h" />
+      <change beforePath="$PROJECT_DIR$/Pods/Protobuf/objectivec/google/protobuf/Empty.pbobjc.h" afterPath="$PROJECT_DIR$/Pods/Protobuf/objectivec/google/protobuf/Empty.pbobjc.h" />
+      <change beforePath="$PROJECT_DIR$/Pods/Protobuf/objectivec/google/protobuf/FieldMask.pbobjc.h" afterPath="$PROJECT_DIR$/Pods/Protobuf/objectivec/google/protobuf/FieldMask.pbobjc.h" />
+      <change beforePath="$PROJECT_DIR$/Pods/Protobuf/objectivec/google/protobuf/SourceContext.pbobjc.h" afterPath="$PROJECT_DIR$/Pods/Protobuf/objectivec/google/protobuf/SourceContext.pbobjc.h" />
+      <change beforePath="$PROJECT_DIR$/Pods/Protobuf/objectivec/google/protobuf/Struct.pbobjc.h" afterPath="$PROJECT_DIR$/Pods/Protobuf/objectivec/google/protobuf/Struct.pbobjc.h" />
+      <change beforePath="$PROJECT_DIR$/Pods/Protobuf/objectivec/google/protobuf/Struct.pbobjc.m" afterPath="$PROJECT_DIR$/Pods/Protobuf/objectivec/google/protobuf/Struct.pbobjc.m" />
+      <change beforePath="$PROJECT_DIR$/Pods/Protobuf/objectivec/google/protobuf/Timestamp.pbobjc.h" afterPath="$PROJECT_DIR$/Pods/Protobuf/objectivec/google/protobuf/Timestamp.pbobjc.h" />
+      <change beforePath="$PROJECT_DIR$/Pods/Protobuf/objectivec/google/protobuf/Type.pbobjc.h" afterPath="$PROJECT_DIR$/Pods/Protobuf/objectivec/google/protobuf/Type.pbobjc.h" />
+      <change beforePath="$PROJECT_DIR$/Pods/Protobuf/objectivec/google/protobuf/Type.pbobjc.m" afterPath="$PROJECT_DIR$/Pods/Protobuf/objectivec/google/protobuf/Type.pbobjc.m" />
+      <change beforePath="$PROJECT_DIR$/Pods/Protobuf/objectivec/google/protobuf/Wrappers.pbobjc.h" afterPath="$PROJECT_DIR$/Pods/Protobuf/objectivec/google/protobuf/Wrappers.pbobjc.h" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/GTMSessionFetcher/GTMSessionFetcher.xcconfig" afterPath="$PROJECT_DIR$/Pods/Target Support Files/GTMSessionFetcher/GTMSessionFetcher.xcconfig" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/GTMSessionFetcher/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/GTMSessionFetcher/Info.plist" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-umbrella.h" afterPath="$PROJECT_DIR$/Pods/Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-umbrella.h" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac.xcconfig" afterPath="$PROJECT_DIR$/Pods/Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac.xcconfig" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/GoogleToolboxForMac/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/GoogleToolboxForMac/Info.plist" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-UCBook/Pods-UCBook-acknowledgements.markdown" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-UCBook/Pods-UCBook-acknowledgements.markdown" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-UCBook/Pods-UCBook-acknowledgements.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-UCBook/Pods-UCBook-acknowledgements.plist" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-UCBook/Pods-UCBook-frameworks.sh" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-UCBook/Pods-UCBook-frameworks.sh" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-UCBook/Pods-UCBook.debug.xcconfig" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-UCBook/Pods-UCBook.debug.xcconfig" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-UCBook/Pods-UCBook.release.xcconfig" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-UCBook/Pods-UCBook.release.xcconfig" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-UCBookTests/Pods-UCBookTests.debug.xcconfig" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-UCBookTests/Pods-UCBookTests.debug.xcconfig" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-UCBookTests/Pods-UCBookTests.release.xcconfig" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-UCBookTests/Pods-UCBookTests.release.xcconfig" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-UCBookUITests/Pods-UCBookUITests.debug.xcconfig" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-UCBookUITests/Pods-UCBookUITests.debug.xcconfig" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Pods-UCBookUITests/Pods-UCBookUITests.release.xcconfig" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Pods-UCBookUITests/Pods-UCBookUITests.release.xcconfig" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Protobuf/Info.plist" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Protobuf/Info.plist" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/Protobuf/Protobuf.xcconfig" afterPath="$PROJECT_DIR$/Pods/Target Support Files/Protobuf/Protobuf.xcconfig" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/leveldb-library/leveldb-library.xcconfig" afterPath="$PROJECT_DIR$/Pods/Target Support Files/leveldb-library/leveldb-library.xcconfig" />
+      <change beforePath="$PROJECT_DIR$/Pods/Target Support Files/nanopb/nanopb.xcconfig" afterPath="$PROJECT_DIR$/Pods/Target Support Files/nanopb/nanopb.xcconfig" />
+      <change beforePath="$PROJECT_DIR$/UCBook.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/UCBook.xcodeproj/project.pbxproj" />
+      <change beforePath="$PROJECT_DIR$/UCBook.xcodeproj/xcuserdata/trey.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="$PROJECT_DIR$/UCBook.xcodeproj/xcuserdata/trey.xcuserdatad/xcschemes/xcschememanagement.plist" />
+      <change beforePath="$PROJECT_DIR$/UCBook.xcworkspace/xcuserdata/trey.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterPath="$PROJECT_DIR$/UCBook.xcworkspace/xcuserdata/trey.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" />
+      <change beforePath="$PROJECT_DIR$/UCBook/Controller/AccountVC.swift" afterPath="$PROJECT_DIR$/UCBook/Controller/AccountVC.swift" />
+      <change beforePath="$PROJECT_DIR$/UCBook/Controller/BookBoardVC.swift" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/UCBook/Controller/CollectionViewCellsVC.swift" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/UCBook/Controller/HubVC.swift" afterPath="$PROJECT_DIR$/UCBook/Controller/HubVC.swift" />
+      <change beforePath="$PROJECT_DIR$/UCBook/Controller/LoginTransitionVC.swift" afterPath="$PROJECT_DIR$/UCBook/Controller/LoginTransitionVC.swift" />
+      <change beforePath="$PROJECT_DIR$/UCBook/Controller/LoginVC.swift" afterPath="$PROJECT_DIR$/UCBook/Controller/LoginVC.swift" />
+      <change beforePath="$PROJECT_DIR$/UCBook/Controller/PostPopupVC.swift" afterPath="$PROJECT_DIR$/UCBook/Controller/PostPopupVC.swift" />
+      <change beforePath="$PROJECT_DIR$/UCBook/Controller/PostVC.swift" afterPath="$PROJECT_DIR$/UCBook/Controller/PostVC.swift" />
+      <change beforePath="$PROJECT_DIR$/UCBook/Controller/PostingBoardVC.swift" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/UCBook/Controller/PostingBoardVC2.swift" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/UCBook/Controller/PostingBoardViewVC.swift" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/UCBook/Controller/SeachPopupVC.swift" afterPath="$PROJECT_DIR$/UCBook/Controller/SeachPopupVC.swift" />
+      <change beforePath="$PROJECT_DIR$/UCBook/Controller/firstLoginVC.swift" afterPath="$PROJECT_DIR$/UCBook/Controller/firstLoginVC.swift" />
+      <change beforePath="$PROJECT_DIR$/UCBook/Controller/somefake.swift" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/UCBook/Model/Book.swift" afterPath="$PROJECT_DIR$/UCBook/Model/Book.swift" />
+      <change beforePath="$PROJECT_DIR$/UCBook/Model/Student.swift" afterPath="$PROJECT_DIR$/UCBook/Model/Student.swift" />
+      <change beforePath="$PROJECT_DIR$/UCBook/Singleton/AppDelegate.swift" afterPath="$PROJECT_DIR$/UCBook/Singleton/AppDelegate.swift" />
+      <change beforePath="$PROJECT_DIR$/UCBook/VIew/Base.lproj/Main.storyboard" afterPath="$PROJECT_DIR$/UCBook/VIew/Base.lproj/Main.storyboard" />
+      <change beforePath="$PROJECT_DIR$/UCBook/VIew/PostingBoard.storyboard" afterPath="$PROJECT_DIR$/UCBook/VIew/PostingBoard.storyboard" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1400" />
+    <option name="height" value="837" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="AndroidView" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8b2b9ee3-208b-405e-94f4-477f4422d0c1" name="Default" comment="" />
+      <created>1533173131441</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1533173131441</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1400" height="837" extended-state="0" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24945612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24945612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+</project>
